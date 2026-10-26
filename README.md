@@ -57,6 +57,9 @@ npm run build    # produce the finished site in _site/
 
 ## Hosting
 
+The site is hosted on Netlify at <https://existing-project-94e492.netlify.app>, linked to this
+repository: every push to `main` rebuilds and publishes the site automatically.
+
 The site is plain files, so any static host works. `netlify.toml` and `src/_redirects` are ready for
 Netlify or Cloudflare Pages:
 
