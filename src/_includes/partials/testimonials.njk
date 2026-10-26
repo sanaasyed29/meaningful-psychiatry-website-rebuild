@@ -1,0 +1,14 @@
+<section class="section testimonials">
+  <div class="container">
+    <h2 class="center">Testimonials</h2>
+    <div class="carousel" data-carousel>
+      <button class="carousel__btn carousel__btn--prev" aria-label="Previous testimonial"><i class="fa-solid fa-angle-left"></i></button>
+      <div class="carousel__track">
+        {%- for t in testimonials %}
+        <blockquote class="carousel__slide{% if loop.first %} is-active{% endif %}"><p>"{{ t }}"</p></blockquote>
+        {%- endfor %}
+      </div>
+      <button class="carousel__btn carousel__btn--next" aria-label="Next testimonial"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </div>
+</section>

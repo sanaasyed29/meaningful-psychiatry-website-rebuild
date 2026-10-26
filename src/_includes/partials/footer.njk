@@ -1,0 +1,37 @@
+<footer class="site-footer">
+  <div class="container">
+    {% include "partials/featured-box.njk" %}
+    <div class="footer-main">
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-nav">
+          {%- for item in site.footerNav %}
+          <li><a href="{{ item.url }}"{% if item.url | isExternal %} target="_blank" rel="noopener"{% elif item.url | isActive(page.url) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <div class="footer-contact">
+          <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+          <div><a href="{{ site.phoneLink }}" class="footer-contact__label">Call or Text</a><p><a href="{{ site.phoneLink }}">{{ site.phone }}</a></p></div>
+        </div>
+        <div class="footer-contact">
+          <i class="fa-solid fa-envelope-open" aria-hidden="true"></i>
+          <div><a href="mailto:{{ site.email }}" class="footer-contact__label">Email</a><p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        {% include "partials/newsletter-form.njk" %}
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ "now" | currentYear }} {{ site.name }}</p>
+      <div class="social">
+        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook" class="social--fb"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

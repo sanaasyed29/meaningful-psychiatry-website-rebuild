@@ -1,0 +1,8 @@
+<div class="featured-box">
+  <h3>Recently Featured On</h3>
+  <div class="featured-box__logos">
+    {%- for f in site.featuredOn %}
+    <img src="{{ f.logo }}" alt="{{ f.name }}" loading="lazy">
+    {%- endfor %}
+  </div>
+</div>

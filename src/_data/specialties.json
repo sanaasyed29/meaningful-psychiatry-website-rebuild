@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Anxiety & Panic Disorders",
+    "text": "Disorders characterized by excessive fear, anxiety, and related behavioral disturbances.",
+    "icon": "fa-solid fa-head-side-virus"
+  },
+  {
+    "title": "Behavioral Disorders",
+    "text": "Disorders involving patterns of disruptive behaviors that last for at least six months and cause problems in school, at home, and in social situations.",
+    "icon": "fa-solid fa-user-times"
+  },
+  {
+    "title": "Bipolar and Related Disorders",
+    "text": "Disorders involving episodes of mood changes ranging from manic highs to depressive lows.",
+    "icon": "fa-solid fa-user-friends"
+  },
+  {
+    "title": "Depressive Disorders",
+    "text": "Disorders characterized by persistent feelings of sadness, hopelessness, and loss of interest or pleasure in most activities.",
+    "icon": "fa-solid fa-sad-tear"
+  },
+  {
+    "title": "Mood Disorders Secondary to Medical Conditions",
+    "text": "Mood disturbances directly caused by a medical condition, affecting emotional and behavioral stability.",
+    "icon": "fa-solid fa-medkit"
+  },
+  {
+    "title": "Obsessive Compulsive and Related Disorders",
+    "text": "Disorders characterized by obsessive thoughts and repetitive behaviors aimed at reducing anxiety or distress.",
+    "icon": "fa-solid fa-repeat"
+  },
+  {
+    "title": "Schizophrenia Spectrum and Other Psychotic Disorders",
+    "text": "Disorders marked by delusions, hallucinations, disorganized thinking, and impaired functioning.",
+    "icon": "fa-solid fa-user-cog"
+  },
+  {
+    "title": "PTSD and Trauma/Stressor Related Disorders",
+    "text": "Disorders triggered by exposure to traumatic or stressful events, causing distress and functional impairment.",
+    "icon": "fa-solid fa-cloud-meatball"
+  },
+  {
+    "title": "Dissociative Disorders",
+    "text": "Disorders involving disruptions or discontinuities in consciousness, memory, identity, or perception.",
+    "icon": "fa-regular fa-question-circle"
+  },
+  {
+    "title": "Somatic Symptom and Related Disorders",
+    "text": "Disorders characterized by excessive focus on physical symptoms that cause significant distress and impairment.",
+    "icon": "fa-solid fa-hand-holding-medical"
+  },
+  {
+    "title": "Sleep-Wake Disorders",
+    "text": "Disorders that involve problems with the quality, timing, and amount of sleep, affecting overall health and functioning.",
+    "icon": "fa-solid fa-bed"
+  },
+  {
+    "title": "Neurodevelopmental Disorders",
+    "text": "Disorders that begin in childhood, affecting brain development and leading to developmental deficits in personal, social, academic, or occupational functioning.",
+    "icon": "fa-solid fa-briefcase-medical"
+  },
+  {
+    "title": "Neurocognitive Disorders",
+    "text": "Disorders characterized by a decline in cognitive function, often due to neurological or other medical conditions.",
+    "icon": "fa-solid fa-brain"
+  },
+  {
+    "title": "Personality Disorders",
+    "text": "Disorders involving enduring patterns of behavior, cognition, and inner experience that deviate significantly from cultural expectations and cause distress or impairment.",
+    "icon": "fa-solid fa-users"
+  },
+  {
+    "title": "Adjustment Disorder and Grief",
+    "text": "A short-term condition that occurs when an individual struggles to cope with a significant life change or stressor, leading to emotional or behavioral symptoms.",
+    "icon": "fa-solid fa-heart-broken"
+  }
+]

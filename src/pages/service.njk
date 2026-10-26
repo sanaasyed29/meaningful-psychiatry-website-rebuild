@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: interests
+  size: 1
+  alias: item
+permalink: "/service/{{ item.slug }}/"
+eleventyComputed:
+  title: "{{ item.title }}"
+  description: "{{ item.text }}"
+---
+<section class="page-hero">
+  <p class="eyebrow">Special Interests in Psychotherapy</p>
+  <h1 class="page-title">{{ item.title }}</h1>
+  <span class="rule"></span>
+</section>
+<section class="section section--tight">
+  <div class="container container--narrow center">
+    <span class="interest-card__icon interest-card__icon--lg"><img src="{{ item.icon }}" alt=""></span>
+    <p class="lead">{{ item.text }}</p>
+    <div class="btn-row btn-row--center">
+      {%- if item.relatedPost %}<a href="{{ item.relatedPost }}" class="btn btn--outline">Read the Article</a>{% endif %}
+      <a href="/contact-us/" class="btn">Contact Us</a>
+    </div>
+  </div>
+</section>
+{% include "partials/cta.njk" %}

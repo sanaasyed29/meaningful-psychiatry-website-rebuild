@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+title: Blog
+seoTitle: "Meaningful Psychiatry Blog"
+description: "Articles from Dr. Badeea Qureshi and Meaningful Psychiatry on mental health, medication management, psychotherapy and life in Washington State."
+pagination:
+  data: collections.posts
+  size: 6
+  alias: posts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+<section class="page-hero">
+  <p class="eyebrow">Latest News</p>
+  <h2 class="page-title page-title--white">From Our Blog</h2>
+  <span class="rule rule--blue"></span>
+</section>
+
+<section class="section section--tight">
+  <div class="container container--mid">
+    {% include "partials/featured-box.njk" %}
+    <div class="post-grid">
+      {%- for post in posts %}{% include "partials/post-card.njk" %}{% endfor %}
+    </div>
+    {%- if pagination.pages.length > 1 %}
+    <nav class="pager" aria-label="Blog pages">
+      {%- for href in pagination.hrefs %}
+      <a href="{{ href }}"{% if page.url == href %} aria-current="page"{% endif %}>{{ loop.index }}</a>
+      {%- endfor %}
+    </nav>
+    {%- endif %}
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

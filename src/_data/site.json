@@ -1,0 +1,58 @@
+{
+  "name": "Meaningful Psychiatry",
+  "url": "https://meaningfulpsychiatry.com",
+  "phone": "425-272-5931",
+  "phoneLink": "tel:4252725931",
+  "email": "admin@meaningfulpsychiatry.com",
+  "bookingUrl": "https://care.osmind.org/appointments/embed_appt?dietitian_id=17069373&provider_ids=%5B17069373%5D&appt_type_ids=%5B498945,498946,498947,524821,508077,508078,508079,524822,510301,524823,510606,524824,513239,518337,518338,518339,526630,528605,538689%5D&primary_color=4A9625",
+  "acceptingBanner": "Now Accepting: ✔ Aetna, ✔ Ambetter, ✔ Medicare, ✔ Medicaid",
+  "insuranceOptions": [
+    "Private pay (Dr. Qureshi)",
+    "Aetna (Francis)",
+    "Ambetter (Francis)",
+    "Medicare",
+    "Medicaid",
+    "Other"
+  ],
+  "social": {
+    "facebook": "https://facebook.com/meaningfulpsychiatry",
+    "instagram": "https://www.instagram.com/meaningfulpsychiatry/",
+    "instagramHandle": "@meaningfulpsychiatry",
+    "spotify": "https://open.spotify.com/show/3AIYRYODDaBBk4oRV0lOTy"
+  },
+  "forms": {
+    "contactAction": "",
+    "newsletterAction": ""
+  },
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "About", "children": [
+      { "label": "Meet the Team", "url": "/about-us/" },
+      { "label": "Services", "url": "/our-services/" }
+    ] },
+    { "label": "Blog", "url": "/blog/" },
+    { "label": "Podcast", "url": "/podcast/" },
+    { "label": "Contact", "url": "/contact-us/" },
+    { "label": "Help", "url": "/help-faqs/" },
+    { "label": "Insurance & Mental Health Care in Washington", "children": [
+      { "label": "Aetna Mental Health Provider in Washington", "url": "/aetna-mental-health-provider-in-washington/" },
+      { "label": "How Much Does a Mental Health Provider Cost With Aetna?", "url": "/aetna-mental-health-provider-cost/" },
+      { "label": "Online Psychiatric Care With Aetna in Washington: What to Expect", "url": "/online-psychiatric-care-aetna-washington/" }
+    ] }
+  ],
+  "footerNav": [
+    { "label": "Home", "url": "/" },
+    { "label": "About Dr. Qureshi", "url": "/about-us/" },
+    { "label": "Services", "url": "/our-services/" },
+    { "label": "Blog", "url": "/blog/" },
+    { "label": "Podcast", "url": "/podcast/" },
+    { "label": "Contact", "url": "/contact-us/" },
+    { "label": "Help and FAQs", "url": "/help-faqs/" },
+    { "label": "Unequal Parts Podcast", "url": "https://open.spotify.com/show/3AIYRYODDaBBk4oRV0lOTy" }
+  ],
+  "featuredOn": [
+    { "name": "Refinery29", "logo": "/images/2024/09/refinery29.svg" },
+    { "name": "Sammamish Chamber of Commerce", "logo": "/images/2020/04/sammamish-chamber.png" },
+    { "name": "NBC News", "logo": "/images/2024/09/nbc-news-logo.webp" }
+  ]
+}

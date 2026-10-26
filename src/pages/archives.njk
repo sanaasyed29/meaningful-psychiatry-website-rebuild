@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.archiveList
+  size: 1
+  alias: group
+permalink: "/{{ group.key }}/"
+eleventyComputed:
+  title: "{{ group.date | monthYear }}"
+---
+<section class="page-hero">
+  <p class="eyebrow">Archives</p>
+  <h1 class="page-title page-title--white">{{ group.date | monthYear }}</h1>
+</section>
+<section class="section section--tight">
+  <div class="container container--mid">
+    <div class="post-grid">
+      {%- for post in group.posts %}{% include "partials/post-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>

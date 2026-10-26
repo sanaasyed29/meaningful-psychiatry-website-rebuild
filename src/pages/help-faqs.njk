@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: Help and FAQs
+permalink: /help-faqs/
+description: "Get answers to our most frequently asked questions about virtual psychiatric care, insurance, scheduling and more at Meaningful Psychiatry."
+---
+<section class="page-hero">
+  <h1 class="page-title page-title--white">Frequently Asked Questions</h1>
+</section>
+
+<section class="section section--tight">
+  <div class="container container--mid">
+    <div class="faq">
+      {%- for f in faqs %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ f.question }}</summary>
+        <div class="faq__answer">{{ f.answer | safe }}</div>
+      </details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="center">
+      <i class="fa-solid fa-circle-question still-q-icon" aria-hidden="true"></i>
+      <h2>Still Have Questions?</h2>
+      <p>Send us a message! We’re happy to answer any questions you may have.</p>
+    </div>
+    <div class="form-plain">
+      {% include "partials/contact-form.njk" %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

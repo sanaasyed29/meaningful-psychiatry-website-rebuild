@@ -1,0 +1,70 @@
+[
+  {
+    "question": "What services do you offer?",
+    "answer": "<p><span class=\"s2\">We provide comprehensive psychiatric evaluations, medication management, and psychotherapy for a variety of mental health conditions.</span></p><p><span class=\"s2\">Medication management: Our aim is to tailor a treatment plan for your needs, with the goal of finding a medication regimen to target your specific psychiatric symptoms. We aim to prescribe the fewest number of medications necessary and given at the lowest effective dose for you. </span></p><p><span class=\"s2\">Psychotherapy: If you elect to start psychotherapy with us, we will start by listing your goals for therapy. It may be appropriate to pursue a time limited psychotherapy for 12 months, at a frequency that suits you during that period. Our general approach to therapy is supportive and psychodynamic with a direct communication style.</span></p>"
+  },
+  {
+    "question": "How do virtual appointments work?",
+    "answer": "<p>Virtual appointments are conducted via a secure, HIPAA-compliant video platform. You will receive a link to join the session at your scheduled appointment time. You can access the platform from a computer, tablet, or smartphone with a reliable internet connection. You will need to register with the OSMIND patient app.</p>"
+  },
+  {
+    "question": "Are virtual appointments as effective as in-person visits?",
+    "answer": "<p>Yes, research has shown that virtual appointments are just as effective as in-person visits for many psychiatric services, including therapy and medication management. They also provide the added convenience of receiving care from the comfort of your home.</p>"
+  },
+  {
+    "question": "How do I schedule an appointment?",
+    "answer": "<p>You can schedule an appointment by calling our office, sending an email, or using our online scheduling tool available on our website. Our admin will help you to schedule your first intake appointment, after your complete your onboarding paperwork.</p>"
+  },
+  {
+    "question": "What should I expect during my first appointment?",
+    "answer": "<p>During your first appointment, we will conduct a comprehensive evaluation to understand your mental health history, current concerns, and treatment goals. This helps us develop a personalized treatment plan tailored to your needs. The first appointment is 60 minutes long.</p>"
+  },
+  {
+    "question": "What insurance plans do you accept?",
+    "answer": "<p>Dr. Qureshi is private pay. Francis Agbotse, PMHNP is accepting Aetna, Ambetter, Medicare and Medicaid.</p>"
+  },
+  {
+    "question": "Do you offer sliding scale fees or financial assistance?",
+    "answer": "<p>Yes! Please contact our office to receive our sliding scale form.</p>"
+  },
+  {
+    "question": "What is your cancellation policy?",
+    "answer": "<p><span class=\"s2\">If you are able to cancel and reschedule with 48 hours advanced notice, there is no cancellation fee. </span></p><p><span class=\"s2\">If you cancel with less than 48 hours notice, there is a 50% cancellation fee. </span></p><p><span class=\"s2\">If you do not show up for an appointment without notice, you will be expected to pay the full amount. </span></p>"
+  },
+  {
+    "question": "What should I do if I need a prescription refill?",
+    "answer": "<p>For prescription refills, please contact our office directly. Refills are typically processed within 48 hours. We do not refill prescriptions during weekends or holidays, so please plan accordingly.</p>"
+  },
+  {
+    "question": "Can I contact my provider between appointments?",
+    "answer": "<p><span class=\"s2\">Yes, you can contact your provider for non-urgent questions or concerns via our secure messaging system through the patient portal on the OSMIND app. We will respond to questions via the portal within 1-2 business days.</span></p><p><span class=\"s2\">However, if you are experiencing a psychiatric emergency, please call 911 or go to your nearest emergency room.</span></p>"
+  },
+  {
+    "question": "Do you treat children and adolescents?",
+    "answer": "<p><span class=\"s2\">Yes, we provide psychiatric care for all patients age 8 years and up. For children younger than this, we can consider on a case by case basis. However a dedicated child psychiatrist may be a better fit for younger children.</span></p>"
+  },
+  {
+    "question": "Are my sessions confidential?",
+    "answer": "<p><span class=\"s2\">Yes, all sessions are confidential. We adhere to strict HIPAA guidelines to ensure your privacy. We will not share your information without your consent unless required by law.</span></p><p><span class=\"s2\">The only times confidentiality may be breached, is if there is imminent concern for your safety or the safety of others.</span></p>"
+  },
+  {
+    "question": "What if I have a psychiatric emergency?",
+    "answer": "<p>If you are experiencing a psychiatric emergency, please call 911, go to your nearest emergency room, or you may also call the suicide and crisis lifeline at 988.</p>"
+  },
+  {
+    "question": "What technology do I need for a virtual appointment?",
+    "answer": "<p><span class=\"s2\">You will need a device with a camera and microphone (such as a smartphone, tablet, or computer) and a stable internet connection. You will be able to access the telemedicine video link through your patient portal on the OSMIND app.</span></p>"
+  },
+  {
+    "question": "How do I prepare for a virtual appointment?",
+    "answer": "<p><span class=\"s2\">Find a quiet, private space with good lighting for your session. Ensure your device is charged and has a stable internet connection. Have any relevant medical records or a list of medications ready for discussion.</span></p>"
+  },
+  {
+    "question": "Can I have a support person join my virtual appointment?",
+    "answer": "<p><span class=\"s2\">Yes, you may have a support person join your virtual appointment if you feel it would be helpful. Please inform your provider beforehand. You may need to complete a “release of information” form, prior to your appointment.</span></p>"
+  },
+  {
+    "question": "Do you offer group therapy or workshops?",
+    "answer": "<p>Not currently, but this will be considered depending on demand.</p>"
+  }
+]

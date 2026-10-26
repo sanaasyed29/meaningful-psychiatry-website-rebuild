@@ -1,0 +1,26 @@
+<aside class="sidebar">
+  <div class="widget">
+    <h3 class="widget__title">Category</h3>
+    <ul class="widget__list">
+      {%- for c in collections.categoryList %}
+      <li><a href="/category/{{ c.name | slugify }}/">{{ c.name }}</a><span>({{ c.posts.length }})</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  <div class="widget">
+    <h3 class="widget__title">Archives</h3>
+    <ul class="widget__list">
+      {%- for m in collections.archiveList %}
+      <li><a href="/{{ m.key }}/">{{ m.date | monthYear }}</a><span>({{ m.posts.length }})</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  <div class="widget">
+    <h3 class="widget__title">Tags</h3>
+    <div class="tag-cloud">
+      {%- for t in collections.tagList %}
+      <a href="/tag/{{ t.name | slugify }}/">{{ t.name }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Podcast
+seoTitle: "Meaningful Psychiatry Podcast"
+description: "Listen to Unequal Parts, the podcast with Dr. Badeea Qureshi and Maira, on identity, faith, beauty, and growing up."
+permalink: /podcast/
+---
+<section class="page-hero">
+  <p class="eyebrow">Get the Latest</p>
+  <h2 class="page-title page-title--white page-title--lg">From Our Podcast</h2>
+  <span class="rule rule--blue"></span>
+</section>
+
+<section class="section section--tight">
+  <div class="container container--mid">
+    {% include "partials/featured-box.njk" %}
+    <div class="post-grid">
+      {%- for post in collections.podcast %}{% include "partials/post-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+---
+{%- set posts = collections.posts %}
+{%- set idx = -1 %}
+{%- for p in posts %}{% if p.url == page.url %}{% set idx = loop.index0 %}{% endif %}{% endfor %}
+{%- set older = posts[idx + 1] if idx + 1 < posts.length else null %}
+{%- set newer = posts[idx - 1] if idx > 0 else null %}
+<section class="section section--tight">
+  <div class="container container--mid post-layout">
+    <article class="post">
+      {%- if image %}<img class="post__image" src="{{ image }}" alt="">{% endif %}
+      <h1 class="post__title">{{ title }}</h1>
+      <p class="post__meta">
+        <i class="fa-solid fa-folder" aria-hidden="true"></i>
+        {%- for c in categories %} <a href="/category/{{ c | slugify }}/">{{ c }}</a>{% if not loop.last %},{% endif %}{% endfor %}
+        <span class="post__date">{{ page.date | readableDate }}</span>
+      </p>
+      <span class="rule rule--left"></span>
+      <div class="post__content">
+        {{ content | safe }}
+      </div>
+      <div class="post__footer">
+        <p class="post__tags"><strong>Tags:</strong>
+          {%- for t in tags %}{% if t != "post" %} <a href="/tag/{{ t | slugify }}/">{{ t }}</a>{% if not loop.last %},{% endif %}{% endif %}{% endfor %}
+        </p>
+        <p class="share">Share:
+          <a class="share--fb" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absoluteUrl(site.url) | urlencode }}" target="_blank" rel="noopener" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="share--x" href="https://twitter.com/intent/tweet?url={{ page.url | absoluteUrl(site.url) | urlencode }}&text={{ title | urlencode }}" target="_blank" rel="noopener" aria-label="Share on X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a class="share--pin" href="https://pinterest.com/pin/create/button/?url={{ page.url | absoluteUrl(site.url) | urlencode }}&media={{ image | absoluteUrl(site.url) | urlencode }}&description={{ title | urlencode }}" target="_blank" rel="noopener" aria-label="Share on Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </p>
+      </div>
+      <nav class="post-nav" aria-label="More posts">
+        {%- if older %}
+        <a class="post-nav__item" href="{{ older.url }}"><img src="{{ older.data.image }}" alt=""><span><small>Previous</small>{{ older.data.title }}</span></a>
+        {%- else %}<span></span>{% endif %}
+        {%- if newer %}
+        <a class="post-nav__item post-nav__item--next" href="{{ newer.url }}"><span><small>Next</small>{{ newer.data.title }}</span><img src="{{ newer.data.image }}" alt=""></a>
+        {%- endif %}
+      </nav>
+    </article>
+    {% include "partials/sidebar.njk" %}
+  </div>
+</section>

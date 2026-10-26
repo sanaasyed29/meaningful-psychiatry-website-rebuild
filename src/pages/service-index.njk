@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: Special Interests in Psychotherapy
+permalink: /service/
+---
+<section class="page-hero">
+  <p class="eyebrow">Integrative Approach</p>
+  <h1 class="page-title">Special Interests in Psychotherapy</h1>
+  <span class="rule"></span>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <div class="interest-grid">
+      {%- for s in interests %}
+      <a class="interest-card" href="/service/{{ s.slug }}/">
+        <span class="interest-card__icon"><img src="{{ s.icon }}" alt="" loading="lazy"></span>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.text }}</p>
+        <span class="interest-card__foot"></span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{% include "partials/cta.njk" %}

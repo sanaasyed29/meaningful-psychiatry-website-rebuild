@@ -1,0 +1,23 @@
+<form class="contact-form" method="post" action="{{ site.forms.contactAction or ('mailto:' + site.email) }}" data-mailto-fallback="{{ 'false' if site.forms.contactAction else 'true' }}" data-subject="Website message">
+  <div class="contact-form__grid">
+    <input type="text" name="First Name" placeholder="First Name*" aria-label="First Name" required>
+    <input type="tel" name="Phone Number" placeholder="Phone Number*" aria-label="Phone Number" required>
+    <input type="text" name="Middle Name" placeholder="Middle Name" aria-label="Middle Name">
+    <input type="email" name="Email" placeholder="Email*" aria-label="Email" required>
+    <input type="text" name="Last Name" placeholder="Last Name*" aria-label="Last Name" required>
+    <input type="text" name="Preferred Day/Time" placeholder="Preferred Day/Time?" aria-label="Preferred Day/Time">
+    <input type="text" name="Date of Birth" placeholder="Date of Birth*" aria-label="Date of Birth" required>
+    <input type="text" name="Referral Source" placeholder="Referral Source" aria-label="Referral Source">
+    <select name="Insurance" aria-label="Your Insurance">
+      <option value="">Your Insurance</option>
+      {%- for opt in site.insuranceOptions %}
+      <option value="{{ opt }}">{{ opt }}</option>
+      {%- endfor %}
+    </select>
+    <input type="text" name="Other Insurance" placeholder="If Other, please specify" aria-label="If Other, please specify">
+    <textarea name="Message" rows="6" placeholder="How Can We Help?*" aria-label="How Can We Help?" required></textarea>
+  </div>
+  <label class="contact-form__consent"><input type="checkbox" name="Newsletter" value="Yes"> I'd like to subscribe to the Meaningful Psychiatry newsletter (optional)</label>
+  <div class="center"><button type="submit" class="btn">Submit Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button></div>
+  <p class="contact-form__note">We respond within one business day. Submitting this form does not establish a doctor-patient relationship. If this is an emergency, call 911 or 988.</p>
+</form>

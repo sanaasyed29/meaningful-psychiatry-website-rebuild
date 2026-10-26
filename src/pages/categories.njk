@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.categoryList
+  size: 1
+  alias: group
+permalink: "/category/{{ group.name | slugify }}/"
+eleventyComputed:
+  title: "{{ group.name }}"
+---
+<section class="page-hero">
+  <p class="eyebrow">Category</p>
+  <h1 class="page-title page-title--white">{{ group.name }}</h1>
+</section>
+<section class="section section--tight">
+  <div class="container container--mid">
+    <div class="post-grid">
+      {%- for post in group.posts %}{% include "partials/post-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
