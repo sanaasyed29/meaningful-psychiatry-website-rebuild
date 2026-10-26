@@ -48,6 +48,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("monthYear", (d) =>
     new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", timeZone: "UTC" })
   );
+  eleventyConfig.addFilter("head", (arr, n) => (arr || []).slice(0, n));
   eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
   eleventyConfig.addFilter("isoDate", (d) => new Date(d).toISOString().slice(0, 10));
   eleventyConfig.addFilter("truncateWords", (s, n = 55) => {

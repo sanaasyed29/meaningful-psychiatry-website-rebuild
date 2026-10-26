@@ -9,8 +9,10 @@ eleventyComputed:
   title: "{{ group.name }}"
 ---
 <section class="page-hero">
-  <p class="eyebrow">Category</p>
-  <h1 class="page-title page-title--white">{{ group.name }}</h1>
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Category</p>
+    <h1 class="page-title">{{ group.name }}</h1>
+  </div>
 </section>
 <section class="section section--tight">
   <div class="container container--mid">

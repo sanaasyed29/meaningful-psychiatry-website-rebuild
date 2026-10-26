@@ -1,6 +1,8 @@
 <form class="newsletter-form" method="post" action="{{ site.forms.newsletterAction or ('mailto:' + site.email + '?subject=Newsletter%20sign-up') }}" data-mailto-fallback="{{ 'false' if site.forms.newsletterAction else 'true' }}" data-subject="Newsletter sign-up">
-  <p>Sign up for our newsletter!</p>
-  <label class="sr-only" for="nl-email-{{ page.url | slugify }}">Email Address</label>
-  <input id="nl-email-{{ page.url | slugify }}" type="email" name="email" placeholder="Email Address" required>
-  <button type="submit" class="btn btn--block">Subscribe Now</button>
+  <p>Mental health insights and practice news from Dr. Qureshi.</p>
+  <label class="sr-only" for="nl-email-{{ page.url | slugify }}">Email address</label>
+  <div class="newsletter-form__row">
+    <input id="nl-email-{{ page.url | slugify }}" type="email" name="email" placeholder="Email address" autocomplete="email" required>
+    <button type="submit" class="btn">Subscribe</button>
+  </div>
 </form>

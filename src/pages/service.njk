@@ -10,9 +10,10 @@ eleventyComputed:
   description: "{{ item.text }}"
 ---
 <section class="page-hero">
-  <p class="eyebrow">Special Interests in Psychotherapy</p>
-  <h1 class="page-title">{{ item.title }}</h1>
-  <span class="rule"></span>
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Special Interests in Psychotherapy</p>
+    <h1 class="page-title">{{ item.title }}</h1>
+  </div>
 </section>
 <section class="section section--tight">
   <div class="container container--narrow center">
@@ -24,4 +25,3 @@ eleventyComputed:
     </div>
   </div>
 </section>
-{% include "partials/cta.njk" %}

@@ -1,9 +1,9 @@
 <article class="post-card">
-  <a href="{{ post.url }}" class="post-card__img"><img src="{{ post.data.image }}" alt="" loading="lazy"></a>
+  <a href="{{ post.url }}" class="post-card__img" tabindex="-1" aria-hidden="true"><img src="{{ post.data.image }}" alt="" loading="lazy"></a>
   <div class="post-card__body">
+    <p class="post-card__meta">{{ post.date | readableDate }}{% if post.data.categories[0] %} · {{ post.data.categories[0] }}{% endif %}</p>
     <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-    <p>{{ post.data.excerpt | truncateWords(70) }}</p>
-    <a href="{{ post.url }}" class="read-more">Read More »</a>
+    <p class="post-card__excerpt">{{ post.data.excerpt | truncateWords(30) }}</p>
+    <a href="{{ post.url }}" class="text-link">Read more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
   </div>
-  <div class="post-card__meta">{{ post.date | readableDate }}</div>
 </article>

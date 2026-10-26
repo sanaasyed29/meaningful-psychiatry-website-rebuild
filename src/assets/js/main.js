@@ -19,10 +19,12 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
   const slides = [...carousel.querySelectorAll(".carousel__slide")];
   if (slides.length < 2) return;
   let i = 0;
+  const count = carousel.querySelector(".carousel__count");
   const show = (n) => {
     slides[i].classList.remove("is-active");
     i = (n + slides.length) % slides.length;
     slides[i].classList.add("is-active");
+    if (count) count.textContent = `${i + 1} / ${slides.length}`;
   };
   let timer = setInterval(() => show(i + 1), 9000);
   const restart = () => { clearInterval(timer); timer = setInterval(() => show(i + 1), 9000); };

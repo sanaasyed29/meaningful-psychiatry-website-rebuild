@@ -1,23 +1,23 @@
 <form class="contact-form" method="post" action="{{ site.forms.contactAction or ('mailto:' + site.email) }}" data-mailto-fallback="{{ 'false' if site.forms.contactAction else 'true' }}" data-subject="Website message">
+  {%- set fid = (page.url | slugify) or "home" %}
   <div class="contact-form__grid">
-    <input type="text" name="First Name" placeholder="First Name*" aria-label="First Name" required>
-    <input type="tel" name="Phone Number" placeholder="Phone Number*" aria-label="Phone Number" required>
-    <input type="text" name="Middle Name" placeholder="Middle Name" aria-label="Middle Name">
-    <input type="email" name="Email" placeholder="Email*" aria-label="Email" required>
-    <input type="text" name="Last Name" placeholder="Last Name*" aria-label="Last Name" required>
-    <input type="text" name="Preferred Day/Time" placeholder="Preferred Day/Time?" aria-label="Preferred Day/Time">
-    <input type="text" name="Date of Birth" placeholder="Date of Birth*" aria-label="Date of Birth" required>
-    <input type="text" name="Referral Source" placeholder="Referral Source" aria-label="Referral Source">
-    <select name="Insurance" aria-label="Your Insurance">
-      <option value="">Your Insurance</option>
-      {%- for opt in site.insuranceOptions %}
-      <option value="{{ opt }}">{{ opt }}</option>
-      {%- endfor %}
-    </select>
-    <input type="text" name="Other Insurance" placeholder="If Other, please specify" aria-label="If Other, please specify">
-    <textarea name="Message" rows="6" placeholder="How Can We Help?*" aria-label="How Can We Help?" required></textarea>
+    <div class="field"><label for="cf-first-{{ fid }}">First name <span aria-hidden="true">*</span></label><input id="cf-first-{{ fid }}" type="text" name="First Name" autocomplete="given-name" required></div>
+    <div class="field"><label for="cf-last-{{ fid }}">Last name <span aria-hidden="true">*</span></label><input id="cf-last-{{ fid }}" type="text" name="Last Name" autocomplete="family-name" required></div>
+    <div class="field"><label for="cf-email-{{ fid }}">Email <span aria-hidden="true">*</span></label><input id="cf-email-{{ fid }}" type="email" name="Email" autocomplete="email" required></div>
+    <div class="field"><label for="cf-phone-{{ fid }}">Phone <span aria-hidden="true">*</span></label><input id="cf-phone-{{ fid }}" type="tel" name="Phone Number" autocomplete="tel" required></div>
+    <div class="field"><label for="cf-ins-{{ fid }}">Insurance</label>
+      <select id="cf-ins-{{ fid }}" name="Insurance">
+        <option value="">Select…</option>
+        {%- for opt in site.insuranceOptions %}
+        <option value="{{ opt }}">{{ opt }}</option>
+        {%- endfor %}
+      </select>
+    </div>
+    <div class="field"><label for="cf-time-{{ fid }}">Preferred day/time</label><input id="cf-time-{{ fid }}" type="text" name="Preferred Day/Time"></div>
+    <div class="field field--full"><label for="cf-ref-{{ fid }}">How did you hear about us?</label><input id="cf-ref-{{ fid }}" type="text" name="Referral Source"></div>
+    <div class="field field--full"><label for="cf-msg-{{ fid }}">How can we help? <span aria-hidden="true">*</span></label><textarea id="cf-msg-{{ fid }}" name="Message" rows="4" required></textarea></div>
   </div>
-  <label class="contact-form__consent"><input type="checkbox" name="Newsletter" value="Yes"> I'd like to subscribe to the Meaningful Psychiatry newsletter (optional)</label>
-  <div class="center"><button type="submit" class="btn">Submit Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button></div>
-  <p class="contact-form__note">We respond within one business day. Submitting this form does not establish a doctor-patient relationship. If this is an emergency, call 911 or 988.</p>
+  <label class="check"><input type="checkbox" name="Newsletter" value="Yes"> I'd like to subscribe to the Meaningful Psychiatry newsletter (optional)</label>
+  <button type="submit" class="btn btn--block btn--lg">Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+  <p class="privacy-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> <span><strong>Your privacy matters.</strong> Please don't include detailed medical information in this message. Your health history is collected during intake through Osmind, our secure, HIPAA-compliant patient platform. Submitting this form does not establish a doctor-patient relationship.</span></p>
 </form>

@@ -10,14 +10,14 @@ pagination:
 permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
 <section class="page-hero">
-  <p class="eyebrow">Latest News</p>
-  <h2 class="page-title page-title--white">From Our Blog</h2>
-  <span class="rule rule--blue"></span>
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Latest News</p>
+    <h1 class="page-title">From Our Blog</h1>
+  </div>
 </section>
 
 <section class="section section--tight">
   <div class="container container--mid">
-    {% include "partials/featured-box.njk" %}
     <div class="post-grid">
       {%- for post in posts %}{% include "partials/post-card.njk" %}{% endfor %}
     </div>
@@ -31,4 +31,3 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumbe
   </div>
 </section>
 
-{% include "partials/cta.njk" %}

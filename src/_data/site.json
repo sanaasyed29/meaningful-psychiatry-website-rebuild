@@ -25,34 +25,105 @@
     "newsletterAction": ""
   },
   "nav": [
-    { "label": "Home", "url": "/" },
-    { "label": "About", "children": [
-      { "label": "Meet the Team", "url": "/about-us/" },
-      { "label": "Services", "url": "/our-services/" }
-    ] },
-    { "label": "Blog", "url": "/blog/" },
-    { "label": "Podcast", "url": "/podcast/" },
-    { "label": "Contact", "url": "/contact-us/" },
-    { "label": "Help", "url": "/help-faqs/" },
-    { "label": "Insurance & Mental Health Care in Washington", "children": [
-      { "label": "Aetna Mental Health Provider in Washington", "url": "/aetna-mental-health-provider-in-washington/" },
-      { "label": "How Much Does a Mental Health Provider Cost With Aetna?", "url": "/aetna-mental-health-provider-cost/" },
-      { "label": "Online Psychiatric Care With Aetna in Washington: What to Expect", "url": "/online-psychiatric-care-aetna-washington/" }
-    ] }
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "About",
+      "children": [
+        {
+          "label": "Meet the Team",
+          "url": "/about-us/"
+        },
+        {
+          "label": "Services",
+          "url": "/our-services/"
+        }
+      ],
+      "shortLabel": "About"
+    },
+    {
+      "label": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "label": "Podcast",
+      "url": "/podcast/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact-us/"
+    },
+    {
+      "label": "Help",
+      "url": "/help-faqs/"
+    },
+    {
+      "label": "Insurance & Mental Health Care in Washington",
+      "children": [
+        {
+          "label": "Aetna Mental Health Provider in Washington",
+          "url": "/aetna-mental-health-provider-in-washington/"
+        },
+        {
+          "label": "How Much Does a Mental Health Provider Cost With Aetna?",
+          "url": "/aetna-mental-health-provider-cost/"
+        },
+        {
+          "label": "Online Psychiatric Care With Aetna in Washington: What to Expect",
+          "url": "/online-psychiatric-care-aetna-washington/"
+        }
+      ],
+      "shortLabel": "Insurance"
+    }
   ],
   "footerNav": [
-    { "label": "Home", "url": "/" },
-    { "label": "About Dr. Qureshi", "url": "/about-us/" },
-    { "label": "Services", "url": "/our-services/" },
-    { "label": "Blog", "url": "/blog/" },
-    { "label": "Podcast", "url": "/podcast/" },
-    { "label": "Contact", "url": "/contact-us/" },
-    { "label": "Help and FAQs", "url": "/help-faqs/" },
-    { "label": "Unequal Parts Podcast", "url": "https://open.spotify.com/show/3AIYRYODDaBBk4oRV0lOTy" }
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "About Dr. Qureshi",
+      "url": "/about-us/"
+    },
+    {
+      "label": "Services",
+      "url": "/our-services/"
+    },
+    {
+      "label": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "label": "Podcast",
+      "url": "/podcast/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact-us/"
+    },
+    {
+      "label": "Help and FAQs",
+      "url": "/help-faqs/"
+    },
+    {
+      "label": "Unequal Parts Podcast",
+      "url": "https://open.spotify.com/show/3AIYRYODDaBBk4oRV0lOTy"
+    }
   ],
   "featuredOn": [
-    { "name": "Refinery29", "logo": "/images/2024/09/refinery29.svg" },
-    { "name": "Sammamish Chamber of Commerce", "logo": "/images/2020/04/sammamish-chamber.png" },
-    { "name": "NBC News", "logo": "/images/2024/09/nbc-news-logo.webp" }
+    {
+      "name": "Refinery29",
+      "logo": "/images/2024/09/refinery29.svg"
+    },
+    {
+      "name": "Sammamish Chamber of Commerce",
+      "logo": "/images/2020/04/sammamish-chamber.png"
+    },
+    {
+      "name": "NBC News",
+      "logo": "/images/2024/09/nbc-news-logo.webp"
+    }
   ]
 }

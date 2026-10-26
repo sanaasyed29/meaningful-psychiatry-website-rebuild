@@ -5,109 +5,247 @@ description: "Psychiatrist in Washington State, blending professional expertise 
 bodyClass: home
 ---
 <section class="hero">
-  <div class="hero__inner">
-    <img class="hero__photo hero__photo--left" src="/images/2024/09/Badeea_Qureshi_MD.webp" alt="Badeea Qureshi MD - Meaningful Psychiatry">
+  <div class="container hero__inner">
     <div class="hero__content">
-      <p class="hero__banner">{{ site.acceptingBanner }}</p>
+      <p class="eyebrow eyebrow--light">Telehealth psychiatry across Washington State</p>
       <h1>Online psychiatry for children, teens, and adults across Washington State.</h1>
-      <p class="hero__sub">Ages 8+ | WA residents | Medication management and psychotherapy | Private-pay and select insurance</p>
+      <ul class="hero__facts">
+        <li><i class="fa-solid fa-child-reaching" aria-hidden="true"></i> Ages 8+</li>
+        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> WA residents</li>
+        <li><i class="fa-solid fa-pills" aria-hidden="true"></i> Medication management &amp; psychotherapy</li>
+        <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Private-pay &amp; select insurance</li>
+      </ul>
       <div class="btn-row">
-        <a href="/aetna-mental-health-provider-cost/" class="btn btn--wide">Check insurance and fees</a>
-        <a href="{{ site.bookingUrl }}" class="btn btn--wide" target="_blank" rel="noopener">Request An Appointment</a>
+        <a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener">Book an Appointment</a>
+        <a href="{{ site.phoneLink }}" class="btn btn--lg btn--ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text {{ site.phone }}</a>
       </div>
+      <a href="/aetna-mental-health-provider-cost/" class="text-link text-link--light">Check insurance and fees <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </div>
-    <img class="hero__photo hero__photo--right" src="/images/2026/10/Francis_Agbotse2.webp" alt="Francis Agbotse, PMHNP">
+    <div class="hero__people">
+      <figure class="person-card person-card--a">
+        <img src="/images/2024/09/Badeea_Qureshi_MD.webp" alt="Dr. Badeea Qureshi MD">
+        <figcaption><strong>Dr. Badeea Qureshi, MD</strong><span>Psychiatrist</span></figcaption>
+      </figure>
+      <figure class="person-card person-card--b">
+        <img src="/images/2026/10/Francis_Agbotse2.webp" alt="Francis Agbotse, PMHNP">
+        <figcaption><strong>Francis Agbotse, PMHNP</strong><span>Psychiatric Nurse Practitioner</span></figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
-{% include "partials/wave.njk" %}
-
-<section class="features">
-  <div class="feature">
-    <div class="feature__head"><span class="feature__icon"><i class="fa-solid fa-file-medical"></i></span><h3>Evidence Based Medicine</h3></div>
-    <p>We aim to use evidence-based medicine to guide us in collaborating with you when arriving at a suitable medication regimen for your psychiatric needs. At times, certain individuals may respond better to medications that may not be first line for a particular disorder, this will always be discussed with you. In certain cases, medications may not be indicated, and may provide a greater risk than benefit, in these cases we can discuss the clinical decision making process and other supports.</p>
-  </div>
-  <div class="feature feature--gold">
-    <div class="feature__head"><span class="feature__icon"><i class="fa-solid fa-phone-volume"></i></span><h3>Schedule an Appointment</h3></div>
-    <p>Contact us today to schedule an appointment.</p>
-    <p><strong>Call or Text Us:</strong></p>
-    <p><a href="{{ site.phoneLink }}"><strong>{{ site.phone }}</strong></a></p>
-    <a href="/contact-us/" class="btn btn--navy">Contact Us</a>
-  </div>
-  <div class="feature">
-    <div class="feature__head"><span class="feature__icon"><i class="fa-solid fa-hand-holding-medical"></i></span><h3>Tailored Treatment Regimens</h3></div>
-    <p>At Meaningful Psychiatry, our goal is to ensure we address your mental health needs from multiple angles. This includes medication management, individual psychotherapy, drawing on social supports and resources, and recommendations for somatic therapies and alternative medicine modalities if applicable.</p>
-  </div>
-</section>
-
-{% include "partials/wave.njk" %}
-
-<section class="mission">
-  <div class="container container--narrow">
-    <p class="eyebrow">Meaningful Psychiatry</p>
-    <h2>Our Mission</h2>
-    <p>Our mission at Meaningful Psychiatry is to broaden the definition of mental health care by embracing the full spectrum of the human experience. We believe in zooming out, exploring beyond the surface, and understanding the intricate connections between the mind, body, and spirit.</p>
-    <p>We approach mental health as part of the entirety of the patient’s life, recognizing the interplay between psychological well-being, physical health, and spiritual fulfillment.</p>
-    <p>Rooted in a deep understanding of cultural diversity and personal growth, we strive to create a compassionate and inclusive environment where every patient feels seen, heard, and valued. At Meaningful Psychiatry, we empower our patients to achieve balance, resilience, and authentic fulfillment in every aspect of their lives.</p>
-    <ul class="check-grid">
-      <li>Holistic Healing</li>
-      <li>Global Awareness</li>
-      <li>Purposeful Conversations</li>
-      <li>Full Picture of Health</li>
+<section class="insurance-band">
+  <div class="container insurance-band__inner">
+    <p class="insurance-band__label">Now accepting</p>
+    <ul class="chips">
+      <li>Aetna</li><li>Ambetter</li><li>Medicare</li><li>Medicaid</li><li>Private pay</li>
     </ul>
-    <div class="center"><a href="/contact-us/" class="btn">Contact Us</a></div>
+    <a href="/aetna-mental-health-provider-in-washington/" class="text-link">Insurance details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
   </div>
 </section>
 
-{% include "partials/wave.njk" %}
+<section class="section section--light">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Our approach</p>
+      <h2>Care that looks at the whole person</h2>
+    </div>
+    <div class="card-grid card-grid--3">
+      <article class="card">
+        <span class="card__icon"><i class="fa-solid fa-file-medical" aria-hidden="true"></i></span>
+        <h3>Evidence Based Medicine</h3>
+        <p>We aim to use evidence-based medicine to guide us in collaborating with you when arriving at a suitable medication regimen for your psychiatric needs. In certain cases, medications may not be indicated, and we can discuss the clinical decision making process and other supports.</p>
+      </article>
+      <article class="card">
+        <span class="card__icon"><i class="fa-solid fa-hand-holding-medical" aria-hidden="true"></i></span>
+        <h3>Tailored Treatment Regimens</h3>
+        <p>We address your mental health needs from multiple angles, including medication management, individual psychotherapy, drawing on social supports and resources, and recommendations for somatic therapies and alternative medicine modalities if applicable.</p>
+      </article>
+      <article class="card">
+        <span class="card__icon"><i class="fa-solid fa-laptop-medical" aria-hidden="true"></i></span>
+        <h3>Secure Telehealth</h3>
+        <p>Appointments take place over a secure, HIPAA-compliant video platform. Attend from a private location without commuting, sitting in a waiting room, or rearranging your entire day around an office visit.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
-    <div class="section-head center">
-      <p class="eyebrow">Integrative Approach</p>
-      <h2>Specialty Medication Management Services</h2>
-      <span class="rule"></span>
+    <div class="section-head">
+      <p class="eyebrow">Meet your providers</p>
+      <h2>Experienced, compassionate psychiatric care</h2>
     </div>
-    <div class="spec-grid">
+    <div class="provider-grid">
+      <article class="provider">
+        <img src="/images/2024/08/Badeea-Qureshi.webp" alt="Dr. Badeea Qureshi MD" class="provider__img provider__img--navy">
+        <div class="provider__body">
+          <h3>Dr. Badeea Qureshi, MD</h3>
+          <p class="provider__role">Psychiatrist · Private pay</p>
+          <p>Trained at the University of Liverpool School of Medicine and the University of Washington Psychiatry Residency Program, Dr. Qureshi weaves together mind, body, and spirit, with a focus on time-limited, personalized medication regimens and psychotherapy.</p>
+          <div class="btn-row">
+            <a href="#contact" class="btn">Request an Appointment</a>
+            <a href="/about-us/#badeea" class="btn btn--outline">Read Bio</a>
+          </div>
+        </div>
+      </article>
+      <article class="provider">
+        <img src="/images/2026/09/Francis_Agbotse.webp" alt="Francis Agbotse, PMHNP" class="provider__img">
+        <div class="provider__body">
+          <h3>Francis Agbotse, PMHNP</h3>
+          <p class="provider__role">Psychiatric Mental Health Nurse Practitioner · Aetna, Ambetter, Medicare &amp; Medicaid</p>
+          <p>With over a decade of experience in psychiatry, Francis is well equipped to work with complex psychiatric presentations, multiple diagnoses, and complicated medication regimens, in a collaborative, patient-centered way.</p>
+          <div class="btn-row">
+            <a href="{{ site.bookingUrl }}" class="btn" target="_blank" rel="noopener">Schedule with Francis</a>
+            <a href="/about-us/#francis" class="btn btn--outline">Read Bio</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Getting started</p>
+      <h2>Three simple steps to your first visit</h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__num">1</span>
+        <h3>Reach out</h3>
+        <p>Book online, call or text {{ site.phone }}, or send us a message below. We respond within one business day.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">2</span>
+        <h3>Complete onboarding</h3>
+        <p>Our admin will help you schedule your first intake appointment after you complete your onboarding paperwork in the secure Osmind patient app.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">3</span>
+        <h3>Meet your provider</h3>
+        <p>Your first appointment is a 60-minute comprehensive evaluation of your mental health history, current concerns, and treatment goals.</p>
+      </li>
+    </ol>
+    <div class="center"><a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener">Book an Appointment</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Our services</p>
+      <h2>Medication management and psychotherapy</h2>
+    </div>
+    <div class="card-grid card-grid--2">
+      <article class="card card--service">
+        <span class="card__icon"><i class="fa-solid fa-prescription-bottle-medical" aria-hidden="true"></i></span>
+        <h3>Medication Management</h3>
+        <ul class="checklist">
+          <li>Personalized psychiatric medication regimen</li>
+          <li>Evidence based medicine</li>
+          <li>Continuous assessment of medication needs</li>
+          <li>Monitoring for side effects, drug interactions and efficacy</li>
+          <li>Goals for time limited medication use where appropriate</li>
+          <li>Minimizing risks of polypharmacy and considerations around deprescribing</li>
+        </ul>
+      </article>
+      <article class="card card--service">
+        <span class="card__icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span>
+        <h3>Psychotherapy</h3>
+        <ul class="checklist">
+          <li>Judgement free and confidential</li>
+          <li>Goal directed</li>
+          <li>Psychoanalytic and supportive approach</li>
+          <li>Nurturing environment</li>
+          <li>Direct communication style</li>
+          <li>Focus on personal and interpersonal growth</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--navy">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--light">Integrative approach</p>
+      <h2>Specialty Medication Management Services</h2>
+      <p class="section-head__sub">We treat a wide range of conditions for patients age 8 and up.</p>
+    </div>
+    <div class="condition-grid">
       {%- for s in specialties %}
-      <div class="spec-card">
+      <div class="condition">
         <i class="{{ s.icon }}" aria-hidden="true"></i>
-        <h3>{{ s.title }}</h3>
-        <p>{{ s.text }}</p>
+        <div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.text }}</p>
+        </div>
       </div>
       {%- endfor %}
     </div>
-    <div class="center"><a href="/contact-us/" class="btn">Contact Us</a></div>
+  </div>
+</section>
+
+<section class="mission">
+  <div class="container mission__inner">
+    <div>
+      <p class="eyebrow eyebrow--light">Meaningful Psychiatry</p>
+      <h2>Our Mission</h2>
+      <p>Our mission at Meaningful Psychiatry is to broaden the definition of mental health care by embracing the full spectrum of the human experience. We believe in zooming out, exploring beyond the surface, and understanding the intricate connections between the mind, body, and spirit.</p>
+      <p>Rooted in a deep understanding of cultural diversity and personal growth, we strive to create a compassionate and inclusive environment where every patient feels seen, heard, and valued.</p>
+    </div>
+    <ul class="mission__pillars">
+      <li><i class="fa-solid fa-spa" aria-hidden="true"></i> Holistic Healing</li>
+      <li><i class="fa-solid fa-earth-americas" aria-hidden="true"></i> Global Awareness</li>
+      <li><i class="fa-solid fa-comments" aria-hidden="true"></i> Purposeful Conversations</li>
+      <li><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Full Picture of Health</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Integrative approach</p>
+      <h2>Special Interests in Psychotherapy</h2>
+      <p class="section-head__sub">Dr. Qureshi embraces a compassionate and integrative approach to mental health, recognizing the spiritual and psychological dimensions of challenges related to finances, sexual health, and personal relationships.</p>
+    </div>
+    <div class="interest-grid">
+      {%- for s in interests %}
+      <a class="interest-card" href="/service/{{ s.slug }}/">
+        <span class="interest-card__icon"><img src="{{ s.icon }}" alt="" loading="lazy"></span>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.text }}</p>
+        <span class="interest-card__more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/testimonials.njk" %}
+
+<section class="section section--light featured-section">
+  <div class="container">
+    {% include "partials/featured-box.njk" %}
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="split-head">
+    <div class="section-head section-head--split">
       <div>
-        <p class="eyebrow">Integrative Approach</p>
-        <h2>Special Interests in Psychotherapy</h2>
-        <span class="rule rule--left"></span>
+        <p class="eyebrow">From the blog</p>
+        <h2>Latest articles</h2>
       </div>
-      <p>Dr. Qureshi embraces a compassionate and integrative approach to mental health, recognizing the spiritual and psychological dimensions of challenges related to finances, sexual health, and personal relationships. Her dedication to understanding both the micro and macro aspects of the human experience enables her to offer a uniquely profound and empathetic form of care.</p>
+      <a href="/blog/" class="text-link">View all articles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </div>
-    <div class="interest-slider" data-slider>
-      <div class="interest-slider__track">
-        {%- for s in interests %}
-        <a class="interest-card" href="/service/{{ s.slug }}/">
-          <span class="interest-card__icon"><img src="{{ s.icon }}" alt="" loading="lazy"></span>
-          <h3>{{ s.title }}</h3>
-          <p>{{ s.text }}</p>
-          <span class="interest-card__foot"></span>
-        </a>
-        {%- endfor %}
-      </div>
-      <div class="interest-slider__dots" role="tablist" aria-label="Choose slide"></div>
+    <div class="post-grid">
+      {%- for post in collections.posts | head(3) %}{% include "partials/post-card.njk" %}{% endfor %}
     </div>
   </div>
 </section>
 
-{% include "partials/cta.njk" %}
-{% include "partials/testimonials.njk" %}
-{% include "partials/wave.njk" %}
-{% include "partials/instagram.njk" %}
+{% include "partials/contact-section.njk" %}

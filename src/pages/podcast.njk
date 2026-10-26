@@ -6,18 +6,17 @@ description: "Listen to Unequal Parts, the podcast with Dr. Badeea Qureshi and M
 permalink: /podcast/
 ---
 <section class="page-hero">
-  <p class="eyebrow">Get the Latest</p>
-  <h2 class="page-title page-title--white page-title--lg">From Our Podcast</h2>
-  <span class="rule rule--blue"></span>
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Get the Latest</p>
+    <h1 class="page-title">From Our Podcast</h1>
+  </div>
 </section>
 
 <section class="section section--tight">
   <div class="container container--mid">
-    {% include "partials/featured-box.njk" %}
     <div class="post-grid">
       {%- for post in collections.podcast %}{% include "partials/post-card.njk" %}{% endfor %}
     </div>
   </div>
 </section>
 
-{% include "partials/cta.njk" %}
