@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 seoTitle: "Aetna Mental Health Provider in Washington | Meaningful Psychiatry"
-description: "Looking for an Aetna mental health provider in Washington? Meaningful Psychiatry offers in-network telehealth psychiatric care for eligible Aetna patients across Washington State."
+description: "Looking for an Aetna mental health provider in Washington? Francis Agbotse, PMHNP at Meaningful Psychiatry offers in-network telehealth psychiatric care for eligible Aetna patients across Washington State."
 permalink: /aetna-mental-health-provider-in-washington/
 ---
 <div class="container lp">
@@ -11,18 +11,20 @@ permalink: /aetna-mental-health-provider-in-washington/
       <div>
         <p class="eyebrow">Mental Healthcare in Washington</p>
         <h1>Looking for a mental health provider in Washington who accepts Aetna?</h1>
-        <p>Meaningful Psychiatry provides compassionate, evidence-based psychiatric care in Washington through secure telehealth. We are in-network with Aetna for eligible services, making it easier to get the support you need.</p>
+        <p>Meaningful Psychiatry provides compassionate, evidence-based psychiatric care in Washington through secure telehealth. Our psychiatric nurse practitioner, Francis Agbotse, PMHNP, is in-network with Aetna for eligible services, making it easier to get the support you need.</p>
         <div class="center"><a href="{{ booking.francis.url }}" class="btn btn--wide" target="_blank" rel="noopener noreferrer">Request An Appointment</a>{% if booking.francis.hint %}<p class="book-hint"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span>Using insurance? On the booking page, select <strong>{{ booking.francis.hint }}</strong>.</span></p>{% endif %}</div>
       </div>
       <div class="lp-hero__art" aria-hidden="true"></div>
     </div>
   </section>
 
+  {% include "partials/insurance-notice.njk" %}
+
   <section class="lp-band lp-band--gold">
     <p><strong>Finding a mental health provider who accepts your insurance can be surprisingly difficult. You may spend hours searching directories, calling offices, and trying to figure out whether a provider is actually in-network.</strong></p>
-    <p><strong>If you have Aetna and are looking for psychiatric services in Washington, Meaningful Psychiatry offers telehealth psychiatric care for eligible Aetna patients.</strong></p>
+    <p><strong>If you have Aetna and are looking for psychiatric services in Washington, Francis Agbotse, PMHNP offers telehealth psychiatric care for eligible Aetna patients.</strong></p>
     <p><strong>Our practice is based in Sammamish, but telehealth allows us to serve patients across Washington, including the greater Seattle area, Eastside communities, Tacoma, Everett, Olympia, Spokane, and surrounding communities.</strong></p>
-    <p><strong>Meaningful Psychiatry is in-network with Aetna for eligible services. Because insurance benefits vary by plan, we verify available benefits before your appointment whenever possible.</strong></p>
+    <p><strong>Francis Agbotse, PMHNP is in-network with Aetna for eligible services. Because insurance benefits vary by plan, we verify available benefits before your appointment whenever possible.</strong></p>
   </section>
 
   <section class="lp-band">
@@ -96,52 +98,15 @@ permalink: /aetna-mental-health-provider-in-washington/
       <div>
         <h2>Does Aetna cover psychiatric services?</h2>
         <p>Aetna coverage varies depending on your specific plan. Your benefits may include different deductibles, copays, coinsurance, referral requirements, or authorization requirements.</p>
-        <p>Before scheduling, check the information on your Aetna member card and plan documents. You can also ask whether Meaningful Psychiatry and the specific provider you are requesting are in-network for your plan.</p>
+        <p>Before scheduling, check the information on your Aetna member card and plan documents. You can also ask whether Francis Agbotse, PMHNP is in-network for your plan.</p>
         <p>Our team can help verify available benefit information, but Aetna makes the final determination regarding coverage and your patient responsibility.</p>
+        <p>Want to know what a visit may cost? Read <a href="/aetna-mental-health-provider-cost/">what you'll pay with Aetna</a>. Curious how video visits work? See <a href="/online-psychiatric-care-aetna-washington/">what to expect from a telehealth visit</a>.</p>
       </div>
       <div class="center"><img src="/images/2026/10/Aetna_logo_reg_rgb_vio.webp" alt="Aetna" class="lp-logo"></div>
     </div>
   </section>
 
-  <section class="lp-band">
-    <div class="lp-cols lp-cols--middle">
-      <div>
-        <h2>What happens at the first appointment?</h2>
-        <p>Your first appointment is more than a quick medication check.</p>
-        <p>Your provider may ask about:</p>
-        <ul>
-          <li>What brought you to treatment</li>
-          <li>Current symptoms and concerns</li>
-          <li>Mental-health history</li>
-          <li>Previous medications and treatments</li>
-          <li>Current medications</li>
-          <li>Sleep, energy, mood, and concentration</li>
-          <li>Family, work, school, and daily life</li>
-          <li>Your goals for treatment</li>
-        </ul>
-        <p>You will also have an opportunity to ask questions and discuss what you would like treatment to look like.</p>
-      </div>
-      {% include "partials/first-appointment-pill.njk" %}
-    </div>
-  </section>
 
-  <section class="lp-band lp-band--gold">
-    <div class="lp-cols lp-cols--middle">
-      <div>
-        <h2>Why choose telehealth?</h2>
-        <p>For many patients, virtual care removes practical barriers to getting help.</p>
-        <p>You can attend from a private location without commuting, sitting in a waiting room, or rearranging your entire day around an office visit.</p>
-        <p>For people living outside the Seattle metropolitan area, telehealth can also make it easier to access psychiatric care without driving long distances.</p>
-        <p>You will need a device with a camera, an internet connection, and a private place to talk.</p>
-      </div>
-      <ul class="checklist checklist--gold">
-        <li>Convenient and Flexible Scheduling</li>
-        <li>Secure and Confidential</li>
-        <li>High-Quality Care From Home</li>
-        <li>Accessible Across Washington</li>
-      </ul>
-    </div>
-  </section>
 
   <section class="lp-band">
     <h2>A resource for patients — and the professionals who care for them</h2>
@@ -149,6 +114,8 @@ permalink: /aetna-mental-health-provider-in-washington/
     <p>Primary-care providers, therapists, counselors, school professionals, and other healthcare professionals may encounter patients who need psychiatric evaluation or medication management but do not have access to those services within their own practice.</p>
     <p>If you are a professional looking for a psychiatric referral resource in Washington, you are welcome to contact our office to learn more about current availability, insurance participation, and referral coordination.</p>
   </section>
+
+  {% include "partials/insurance-guides.njk" %}
 
   {% set closingTitle = "Ready to explore your options?" %}
   {% set closingText = "If you have Aetna and are looking for a mental health provider in Washington who provides psychiatric services, contact Meaningful Psychiatry to learn more about availability and next steps." %}

@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+title: Insurance & Payment
+seoTitle: "Insurance & Payment Options | Meaningful Psychiatry"
+permalink: /insurance/
+description: "Which insurance does Meaningful Psychiatry accept? Francis Agbotse, PMHNP takes Aetna, Ambetter, and Coordinated Care (Medicare and Medicaid). Dr. Badeea Qureshi, MD offers private pay with a sliding scale."
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Insurance &amp; payment</p>
+    <h1 class="page-title">How to pay for your care</h1>
+    <p class="page-hero__sub">Each of our providers has a different payment option. Find the one that fits you, then book directly with that provider.</p>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="ins-compare">
+      <article class="ins-card">
+        <span class="pay-badge pay-badge--ins">Insurance</span>
+        <h2>Francis Agbotse, PMHNP</h2>
+        <p class="ins-card__role">Psychiatric Nurse Practitioner</p>
+        <h3>In-network with</h3>
+        <ul class="checklist">
+          <li>Aetna</li>
+          <li>Ambetter</li>
+          <li>Coordinated Care (Medicare and Medicaid)</li>
+        </ul>
+        <h3>Waitlist open for</h3>
+        <p>Cigna, Optum Behavioral Health, Premera Blue Cross, Regence BlueShield, TriWest, and First Choice Health. Call or text us to join the waitlist.</p>
+        {% set p = booking.francis %}{% set btnClass = "btn btn--block" %}{% include "partials/book-button.njk" %}
+      </article>
+      <article class="ins-card">
+        <span class="pay-badge">Self-pay</span>
+        <h2>Dr. Badeea Qureshi, MD</h2>
+        <p class="ins-card__role">Psychiatrist</p>
+        <h3>Private pay</h3>
+        <ul class="checklist">
+          <li>Sliding scale available for financial hardship. Ask our office for the sliding scale form.</li>
+          <li>FSA and HSA cards accepted</li>
+          <li>A superbill after every visit, which you can submit to your insurance for possible out-of-network reimbursement</li>
+        </ul>
+        <p>Dr. Qureshi does not bill insurance directly.</p>
+        {% set p = booking.qureshi %}{% set btnClass = "btn btn--block" %}{% include "partials/book-button.njk" %}
+      </article>
+    </div>
+    <p class="center ins-note">A credit card is required to book online. Coverage, copays, and deductibles depend on your specific plan, so we recommend calling the number on your insurance card before your first visit. Not sure which option fits? Call or text <a href="{{ site.phoneLink }}">{{ site.phone }}</a> and we'll help.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container--narrow">
+    <div class="section-head">
+      <p class="eyebrow">Insurance guides</p>
+      <h2>Have Aetna? Start here</h2>
+    </div>
+    <div class="ins-guide-list">
+      <a href="/aetna-mental-health-provider-in-washington/" class="ins-guide"><strong>Finding an Aetna psychiatric provider in Washington</strong><span>What psychiatric care includes and how to get started with Francis.</span></a>
+      <a href="/aetna-mental-health-provider-cost/" class="ins-guide"><strong>How much does mental health care cost with Aetna?</strong><span>Deductibles, copays, coinsurance, and what to ask Aetna.</span></a>
+      <a href="/online-psychiatric-care-aetna-washington/" class="ins-guide"><strong>Online psychiatric care with Aetna: what to expect</strong><span>Before, during, and after a telehealth visit.</span></a>
+    </div>
+  </div>
+</section>

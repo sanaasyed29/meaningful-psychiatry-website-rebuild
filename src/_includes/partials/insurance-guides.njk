@@ -1,0 +1,13 @@
+<nav class="ins-guides" aria-label="Insurance guides">
+  <p class="eyebrow">More insurance guides</p>
+  <ul>
+    {%- for g in [
+      { url: "/insurance/", label: "Insurance & payment overview" },
+      { url: "/aetna-mental-health-provider-in-washington/", label: "Finding an Aetna psychiatric provider" },
+      { url: "/aetna-mental-health-provider-cost/", label: "What you'll pay with Aetna" },
+      { url: "/online-psychiatric-care-aetna-washington/", label: "What to expect from a telehealth visit" }
+    ] %}{% if g.url != page.url %}
+    <li><a href="{{ g.url }}">{{ g.label }}</a></li>
+    {%- endif %}{% endfor %}
+  </ul>
+</nav>

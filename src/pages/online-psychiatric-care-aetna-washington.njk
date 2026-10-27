@@ -11,12 +11,14 @@ permalink: /online-psychiatric-care-aetna-washington/
       <div>
         <p class="eyebrow">Seeing a psychiatric provider from home</p>
         <h1>Online Psychiatric Care With Aetna in Washington: What to Expect</h1>
-        <p>For many people, the biggest barrier to mental-health care isn't knowing that they need help. It is fitting an appointment into an already busy life. Telehealth can remove some of those barriers. Meaningful Psychiatry provides psychiatric services by secure video for eligible patients throughout Washington. If you have Aetna, you may be able to use your in-network benefits for eligible telehealth services.</p>
+        <p>For many people, the biggest barrier to mental-health care isn't knowing that they need help. It is fitting an appointment into an already busy life. Telehealth can remove some of those barriers. Meaningful Psychiatry provides psychiatric services by secure video for eligible patients throughout Washington. If you have Aetna, you may be able to use your in-network benefits for eligible telehealth visits with Francis Agbotse, PMHNP.</p>
         <div class="center"><a href="{{ booking.francis.url }}" class="btn btn--wide" target="_blank" rel="noopener noreferrer">Request An Appointment</a>{% if booking.francis.hint %}<p class="book-hint"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span>Using insurance? On the booking page, select <strong>{{ booking.francis.hint }}</strong>.</span></p>{% endif %}</div>
       </div>
       <div class="lp-hero__art" aria-hidden="true"></div>
     </div>
   </section>
+
+  {% include "partials/insurance-notice.njk" %}
 
   <section class="lp-band lp-band--gold">
     <h2>Why people choose online psychiatric care</h2>
@@ -76,6 +78,8 @@ permalink: /online-psychiatric-care-aetna-washington/
     <h2>A note for Washington patients</h2>
     <p>You must be physically located in a state where your provider is authorized to provide telehealth care at the time of your appointment. For Meaningful Psychiatry's Washington telehealth services, patients should be in Washington during the visit.</p>
   </section>
+
+  {% include "partials/insurance-guides.njk" %}
 
   {% set closingTitle = "Looking for online psychiatric care with Aetna?" %}
   {% set closingText = "Meaningful Psychiatry provides psychiatric services through telehealth for eligible Aetna patients across Washington." %}

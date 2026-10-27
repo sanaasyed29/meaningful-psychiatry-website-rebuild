@@ -65,6 +65,10 @@
       "label": "Insurance & Mental Health Care in Washington",
       "children": [
         {
+          "label": "Insurance & Payment Overview",
+          "url": "/insurance/"
+        },
+        {
           "label": "Aetna Mental Health Provider in Washington",
           "url": "/aetna-mental-health-provider-in-washington/"
         },
@@ -134,6 +138,10 @@
     {
       "label": "For Patients",
       "url": "/patients/"
+    },
+    {
+      "label": "Insurance & Payment",
+      "url": "/insurance/"
     },
     {
       "label": "FAQ",
