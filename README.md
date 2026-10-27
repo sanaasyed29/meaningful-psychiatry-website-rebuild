@@ -70,6 +70,10 @@ Netlify or Cloudflare Pages:
 
 ## Forms and booking
 
+Booking links (Osmind self-scheduling): Francis `bookingUrl` (provider 17069373) and
+Dr. Qureshi `qureshiBookingUrl` (provider 15452809). The general "Book Now" buttons open
+the booking section on the Contact page, where patients pick a provider.
+
 All booking buttons are decided in `src/_data/booking.js` from the links in `site.json`.
 `masterBookingUrl` is the practice-wide Osmind scheduling page; when it is set, both
 providers' buttons use it and show a "select ___" hint for the patient. Use a public self-scheduling link here, not

@@ -4,7 +4,7 @@
   "phone": "425-272-5931",
   "phoneLink": "tel:4252725931",
   "email": "admin@meaningfulpsychiatry.com",
-  "bookingUrl": "https://care.osmind.org/appointments/embed_appt?dietitian_id=17069373&provider_ids=%5B17069373%5D&appt_type_ids=%5B498945,498946,498947,524821,508077,508078,508079,524822,510301,524823,510606,524824,513239,518337,518338,518339,526630,528605,538689%5D&primary_color=4A9625",
+  "bookingUrl": "https://care.osmind.org/appointments/embed_appt?dietitian_id=17069373",
   "acceptingBanner": "Now Accepting: ✔ Aetna, ✔ Ambetter, ✔ Medicare, ✔ Medicaid",
   "insuranceOptions": [
     "Private pay (Dr. Qureshi)",
@@ -138,7 +138,7 @@
   "credentials": {
     "qureshiLicense": "Washington MD61485578"
   },
-  "qureshiBookingUrl": "",
+  "qureshiBookingUrl": "https://care.osmind.org/appointments/embed_appt?dietitian_id=15452809",
   "inquiryFormUrl": "",
   "masterBookingUrl": ""
 }

@@ -22,4 +22,5 @@ if (site.qureshiBookingUrl) {
   qureshi = { kind: "phone", url: site.phoneLink, label: "Call or Text to Schedule", hint: "" };
 }
 
-export default { general: master || site.bookingUrl, francis, qureshi };
+// General "Book Now" buttons open the booking section where patients pick a provider.
+export default { general: master || "/contact-us/#contact", francis, qureshi };
