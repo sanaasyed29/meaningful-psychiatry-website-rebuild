@@ -3,17 +3,16 @@
     <div class="contact-section__info">
       <p class="eyebrow eyebrow--light">Contact us</p>
       <h2>Questions? Need to request an appointment?</h2>
-      <p>Send us a message and our care coordinator will get back to you within one business day. Prefer to talk? Call or text us anytime.</p>
+      <p>Book online through our secure patient platform, or call or text us and our care coordinator will help you get started. We respond within one business day.</p>
       <ul class="contact-list">
         <li><span class="contact-list__icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><div><strong>Call or Text</strong><a href="{{ site.phoneLink }}">{{ site.phone }}</a></div></li>
         <li><span class="contact-list__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><div><strong>Email</strong><a href="mailto:{{ site.email }}">{{ site.email }}</a></div></li>
-        <li><span class="contact-list__icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span><div><strong>Book online</strong><a href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Schedule an appointment</a></div></li>
+        <li><span class="contact-list__icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span><div><strong>Book online</strong><a href="{{ site.bookingUrl }}" target="_blank" rel="noopener noreferrer">Schedule an appointment</a></div></li>
       </ul>
       <p class="contact-section__crisis"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> We don't provide crisis or emergency care. If you are in crisis, call or text 988. For medical emergencies, call 911.</p>
     </div>
     <div class="form-card">
-      <h3>Send us a message</h3>
-      {% include "partials/contact-form.njk" %}
+      {% include "partials/booking-card.njk" %}
     </div>
   </div>
 </section>

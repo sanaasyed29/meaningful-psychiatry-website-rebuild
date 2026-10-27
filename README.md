@@ -68,10 +68,12 @@ Netlify or Cloudflare Pages:
 
 `src/_redirects` sends old WordPress image addresses (`/wp-content/uploads/...`) to their new home.
 
-## Forms
+## Forms and booking
 
-The contact form and newsletter sign-up use Netlify Forms (form names `contact` and
-`newsletter`). Submissions appear in the Netlify dashboard under Forms; add an email
-notification there (Forms > Form notifications) to get each message in your inbox.
-The forms ask visitors not to include medical details, since Netlify Forms is not
-covered by a HIPAA Business Associate Agreement.
+There is no contact form: patients book and complete intake in Osmind (HIPAA-compliant),
+so no health information passes through the website. The booking panel lives in
+`src/_includes/partials/booking-card.njk`; links come from `bookingUrl`, `portalUrl` and
+`phone` in `site.json`.
+
+The only form left is the newsletter sign-up (email address only), handled by Netlify
+Forms under the form name `newsletter`.

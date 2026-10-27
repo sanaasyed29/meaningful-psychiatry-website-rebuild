@@ -16,7 +16,7 @@ bodyClass: home
         <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Private-pay &amp; select insurance</li>
       </ul>
       <div class="btn-row">
-        <a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener">Book an Appointment</a>
+        <a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
         <a href="{{ site.phoneLink }}" class="btn btn--lg btn--ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text {{ site.phone }}</a>
       </div>
       <a href="/aetna-mental-health-provider-cost/" class="text-link text-link--light">Check insurance and fees <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
@@ -49,7 +49,7 @@ bodyClass: home
     <ul class="trust-bar__list">
       <li><i class="fa-solid fa-id-card" aria-hidden="true"></i><span><strong>Licensed in Washington</strong>Telehealth for WA residents</span></li>
       <li><i class="fa-solid fa-lock" aria-hidden="true"></i><span><strong>Secure &amp; confidential</strong>HIPAA-compliant video visits</span></li>
-      <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Verified profile</strong><a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener">Psychology Today</a></span></li>
+      <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Verified profile</strong><a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener noreferrer">Psychology Today</a></span></li>
       <li><i class="fa-solid fa-newspaper" aria-hidden="true"></i><span><strong>As featured in</strong>NBC News &amp; Refinery29</span></li>
     </ul>
   </div>
@@ -93,10 +93,10 @@ bodyClass: home
         <div class="provider__body">
           <h3>Dr. Badeea Qureshi, MD</h3>
           <p class="provider__role">Psychiatrist · Private pay</p>
-          <p class="provider__creds"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> WA license {{ site.credentials.qureshiLicense | replace("Washington ", "") }} · <a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener">Verified on Psychology Today</a></p>
+          <p class="provider__creds"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> WA license {{ site.credentials.qureshiLicense | replace("Washington ", "") }} · <a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener noreferrer">Verified on Psychology Today</a></p>
           <p>Trained at the University of Liverpool School of Medicine and the University of Washington Psychiatry Residency Program, Dr. Qureshi weaves together mind, body, and spirit, with a focus on time-limited, personalized medication regimens and psychotherapy.</p>
           <div class="btn-row">
-            <a href="#contact" class="btn">Request an Appointment</a>
+            <a href="{{ site.phoneLink }}" class="btn">Call or Text to Schedule</a>
             <a href="/about-us/#badeea" class="btn btn--outline">Read Bio</a>
           </div>
         </div>
@@ -108,7 +108,7 @@ bodyClass: home
           <p class="provider__role">Psychiatric Mental Health Nurse Practitioner · Aetna, Ambetter, Medicare &amp; Medicaid</p>
           <p>With over a decade of experience in psychiatry, Francis is well equipped to work with complex psychiatric presentations, multiple diagnoses, and complicated medication regimens, in a collaborative, patient-centered way.</p>
           <div class="btn-row">
-            <a href="{{ site.bookingUrl }}" class="btn" target="_blank" rel="noopener">Schedule with Francis</a>
+            <a href="{{ site.bookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer">Schedule with Francis</a>
             <a href="/about-us/#francis" class="btn btn--outline">Read Bio</a>
           </div>
         </div>
@@ -127,7 +127,7 @@ bodyClass: home
       <li class="step">
         <span class="step__num">1</span>
         <h3>Reach out</h3>
-        <p>Book online, call or text {{ site.phone }}, or send us a message below. We respond within one business day.</p>
+        <p>Book online through Osmind, or call or text {{ site.phone }}. We respond within one business day.</p>
       </li>
       <li class="step">
         <span class="step__num">2</span>
@@ -140,7 +140,7 @@ bodyClass: home
         <p>Your first appointment is a 60-minute comprehensive evaluation of your mental health history, current concerns, and treatment goals.</p>
       </li>
     </ol>
-    <div class="center"><a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener">Book an Appointment</a></div>
+    <div class="center"><a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a></div>
   </div>
 </section>
 

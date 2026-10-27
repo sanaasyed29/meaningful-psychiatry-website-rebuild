@@ -61,9 +61,9 @@ Dr. Qureshi’s participation as an expert witness or consultant does not establ
 
 ## Questions?
 
-<span style="color: #ffffff;"><span style="caret-color: #ffffff;">Send us a message! We’re happy to answer any questions you may have.</span></span>
+Ready to take the next step? Book online through our secure patient platform, or call or text us with any questions.
 
-{% include "partials/contact-form.njk" %}
+{% include "partials/booking-card.njk" %}
 
 ## Ready to Get Started?
 

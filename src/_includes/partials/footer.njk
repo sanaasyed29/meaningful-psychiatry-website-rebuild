@@ -6,7 +6,7 @@
       <p>Book online or call or text {{ site.phone }}. Telehealth across Washington State.</p>
     </div>
     <div class="btn-row">
-      <a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener">Book an Appointment</a>
+      <a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
       <a href="/contact-us/" class="btn btn--lg btn--ghost">Contact Us</a>
     </div>
   </div>
@@ -17,17 +17,17 @@
       <img src="/images/2024/08/meaningful_psychiatry_logo_200-e1725654247478.webp" alt="{{ site.name }}" class="footer-logo" width="120" height="60" loading="lazy">
       <p>Online psychiatry for children, teens, and adults across Washington State.</p>
       <div class="social">
-        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="{{ site.social.spotify }}" target="_blank" rel="noopener" aria-label="Unequal Parts podcast on Spotify"><i class="fa-brands fa-spotify"></i></a>
+        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="{{ site.social.spotify }}" target="_blank" rel="noopener noreferrer" aria-label="Unequal Parts podcast on Spotify"><i class="fa-brands fa-spotify"></i></a>
       </div>
-      <p class="footer-profiles">Find us on <a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener">Psychology Today</a> · <a href="{{ site.profiles.webmd }}" target="_blank" rel="noopener">WebMD</a></p>
+      <p class="footer-profiles">Find us on <a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener noreferrer">Psychology Today</a> · <a href="{{ site.profiles.webmd }}" target="_blank" rel="noopener noreferrer">WebMD</a></p>
     </div>
     <div class="footer-col">
       <h3>Navigation</h3>
       <ul class="footer-nav">
         {%- for item in site.footerNav %}
-        <li><a href="{{ item.url }}"{% if item.url | isExternal %} target="_blank" rel="noopener"{% elif item.url | isActive(page.url) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        <li><a href="{{ item.url }}"{% if item.url | isExternal %} target="_blank" rel="noopener noreferrer"{% elif item.url | isActive(page.url) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
         {%- endfor %}
       </ul>
     </div>
@@ -36,8 +36,8 @@
       <ul class="footer-nav footer-nav--icons">
         <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="{{ site.phoneLink }}">Call or text {{ site.phone }}</a></li>
         <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><a href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Book online</a></li>
-        <li><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i><a href="{{ site.portalUrl }}" target="_blank" rel="noopener">Patient portal login</a></li>
+        <li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><a href="{{ site.bookingUrl }}" target="_blank" rel="noopener noreferrer">Book online</a></li>
+        <li><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i><a href="{{ site.portalUrl }}" target="_blank" rel="noopener noreferrer">Patient portal login</a></li>
         <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Telehealth across Washington State</span></li>
       </ul>
     </div>

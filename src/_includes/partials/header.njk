@@ -4,7 +4,7 @@
     <div class="topbar__contact">
       <a href="{{ site.phoneLink }}"><i class="fa-solid fa-phone" aria-hidden="true"></i> {{ site.phone }}</a>
       <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ site.email }}</a>
-      <a href="{{ site.portalUrl }}" target="_blank" rel="noopener"><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i> Patient Portal</a>
+      <a href="{{ site.portalUrl }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i> Patient Portal</a>
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@
         {%- endfor %}
       </ul>
     </nav>
-    <a href="{{ site.bookingUrl }}" class="btn btn--sm header-book" target="_blank" rel="noopener">Book Now</a>
+    <a href="{{ site.bookingUrl }}" class="btn btn--sm header-book" target="_blank" rel="noopener noreferrer">Book Now</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>

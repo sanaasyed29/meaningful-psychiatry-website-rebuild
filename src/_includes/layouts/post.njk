@@ -25,9 +25,9 @@ layout: layouts/base.njk
           {%- for t in tags %}{% if t != "post" %} <a href="/tag/{{ t | slugify }}/">{{ t }}</a>{% if not loop.last %},{% endif %}{% endif %}{% endfor %}
         </p>
         <p class="share">Share:
-          <a class="share--fb" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absoluteUrl(site.url) | urlencode }}" target="_blank" rel="noopener" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a class="share--x" href="https://twitter.com/intent/tweet?url={{ page.url | absoluteUrl(site.url) | urlencode }}&text={{ title | urlencode }}" target="_blank" rel="noopener" aria-label="Share on X"><i class="fa-brands fa-x-twitter"></i></a>
-          <a class="share--pin" href="https://pinterest.com/pin/create/button/?url={{ page.url | absoluteUrl(site.url) | urlencode }}&media={{ image | absoluteUrl(site.url) | urlencode }}&description={{ title | urlencode }}" target="_blank" rel="noopener" aria-label="Share on Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a class="share--fb" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absoluteUrl(site.url) | urlencode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="share--x" href="https://twitter.com/intent/tweet?url={{ page.url | absoluteUrl(site.url) | urlencode }}&text={{ title | urlencode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a class="share--pin" href="https://pinterest.com/pin/create/button/?url={{ page.url | absoluteUrl(site.url) | urlencode }}&media={{ image | absoluteUrl(site.url) | urlencode }}&description={{ title | urlencode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
         </p>
       </div>
       <nav class="post-nav" aria-label="More posts">
