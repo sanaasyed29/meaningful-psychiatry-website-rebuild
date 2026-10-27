@@ -674,3 +674,13 @@ ul, ol { padding-left: 1.2em; }
 .wa-map__status i { color: var(--gold-text); }
 .ins-disclaimer { margin: 32px 0 0; color: var(--muted); font-size: 15px; }
 .ins-guide-list__label { margin: 14px 0 0; font-weight: 700; color: var(--gold-text); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+
+/* ---------- Patient reviews band (top of homepage) ---------- */
+.reviews-band { background: var(--cream); border-bottom: 1px solid var(--line); }
+.reviews-band__inner { max-width: 860px; padding-top: 26px; padding-bottom: 22px; text-align: center; }
+.reviews-band__stars { display: flex; justify-content: center; gap: 6px; color: var(--gold); font-size: 22px; }
+.reviews-band__label { margin: 8px 0 12px; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-text); }
+.reviews-band .carousel__slide p { font-size: clamp(17px, 1.7vw, 20px); line-height: 1.5; }
+.reviews-band .carousel__slide footer { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.reviews-band .carousel__controls { margin-top: 14px; gap: 14px; }
+.reviews-band .carousel__btn { width: 36px; height: 36px; font-size: 13px; }

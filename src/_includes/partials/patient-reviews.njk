@@ -1,0 +1,26 @@
+{#- Top-of-page band: only quotes marked "from": "patient" in _data/testimonials.json -#}
+{%- set reviews = [] -%}
+{%- for t in testimonials %}{% if t.from == "patient" %}{% set _ = reviews.push(t) %}{% endif %}{% endfor -%}
+{%- if reviews | length %}
+<section class="reviews-band" aria-label="What patients say">
+  <div class="container reviews-band__inner carousel" data-carousel>
+    <div class="reviews-band__stars" aria-hidden="true">
+      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    </div>
+    <p class="reviews-band__label">What patients say</p>
+    <div class="carousel__track">
+      {%- for t in reviews %}
+      <blockquote class="carousel__slide{% if loop.first %} is-active{% endif %}">
+        <p>“{{ t.short or t.text }}”</p>
+        <footer>Patient of Dr. Qureshi</footer>
+      </blockquote>
+      {%- endfor %}
+    </div>
+    <div class="carousel__controls">
+      <button class="carousel__btn carousel__btn--prev" aria-label="Previous review"><i class="fa-solid fa-arrow-left"></i></button>
+      <span class="carousel__count" aria-live="polite">1 / {{ reviews | length }}</span>
+      <button class="carousel__btn carousel__btn--next" aria-label="Next review"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+{%- endif %}

@@ -9,7 +9,7 @@
         {%- for t in testimonials %}
         <blockquote class="carousel__slide{% if loop.first %} is-active{% endif %}">
           <i class="fa-solid fa-quote-left carousel__mark" aria-hidden="true"></i>
-          <p>{{ t }}</p>
+          <p>{{ t.text }}</p>
         </blockquote>
         {%- endfor %}
       </div>
