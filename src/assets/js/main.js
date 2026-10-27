@@ -62,19 +62,40 @@ document.querySelectorAll("[data-slider]").forEach((slider) => {
   setInterval(() => go(index >= maxIndex() ? 0 : index + 1), 6000);
 });
 
-// Forms: until a form service is connected (see README), open the visitor's
-// email app with their message filled in, addressed to the practice.
-document.querySelectorAll('form[data-mailto-fallback="true"]').forEach((form) => {
-  form.addEventListener("submit", (e) => {
+// Forms: submitted to Netlify Forms in the background so visitors stay on the page.
+// Without JavaScript the form still posts normally and lands on /thank-you/.
+document.querySelectorAll("form[data-ajax-form]").forEach((form) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     if (!form.reportValidity()) return;
-    const lines = [];
-    new FormData(form).forEach((value, key) => { if (value) lines.push(`${key}: ${value}`); });
-    const to = form.getAttribute("action").replace(/^mailto:/, "").split("?")[0];
-    const subject = encodeURIComponent(form.dataset.subject || "Website message");
-    window.location.href = `mailto:${to}?subject=${subject}&body=${encodeURIComponent(lines.join("\n"))}`;
+    const button = form.querySelector('button[type="submit"]');
     let status = form.querySelector(".form-status");
-    if (!status) { status = document.createElement("p"); status.className = "form-status"; form.appendChild(status); }
-    status.textContent = "Your email app should open with your message ready to send. If it doesn't, please call or text us.";
+    if (!status) {
+      status = document.createElement("p");
+      status.className = "form-status";
+      status.setAttribute("role", "status");
+      form.appendChild(status);
+    }
+    button.disabled = true;
+    status.classList.remove("form-status--ok", "form-status--error");
+    status.textContent = "Sending…";
+    try {
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString(),
+      });
+      if (!res.ok) throw new Error(res.status);
+      form.reset();
+      status.textContent = form.name === "newsletter"
+        ? "Thank you for subscribing!"
+        : "Thank you! Your message has been sent. We'll get back to you within one business day.";
+      status.classList.add("form-status--ok");
+    } catch (err) {
+      status.textContent = "Sorry, something went wrong. Please call or text us at 425-272-5931.";
+      status.classList.add("form-status--error");
+    } finally {
+      button.disabled = false;
+    }
   });
 });

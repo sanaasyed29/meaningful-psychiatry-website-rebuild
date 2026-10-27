@@ -70,8 +70,8 @@ Netlify or Cloudflare Pages:
 
 ## Forms
 
-The contact form and newsletter sign-up post to the addresses in `site.json` → `forms`.
-While those are empty, submitting opens the visitor's email app with their message
-addressed to the practice. Because the contact form asks for date of birth and insurance
-(health information), connect it only to a service that will sign a HIPAA Business
-Associate Agreement.
+The contact form and newsletter sign-up use Netlify Forms (form names `contact` and
+`newsletter`). Submissions appear in the Netlify dashboard under Forms; add an email
+notification there (Forms > Form notifications) to get each message in your inbox.
+The forms ask visitors not to include medical details, since Netlify Forms is not
+covered by a HIPAA Business Associate Agreement.

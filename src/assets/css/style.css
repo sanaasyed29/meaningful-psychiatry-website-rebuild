@@ -284,6 +284,10 @@ ul, ol { padding-left: 1.2em; }
 .privacy-note i { color: var(--gold-text); margin-top: 3px; }
 .privacy-note strong { color: var(--ink); }
 .form-status { text-align: center; font-weight: 600; margin: 14px 0 0; color: var(--ink); }
+.form-status--ok { color: #2f6b3a; }
+.form-status--error { color: #b4452f; }
+.newsletter-form .form-status { color: var(--white); text-align: left; }
+.btn:disabled { opacity: 0.6; cursor: wait; }
 
 /* ---------- Footer ---------- */
 .footer-cta { background: var(--gold); }
@@ -442,6 +446,46 @@ ul, ol { padding-left: 1.2em; }
 .pill h3 { margin: 0 0 4px; font-size: 21px; }
 .pill p { margin: 0; font-size: 15px; }
 
+
+/* ---------- Trust bar ---------- */
+.trust-bar { background: var(--white); border-bottom: 1px solid var(--line); }
+.trust-bar__list { list-style: none; margin: 0 auto; padding: 28px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.trust-bar__list li { display: flex; gap: 14px; align-items: center; font-size: 14.5px; color: var(--muted); line-height: 1.4; }
+.trust-bar__list i { flex: 0 0 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--gold-soft); color: var(--gold-text); font-size: 18px; }
+.trust-bar__list strong { display: block; color: var(--ink); font-size: 15.5px; }
+.trust-bar__list a { color: var(--gold-text); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.provider__creds { font-size: 14px !important; color: var(--muted); margin-top: -6px; }
+.provider__creds i { color: #2f6b3a; }
+.provider__creds a { color: var(--gold-text); font-weight: 600; }
+.facts a { color: var(--gold-text); font-weight: 600; }
+.footer-profiles { font-size: 14px; margin-top: 16px; }
+.footer-profiles a { color: var(--gold); }
+.footer-profiles a:hover { color: var(--white); }
+
+/* ---------- For Patients page ---------- */
+.quick-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px; }
+.quick-links a { display: inline-flex; gap: 8px; align-items: center; background: var(--white); border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-size: 14.5px; font-weight: 600; color: var(--ink); }
+.quick-links a:hover { border-color: var(--gold); }
+.quick-links i { color: var(--gold-text); }
+.resource-list { display: grid; gap: 24px; max-width: 960px; margin: 0 auto; }
+.resource { display: grid; grid-template-columns: 56px 1fr; gap: 24px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 36px; scroll-margin-top: 100px; }
+.resource .card__icon { margin: 0; }
+.resource h2 { font-size: 28px; }
+.resource h3 { font-size: 19px; margin-bottom: 10px; }
+.resource a:not(.btn) { color: var(--gold-text); font-weight: 600; }
+.resource .checklist { margin-bottom: 20px; }
+.steps-list { padding-left: 1.2em; margin: 0 0 16px; }
+.steps-list li { margin-bottom: 10px; padding-left: 6px; }
+.steps-list li::marker { color: var(--gold-text); font-weight: 700; }
+.pay-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 8px; }
+.note { font-size: 15px; background: var(--cream); border-radius: 10px; padding: 12px 16px; }
+.note i { color: var(--gold-text); margin-right: 6px; }
+.resource--crisis { border-left: 4px solid #b4452f; }
+.resource--crisis .card__icon { background: #b4452f; color: var(--white); }
+.crisis-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.crisis-list li { background: var(--cream); border-radius: 10px; padding: 12px 16px; }
+.crisis-list a { font-size: 17px; }
+
 /* ==========================================================
    Tablet & phone
    ========================================================== */
@@ -465,6 +509,7 @@ ul, ol { padding-left: 1.2em; }
   .provider-grid { grid-template-columns: 1fr; }
   .footer-main { grid-template-columns: 1fr 1fr; }
   .post-layout { grid-template-columns: 1fr; }
+  .trust-bar__list { grid-template-columns: 1fr 1fr; }
   .sidebar { position: static; }
   .member { grid-template-columns: 280px minmax(0, 1fr); gap: 40px; padding: 36px; }
 }
@@ -498,6 +543,9 @@ ul, ol { padding-left: 1.2em; }
   .lp-cols { gap: 32px; }
   .post-nav { grid-template-columns: 1fr; }
   .team-jump { grid-template-columns: 1fr; gap: 10px; margin-bottom: 32px; }
+  .resource { grid-template-columns: 1fr; padding: 26px 20px; gap: 14px; }
+  .pay-grid { grid-template-columns: 1fr; }
+  .trust-bar__list { gap: 18px; padding: 24px 0; }
   .member { grid-template-columns: 1fr; gap: 24px; padding: 24px 20px 28px; }
   .member__side { position: static; }
   .member__photo { max-width: 320px; }

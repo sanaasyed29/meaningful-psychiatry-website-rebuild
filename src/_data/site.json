@@ -20,10 +20,6 @@
     "instagramHandle": "@meaningfulpsychiatry",
     "spotify": "https://open.spotify.com/show/3AIYRYODDaBBk4oRV0lOTy"
   },
-  "forms": {
-    "contactAction": "",
-    "newsletterAction": ""
-  },
   "nav": [
     {
       "label": "Home",
@@ -54,6 +50,10 @@
     {
       "label": "Contact",
       "url": "/contact-us/"
+    },
+    {
+      "label": "For Patients",
+      "url": "/patients/"
     },
     {
       "label": "Help",
@@ -104,6 +104,10 @@
       "url": "/contact-us/"
     },
     {
+      "label": "For Patients",
+      "url": "/patients/"
+    },
+    {
       "label": "Help and FAQs",
       "url": "/help-faqs/"
     },
@@ -125,5 +129,13 @@
       "name": "NBC News",
       "logo": "/images/2024/09/nbc-news-logo.webp"
     }
-  ]
+  ],
+  "portalUrl": "https://patients.care.osmind.org",
+  "profiles": {
+    "psychologyToday": "https://www.psychologytoday.com/us/psychiatrists/badeea-qureshi-sammamish-wa/1372513",
+    "webmd": "https://doctor.webmd.com/doctor/badeea-qureshi-1e984613-08bc-4586-ae7c-3a141afd21b9-overview"
+  },
+  "credentials": {
+    "qureshiLicense": "Washington MD61485578"
+  }
 }

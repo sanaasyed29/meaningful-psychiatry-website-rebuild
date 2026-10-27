@@ -44,6 +44,17 @@ bodyClass: home
   </div>
 </section>
 
+<section class="trust-bar">
+  <div class="container">
+    <ul class="trust-bar__list">
+      <li><i class="fa-solid fa-id-card" aria-hidden="true"></i><span><strong>Licensed in Washington</strong>Telehealth for WA residents</span></li>
+      <li><i class="fa-solid fa-lock" aria-hidden="true"></i><span><strong>Secure &amp; confidential</strong>HIPAA-compliant video visits</span></li>
+      <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Verified profile</strong><a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener">Psychology Today</a></span></li>
+      <li><i class="fa-solid fa-newspaper" aria-hidden="true"></i><span><strong>As featured in</strong>NBC News &amp; Refinery29</span></li>
+    </ul>
+  </div>
+</section>
+
 <section class="section section--light">
   <div class="container">
     <div class="section-head">
@@ -82,6 +93,7 @@ bodyClass: home
         <div class="provider__body">
           <h3>Dr. Badeea Qureshi, MD</h3>
           <p class="provider__role">Psychiatrist · Private pay</p>
+          <p class="provider__creds"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> WA license {{ site.credentials.qureshiLicense | replace("Washington ", "") }} · <a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener">Verified on Psychology Today</a></p>
           <p>Trained at the University of Liverpool School of Medicine and the University of Washington Psychiatry Residency Program, Dr. Qureshi weaves together mind, body, and spirit, with a focus on time-limited, personalized medication regimens and psychotherapy.</p>
           <div class="btn-row">
             <a href="#contact" class="btn">Request an Appointment</a>

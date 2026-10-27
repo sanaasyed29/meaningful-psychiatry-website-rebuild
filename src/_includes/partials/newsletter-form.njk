@@ -1,4 +1,7 @@
-<form class="newsletter-form" method="post" action="{{ site.forms.newsletterAction or ('mailto:' + site.email + '?subject=Newsletter%20sign-up') }}" data-mailto-fallback="{{ 'false' if site.forms.newsletterAction else 'true' }}" data-subject="Newsletter sign-up">
+<form class="newsletter-form" name="newsletter" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-ajax-form>
+  <input type="hidden" name="form-name" value="newsletter">
+  <input type="hidden" name="subject" value="New newsletter sign-up - Meaningful Psychiatry">
+  <p class="sr-only"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
   <p>Mental health insights and practice news from Dr. Qureshi.</p>
   <label class="sr-only" for="nl-email-{{ page.url | slugify }}">Email address</label>
   <div class="newsletter-form__row">

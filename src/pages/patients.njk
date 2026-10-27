@@ -1,0 +1,151 @@
+---
+layout: layouts/base.njk
+title: For Patients
+permalink: /patients/
+description: "Patient resources for Meaningful Psychiatry: Osmind patient portal login, new patient steps, appointments, refills, payment, cancellation policy and crisis resources."
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Patient resources</p>
+    <h1 class="page-title">For Patients</h1>
+    <p class="page-hero__sub">Everything you need before and between your appointments, in one place.</p>
+    <div class="btn-row btn-row--center">
+      <a href="{{ site.portalUrl }}" class="btn btn--lg" target="_blank" rel="noopener"><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i> Patient Portal Login</a>
+      <a href="{{ site.bookingUrl }}" class="btn btn--lg btn--ghost" target="_blank" rel="noopener">Book an Appointment</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight section--light">
+  <div class="container">
+    <nav class="quick-links" aria-label="On this page">
+      <a href="#portal"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> Patient portal</a>
+      <a href="#new-patients"><i class="fa-solid fa-user-plus" aria-hidden="true"></i> New patients</a>
+      <a href="#appointments"><i class="fa-solid fa-video" aria-hidden="true"></i> Appointments</a>
+      <a href="#refills"><i class="fa-solid fa-prescription-bottle-medical" aria-hidden="true"></i> Refills &amp; messages</a>
+      <a href="#payment"><i class="fa-solid fa-credit-card" aria-hidden="true"></i> Payment &amp; insurance</a>
+      <a href="#policies"><i class="fa-solid fa-calendar-xmark" aria-hidden="true"></i> Cancellation policy</a>
+      <a href="#crisis"><i class="fa-solid fa-life-ring" aria-hidden="true"></i> Crisis resources</a>
+    </nav>
+
+    <div class="resource-list">
+
+      <article class="resource" id="portal">
+        <span class="card__icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></span>
+        <div>
+          <h2>Osmind Patient Portal</h2>
+          <p>We use Osmind, a secure, HIPAA-compliant patient platform, for onboarding paperwork, video appointments, secure messaging with your provider, and billing.</p>
+          <ul class="checklist">
+            <li>After your first contact with us, you'll receive an email and text invitation from Osmind. Check your spam or promotions folder if you don't see it.</li>
+            <li>Download the Osmind app from the App Store or Google Play and tap <strong>Activate</strong> to set your password.</li>
+            <li>Prefer a computer? You can also log in from your web browser.</li>
+          </ul>
+          <a href="{{ site.portalUrl }}" class="btn" target="_blank" rel="noopener">Log in to the Patient Portal</a>
+        </div>
+      </article>
+
+      <article class="resource" id="new-patients">
+        <span class="card__icon"><i class="fa-solid fa-user-plus" aria-hidden="true"></i></span>
+        <div>
+          <h2>New Patients</h2>
+          <ol class="steps-list">
+            <li><strong>Reach out.</strong> Book online, call or text {{ site.phone }}, or <a href="/contact-us/">send us a message</a>. We respond within one business day.</li>
+            <li><strong>Complete onboarding.</strong> Fill out your onboarding paperwork in the Osmind patient app. Our admin will then help you schedule your first intake appointment.</li>
+            <li><strong>Meet your provider.</strong> Your first appointment is a 60-minute comprehensive evaluation of your mental health history, current concerns, and treatment goals.</li>
+          </ol>
+          <p>We see patients age 8 and up who are located in Washington State at the time of their visit.</p>
+        </div>
+      </article>
+
+      <article class="resource" id="appointments">
+        <span class="card__icon"><i class="fa-solid fa-video" aria-hidden="true"></i></span>
+        <div>
+          <h2>Preparing for Your Virtual Appointment</h2>
+          <ul class="checklist">
+            <li>Use a smartphone, tablet, or computer with a camera, microphone, and a stable internet connection.</li>
+            <li>Find a quiet, private space with good lighting, and make sure your device is charged.</li>
+            <li>Have any relevant medical records or a list of your current medications ready.</li>
+            <li>Join through the telemedicine link in your Osmind patient portal at your scheduled time.</li>
+            <li>Want a support person to join? Let your provider know beforehand. You may need to complete a release of information form first.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="resource" id="refills">
+        <span class="card__icon"><i class="fa-solid fa-prescription-bottle-medical" aria-hidden="true"></i></span>
+        <div>
+          <h2>Prescription Refills &amp; Messages</h2>
+          <p><strong>Refills:</strong> Please contact our office directly. Refills are typically processed within 48 hours. We do not refill prescriptions during weekends or holidays, so please plan ahead.</p>
+          <p><strong>Questions between appointments:</strong> For non-urgent questions, message your provider through the secure messaging system in the Osmind patient portal. We respond within 1–2 business days.</p>
+          <p class="note"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Portal messages are not monitored for emergencies. If you are experiencing a psychiatric emergency, call 911 or go to your nearest emergency room.</p>
+        </div>
+      </article>
+
+      <article class="resource" id="payment">
+        <span class="card__icon"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></span>
+        <div>
+          <h2>Payment &amp; Insurance</h2>
+          <div class="pay-grid">
+            <div>
+              <h3>Dr. Badeea Qureshi, MD</h3>
+              <ul class="checklist">
+                <li>Private pay</li>
+                <li>Sliding scale available for those with financial hardship. Contact our office for the sliding scale form.</li>
+                <li>FSA/HSA accepted</li>
+                <li>Superbills provided after every visit to submit to your insurance for possible reimbursement</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Francis Agbotse, PMHNP</h3>
+              <ul class="checklist">
+                <li>Aetna</li>
+                <li>Ambetter</li>
+                <li>Coordinated Care (Medicare + Medicaid)</li>
+                <li>Waitlist open for Cigna, Optum Behavioral Health, Premera Blue Cross, Regence BlueShield, TriWest, and First Choice Health</li>
+              </ul>
+            </div>
+          </div>
+          <p>Insurance coverage varies by plan. Learn <a href="/aetna-mental-health-provider-cost/">what to ask your insurance before your first appointment</a>.</p>
+        </div>
+      </article>
+
+      <article class="resource" id="policies">
+        <span class="card__icon"><i class="fa-solid fa-calendar-xmark" aria-hidden="true"></i></span>
+        <div>
+          <h2>Cancellation Policy</h2>
+          <ul class="checklist">
+            <li>Cancel or reschedule with at least 48 hours' notice: no cancellation fee.</li>
+            <li>Cancel with less than 48 hours' notice: 50% cancellation fee.</li>
+            <li>No-show without notice: the full appointment amount is due.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="resource resource--crisis" id="crisis">
+        <span class="card__icon"><i class="fa-solid fa-life-ring" aria-hidden="true"></i></span>
+        <div>
+          <h2>Crisis Resources</h2>
+          <p>Meaningful Psychiatry does not provide crisis or emergency care. If you or someone you know needs help right now:</p>
+          <ul class="crisis-list">
+            <li><strong>Emergency:</strong> Call <a href="tel:911">911</a> or go to your nearest emergency room</li>
+            <li><strong>988 Suicide &amp; Crisis Lifeline:</strong> Call or text <a href="tel:988">988</a>, available 24/7</li>
+            <li><strong>Crisis Text Line:</strong> Text HOME to <a href="sms:741741">741741</a></li>
+            <li><strong>Washington Recovery Help Line</strong> (mental health, substance use, and problem gambling): <a href="tel:18667891511">1-866-789-1511</a></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container center">
+    <h2>Still have questions?</h2>
+    <p class="section-head__sub">Browse our <a href="/help-faqs/" class="text-link">frequently asked questions</a> or reach out to our care coordinator.</p>
+    <div class="btn-row btn-row--center" style="margin-top: 24px;">
+      <a href="/contact-us/" class="btn btn--lg">Contact Us</a>
+      <a href="{{ site.phoneLink }}" class="btn btn--lg btn--outline">Call or Text {{ site.phone }}</a>
+    </div>
+  </div>
+</section>
