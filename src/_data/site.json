@@ -96,10 +96,6 @@
       "url": "/patients/"
     },
     {
-      "label": "FAQ",
-      "url": "/help-faqs/"
-    },
-    {
       "label": "Mind Matters",
       "shortLabel": "Mind Matters",
       "children": [
@@ -112,6 +108,10 @@
           "url": "/podcast/"
         }
       ]
+    },
+    {
+      "label": "FAQ",
+      "url": "/help-faqs/"
     },
     {
       "label": "Contact",
