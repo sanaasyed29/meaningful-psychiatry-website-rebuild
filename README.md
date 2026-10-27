@@ -70,6 +70,10 @@ Netlify or Cloudflare Pages:
 
 ## Forms and booking
 
+All booking buttons are decided in `src/_data/booking.js` from the links in `site.json`.
+`masterBookingUrl` is the practice-wide Osmind scheduling page; when it is set, both
+providers' buttons use it and show a "select ___" hint for the patient.
+
 There is no contact form: patients book and complete intake in Osmind (HIPAA-compliant),
 so no health information passes through the website. The booking panel lives in
 `src/_includes/partials/booking-card.njk`; links come from `bookingUrl`, `portalUrl` and

@@ -6,7 +6,7 @@
       <p>Book online or call or text {{ site.phone }}. Telehealth across Washington State.</p>
     </div>
     <div class="btn-row">
-      <a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+      <a href="{{ booking.general }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
       <a href="/contact-us/" class="btn btn--lg btn--ghost">Contact Us</a>
     </div>
   </div>
@@ -36,7 +36,7 @@
       <ul class="footer-nav footer-nav--icons">
         <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="{{ site.phoneLink }}">Call or text {{ site.phone }}</a></li>
         <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><a href="{{ site.bookingUrl }}" target="_blank" rel="noopener noreferrer">Book online</a></li>
+        <li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><a href="{{ booking.general }}" target="_blank" rel="noopener noreferrer">Book online</a></li>
         <li><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i><a href="{{ site.portalUrl }}" target="_blank" rel="noopener noreferrer">Patient portal login</a></li>
         <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Telehealth across Washington State</span></li>
       </ul>

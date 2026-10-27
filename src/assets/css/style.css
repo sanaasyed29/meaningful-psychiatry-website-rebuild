@@ -500,6 +500,25 @@ ul, ol { padding-left: 1.2em; }
 .booking-card__help a { color: var(--gold-text); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
 @media (max-width: 760px) { .booking-option .btn { width: 100%; } }
 
+
+/* ---------- Provider booking cards ---------- */
+.provider-pick { display: grid; gap: 14px; margin-bottom: 8px; }
+.provider-pick__card { display: flex; flex-direction: column; gap: 6px; border: 1px solid var(--line); border-radius: 14px; padding: 20px; background: var(--white); }
+.provider-pick__card h4 { font-family: var(--font-heading); font-size: 21px; color: var(--ink); margin: 4px 0 0; }
+.provider-pick__role { margin: 0; font-size: 14px; font-weight: 600; color: var(--gold-text); }
+.provider-pick__list { list-style: none; margin: 4px 0 10px; padding: 0; font-size: 14.5px; }
+.provider-pick__list li { position: relative; padding-left: 22px; margin-bottom: 4px; }
+.provider-pick__list li::before { content: "\f00c"; font: var(--fa-font-solid); font-size: 11px; color: var(--gold-text); position: absolute; left: 0; top: 5px; }
+.pay-badge { align-self: flex-start; font-size: 12.5px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 12px; border-radius: 999px; background: var(--gold-soft); color: var(--ink); }
+.pay-badge--ins { background: #e3e6f2; }
+.book-hint { display: flex; gap: 8px; align-items: baseline; text-align: left; margin: 8px 0 0; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
+.book-hint i { color: var(--gold-text); }
+.book-hint strong { color: var(--ink); }
+.btn i.fa-arrow-up-right-from-square { font-size: 12px; }
+.provider-pick .btn { white-space: nowrap; padding-left: 16px; padding-right: 16px; }
+.lp .book-hint { justify-content: flex-start; }
+@media (min-width: 1101px) { .contact-section .provider-pick { grid-template-columns: 1fr 1fr; } }
+
 /* ==========================================================
    Tablet & phone
    ========================================================== */

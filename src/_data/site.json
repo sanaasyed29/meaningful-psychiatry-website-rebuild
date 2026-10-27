@@ -139,5 +139,6 @@
     "qureshiLicense": "Washington MD61485578"
   },
   "qureshiBookingUrl": "",
-  "inquiryFormUrl": ""
+  "inquiryFormUrl": "",
+  "masterBookingUrl": "https://care.osmind.org/go/meaningfulpsychiatryxosmind"
 }

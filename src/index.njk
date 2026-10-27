@@ -16,7 +16,7 @@ bodyClass: home
         <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Private-pay &amp; select insurance</li>
       </ul>
       <div class="btn-row">
-        <a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+        <a href="{{ booking.general }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
         <a href="{{ site.phoneLink }}" class="btn btn--lg btn--ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text {{ site.phone }}</a>
       </div>
       <a href="/aetna-mental-health-provider-cost/" class="text-link text-link--light">Check insurance and fees <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
@@ -96,7 +96,7 @@ bodyClass: home
           <p class="provider__creds"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> WA license {{ site.credentials.qureshiLicense | replace("Washington ", "") }} · <a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener noreferrer">Verified on Psychology Today</a></p>
           <p>Trained at the University of Liverpool School of Medicine and the University of Washington Psychiatry Residency Program, Dr. Qureshi weaves together mind, body, and spirit, with a focus on time-limited, personalized medication regimens and psychotherapy.</p>
           <div class="btn-row">
-            {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% elif site.inquiryFormUrl %}<a href="{{ site.inquiryFormUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Request an appointment with Dr. Qureshi (opens our secure request form in a new tab)">Request an Appointment</a>{% else %}<a href="{{ site.phoneLink }}" class="btn">Call or Text to Schedule</a>{% endif %}
+            {% set p = booking.qureshi %}{% set btnClass = "btn" %}{% include "partials/book-button.njk" %}
             <a href="/about-us/#badeea" class="btn btn--outline">Read Bio</a>
           </div>
         </div>
@@ -108,7 +108,7 @@ bodyClass: home
           <p class="provider__role">Psychiatric Mental Health Nurse Practitioner · Aetna, Ambetter, Medicare &amp; Medicaid</p>
           <p>With over a decade of experience in psychiatry, Francis is well equipped to work with complex psychiatric presentations, multiple diagnoses, and complicated medication regimens, in a collaborative, patient-centered way.</p>
           <div class="btn-row">
-            <a href="{{ site.bookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer">Schedule with Francis</a>
+            {% set p = booking.francis %}{% set btnClass = "btn" %}{% include "partials/book-button.njk" %}
             <a href="/about-us/#francis" class="btn btn--outline">Read Bio</a>
           </div>
         </div>
@@ -140,7 +140,7 @@ bodyClass: home
         <p>Your first appointment is a 60-minute comprehensive evaluation of your mental health history, current concerns, and treatment goals.</p>
       </li>
     </ol>
-    <div class="center"><a href="{{ site.bookingUrl }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a></div>
+    <div class="center"><a href="{{ booking.general }}" class="btn btn--lg" target="_blank" rel="noopener noreferrer">Book an Appointment</a></div>
   </div>
 </section>
 

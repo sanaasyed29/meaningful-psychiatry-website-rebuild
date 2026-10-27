@@ -12,7 +12,7 @@ permalink: /aetna-mental-health-provider-cost/
         <p class="eyebrow">Mental Healthcare in Washington</p>
         <h1>How Much Does a Mental Health Provider Cost With Aetna</h1>
         <p>One of the first questions people ask when looking for mental health care is also one of the hardest to answer with a single number.</p>
-        <div class="center"><a href="{{ site.bookingUrl }}" class="btn btn--wide" target="_blank" rel="noopener noreferrer">Request An Appointment</a></div>
+        <div class="center"><a href="{{ booking.francis.url }}" class="btn btn--wide" target="_blank" rel="noopener noreferrer">Request An Appointment</a>{% if booking.francis.hint %}<p class="book-hint"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span>Using insurance? On the booking page, select <strong>{{ booking.francis.hint }}</strong>.</span></p>{% endif %}</div>
       </div>
       <div class="lp-hero__art" aria-hidden="true"></div>
     </div>

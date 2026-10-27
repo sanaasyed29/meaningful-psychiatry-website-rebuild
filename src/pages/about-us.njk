@@ -43,7 +43,7 @@ description: "Dr. Badeea Qureshi, psychiatrist in Washington State, combines pro
           <div><dt>Payment</dt><dd>Private pay · sliding scale · FSA/HSA · superbills</dd></div>
           <div><dt>Find Dr. Qureshi on</dt><dd><a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener noreferrer">Psychology Today</a> · <a href="{{ site.profiles.webmd }}" target="_blank" rel="noopener noreferrer">WebMD</a></dd></div>
         </dl>
-        {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn btn--block" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% elif site.inquiryFormUrl %}<a href="{{ site.inquiryFormUrl }}" class="btn btn--block" target="_blank" rel="noopener noreferrer" aria-label="Request an appointment with Dr. Qureshi (opens our secure request form in a new tab)">Request an Appointment</a>{% else %}<a href="{{ site.phoneLink }}" class="btn btn--block"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text to Schedule</a>{% endif %}
+        {% set p = booking.qureshi %}{% set btnClass = "btn btn--block" %}{% include "partials/book-button.njk" %}
       </div>
       <div class="member__bio">
         <p class="member__lead">Dr. Badeea Qureshi is a visionary psychiatrist whose practice weaves together the intricate threads of mind, body, and spirit with profound sensitivity and insight.</p>
@@ -75,7 +75,7 @@ description: "Dr. Badeea Qureshi, psychiatrist in Washington State, combines pro
           <div><dt>Training</dt><dd>Windsor School of Medicine, Saint Kitts · University of Alabama at Birmingham</dd></div>
           <div><dt>Accepting</dt><dd>Aetna, Ambetter, and Coordinated Care (Medicare + Medicaid)</dd></div>
         </dl>
-        <a href="{{ site.bookingUrl }}" class="btn btn--block" target="_blank" rel="noopener noreferrer">Schedule with Francis</a>
+        {% set p = booking.francis %}{% set btnClass = "btn btn--block" %}{% include "partials/book-button.njk" %}
       </div>
       <div class="member__bio">
         <p class="member__lead">Francis Agbotse is a compassionate Psychiatric Mental Health Nurse Practitioner who brings a unique blend of medical education, psychiatric expertise, and genuine curiosity about the human experience to his work at Meaningful Psychiatry.</p>

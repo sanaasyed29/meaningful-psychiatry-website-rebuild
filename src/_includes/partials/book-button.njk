@@ -1,0 +1,9 @@
+{#- Expects `p` (booking.francis or booking.qureshi) and optional `who`, `btnClass`. -#}
+{%- if p.kind == "phone" -%}
+<a href="{{ p.url }}" class="{{ btnClass or 'btn' }}"><i class="fa-solid fa-phone" aria-hidden="true"></i> {{ p.label }}</a>
+{%- else -%}
+<a href="{{ p.url }}" class="{{ btnClass or 'btn' }}" target="_blank" rel="noopener noreferrer" aria-label="{{ p.label }} (opens our secure {{ 'request form' if p.kind == 'form' else 'Osmind scheduling page' }} in a new tab)">{{ p.label }} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+{%- endif %}
+{%- if p.hint %}
+<p class="book-hint"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span>On the booking page, select <strong>{{ p.hint }}</strong>.</span></p>
+{%- endif %}

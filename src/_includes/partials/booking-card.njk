@@ -1,21 +1,28 @@
 <div class="booking-card">
   <h3>Book your appointment securely</h3>
-  <p class="booking-card__intro">We schedule and complete intake through <strong>Osmind</strong>, our secure, HIPAA-compliant patient platform, so your personal and health information goes straight into a protected system.</p>
+  <p class="booking-card__intro">Choose the provider that fits how you'd like to pay. Booking and intake happen in <strong>Osmind</strong>, our secure, HIPAA-compliant patient platform.</p>
 
-  <div class="booking-option">
-    <div class="booking-option__text">
-      <strong>Francis Agbotse, PMHNP</strong>
-      <span>Aetna, Ambetter, Medicare &amp; Medicaid</span>
-    </div>
-    <a href="{{ site.bookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Book with Francis (opens our secure Osmind scheduling page in a new tab)">Book with Francis <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-  </div>
-
-  <div class="booking-option">
-    <div class="booking-option__text">
-      <strong>Dr. Badeea Qureshi, MD</strong>
-      <span>Private pay · sliding scale available</span>
-    </div>
-    {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% elif site.inquiryFormUrl %}<a href="{{ site.inquiryFormUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Request an appointment with Dr. Qureshi (opens our secure request form in a new tab)">Request an appointment</a>{% else %}<a href="{{ site.phoneLink }}" class="btn btn--outline"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or text to schedule</a>{% endif %}
+  <div class="provider-pick">
+    <article class="provider-pick__card">
+      <span class="pay-badge">Self-pay</span>
+      <h4>Dr. Badeea Qureshi, MD</h4>
+      <p class="provider-pick__role">Psychiatrist</p>
+      <ul class="provider-pick__list">
+        <li>Private pay, sliding scale available</li>
+        <li>FSA/HSA accepted · superbills provided</li>
+      </ul>
+      {% set p = booking.qureshi %}{% set btnClass = "btn btn--block" %}{% include "partials/book-button.njk" %}
+    </article>
+    <article class="provider-pick__card">
+      <span class="pay-badge pay-badge--ins">Insurance</span>
+      <h4>Francis Agbotse, PMHNP</h4>
+      <p class="provider-pick__role">Psychiatric Nurse Practitioner</p>
+      <ul class="provider-pick__list">
+        <li>Aetna and Ambetter</li>
+        <li>Coordinated Care (Medicare + Medicaid)</li>
+      </ul>
+      {% set p = booking.francis %}{% set btnClass = "btn btn--block" %}{% include "partials/book-button.njk" %}
+    </article>
   </div>
 
   {%- if site.inquiryFormUrl %}
