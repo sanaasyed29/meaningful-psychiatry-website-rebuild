@@ -2,7 +2,7 @@
 title: "Seattle Couples Counseling & Family Therapy — A Psychiatrist’s Approach to Healing Relationships"
 date: 2025-12-15
 permalink: /seattle-couples-counseling-family-therapy-a-psychiatrists-approach-to-healing-relationships/
-image: "/images/2024/08/Badeea_Qureshi_MD.webp"
+image: "/images/stock/family-kitchen-table.webp"
 categories: ["Psychotherapy"]
 tags: ["post", "Couples Counseling"]
 excerpt: "Relationships are the core of our emotional well-being. When communication breaks down or conflict becomes overwhelming, couples and families often feel stuck, distant, or unheard. At Meaningful Psychiatry, Dr. Badeea Qureshibrings a warm, structured, and goal-oriented approach to helping partners and families reconnect — serving Seattle, Bellevue, Redmond, Sammamish, and patients across Washington State through virtual sessions."

@@ -2,7 +2,7 @@
 title: "Seattle Parent Management Training (PMT) — A Psychiatrist’s Approach to Supporting Parents and Children"
 date: 2025-12-15
 permalink: /seattle-parent-management-training-pmt-a-psychiatrists-approach-to-supporting-parents-and-children/
-image: "/images/2024/08/Badeea_Qureshi_MD.webp"
+image: "/images/stock/parent-reading-with-child.webp"
 categories: ["Psychotherapy"]
 tags: ["post", "parenting"]
 excerpt: "Parenting a child with emotional or behavioral challenges can be deeply stressful. Many parents arrive feeling overwhelmed, unsure, and worried that something is “wrong” with their child. At Meaningful Psychiatry, Dr. Badeea Qureshi approaches Parent Management Training (PMT) from a different starting point: meaningful change begins by supporting parents first."

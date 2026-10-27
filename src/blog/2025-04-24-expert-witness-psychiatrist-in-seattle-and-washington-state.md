@@ -2,7 +2,7 @@
 title: "Expert Witness Psychiatrist in Seattle and Washington State"
 date: 2025-04-24
 permalink: /expert-witness-psychiatrist-in-seattle-and-washington-state/
-image: "/images/2024/08/Badeea_Qureshi_MD.webp"
+image: "/images/stock/courthouse-columns.webp"
 categories: ["Psychotherapy"]
 tags: ["post", "expert witness", "psychiatrist", "Seattle", "Washington state"]
 excerpt: "Dr. Badeea Qureshi provides expert psychiatric opinions in select legal and administrative cases, including matters related to trauma, PTSD, and mental health evaluations. With clinical experience in treating adults and children and a background in high-quality, evidence-based care, she is available as an expert witness psychiatrist for attorneys and their clients, law firms, organizations, and courts across Washington State."

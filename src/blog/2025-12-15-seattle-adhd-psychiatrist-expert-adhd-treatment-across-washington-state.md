@@ -2,7 +2,7 @@
 title: "Seattle ADHD Psychiatrist — Expert ADHD Treatment Across Washington State"
 date: 2025-12-15
 permalink: /seattle-adhd-psychiatrist-expert-adhd-treatment-across-washington-state/
-image: "/images/2024/08/Badeea_Qureshi_MD.webp"
+image: "/images/stock/adhd-focus-notebook.webp"
 categories: ["Psychotherapy"]
 tags: ["post", "ADHD"]
 excerpt: "ADHD affects focus, motivation, organization, and emotional regulation — but most importantly, it affects a person’s ability to feel confident in their daily life. For many adults and teens in Seattle, Bellevue, Sammamish, Redmond, and across Washington State, finding the right ADHD psychiatrist can be life-changing."
