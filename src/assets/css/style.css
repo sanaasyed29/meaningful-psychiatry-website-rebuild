@@ -157,6 +157,12 @@ ul, ol { padding-left: 1.2em; }
 .insurance-band { background: var(--white); border-bottom: 1px solid var(--line); }
 .insurance-band__inner { display: flex; align-items: center; justify-content: center; gap: 16px 28px; padding-top: 22px; padding-bottom: 22px; flex-wrap: wrap; }
 .insurance-band__label { margin: 0; font-weight: 700; color: var(--ink); }
+.insurance-band { background: #eaf6ee; border-bottom-color: #cfe9d8; }
+.insurance-band__label { color: #1b6b43; display: inline-flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: .06em; font-size: 15px; }
+.insurance-band__label::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: #2e9e63; box-shadow: 0 0 0 4px rgba(46, 158, 99, .2); }
+.insurance-band .chips li { background: #ffffff; color: #17553a; border: 1px solid #bfe2cc; }
+.insurance-band .chips li::before { color: #2e9e63; }
+.insurance-band .text-link { color: #1b6b43; }
 .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .chips li { background: var(--gold-soft); color: var(--ink); font-weight: 600; font-size: 15px; padding: 6px 16px; border-radius: 999px; }
 .chips li::before { content: "\f00c"; font: var(--fa-font-solid); font-size: 12px; color: var(--gold-text); margin-right: 8px; }
