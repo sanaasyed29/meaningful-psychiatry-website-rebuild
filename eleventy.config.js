@@ -50,12 +50,14 @@ export default function (eleventyConfig) {
   );
   eleventyConfig.addFilter("head", (arr, n) => (arr || []).slice(0, n));
   eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
+  eleventyConfig.addFilter("rfcDate", (d) => new Date(d).toUTCString());
   eleventyConfig.addFilter("isoDate", (d) => new Date(d).toISOString().slice(0, 10));
   eleventyConfig.addFilter("truncateWords", (s, n = 55) => {
     const words = String(s || "").split(/\s+/);
     return words.length > n ? words.slice(0, n).join(" ") + "…" : s;
   });
   eleventyConfig.addFilter("absoluteUrl", (path, base) => new URL(path, base).toString());
+  eleventyConfig.addFilter("isDateArchive", (url) => /^\/\d{4}\/\d{2}\/$/.test(url || ""));
   eleventyConfig.addFilter("isExternal", (url) => /^https?:\/\//.test(url || ""));
   eleventyConfig.addFilter("isActive", (url, pageUrl) =>
     url === "/" ? pageUrl === "/" : (pageUrl || "").startsWith(url)

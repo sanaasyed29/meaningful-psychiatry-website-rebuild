@@ -69,7 +69,7 @@ Dr. Qureshi’s patients have shared their positive experiences:
 
 <div class="gmail-relative gmail-inline-flex gmail-items-center">
 
-<a href="https://doctor.webmd.com/doctor/badeea-qureshi-1e984613-08bc-4586-ae7c-3a141afd21b9-overview?utm_source=chatgpt.com" class="gmail-flex gmail-h-[22px] gmail-items-center gmail-rounded-xl gmail-px-2 gmail-text-[0.5em] gmail-!font-medium gmail-uppercase gmail-bg-[#f4f4f4] gmail-!text-token-text-secondary gmail-hover:bg-token-text-primary gmail-hover:!text-token-main-surface-secondary gmail-dark:bg-token-main-surface-secondary gmail-dark:hover:bg-token-text-primary gmail-relative gmail-top-[-0.094rem]" rel="noopener" target="_blank"><span class="gmail-truncate">WebMD Doctor</span></a>
+<a href="https://doctor.webmd.com/doctor/badeea-qureshi-1e984613-08bc-4586-ae7c-3a141afd21b9-overview" class="gmail-flex gmail-h-[22px] gmail-items-center gmail-rounded-xl gmail-px-2 gmail-text-[0.5em] gmail-!font-medium gmail-uppercase gmail-bg-[#f4f4f4] gmail-!text-token-text-secondary gmail-hover:bg-token-text-primary gmail-hover:!text-token-main-surface-secondary gmail-dark:bg-token-main-surface-secondary gmail-dark:hover:bg-token-text-primary gmail-relative gmail-top-[-0.094rem]" rel="noopener" target="_blank"><span class="gmail-truncate">WebMD Doctor</span></a>
 
 </div>
 

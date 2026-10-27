@@ -2,7 +2,11 @@
 /wp-content/uploads/*   /images/:splat   301
 /blog-sidebar/          /blog/           301
 /footer/*               /                301
-/feed/                  /blog/           301
+/blog/2/                /blog/page/2/    301
+/blog/3/                /blog/page/3/    301
+/blog/4/                /blog/page/4/    301
+/blog/5/                /blog/page/5/    301
+/feed                   /feed/           301
 /sitemap_index.xml      /sitemap.xml     301
 /wp-sitemap.xml         /sitemap.xml     301
 /post-sitemap.xml       /sitemap.xml     301

@@ -14,7 +14,9 @@ document.querySelectorAll(".sub-toggle").forEach((btn) => {
   });
 });
 
-// Testimonials: one quote at a time, auto-advancing
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// Testimonials: one quote at a time, auto-advancing unless the visitor prefers reduced motion
 document.querySelectorAll("[data-carousel]").forEach((carousel) => {
   const slides = [...carousel.querySelectorAll(".carousel__slide")];
   if (slides.length < 2) return;
@@ -26,8 +28,9 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
     slides[i].classList.add("is-active");
     if (count) count.textContent = `${i + 1} / ${slides.length}`;
   };
-  let timer = setInterval(() => show(i + 1), 9000);
-  const restart = () => { clearInterval(timer); timer = setInterval(() => show(i + 1), 9000); };
+  const start = () => (reduceMotion ? null : setInterval(() => show(i + 1), 9000));
+  let timer = start();
+  const restart = () => { clearInterval(timer); timer = start(); };
   carousel.querySelector(".carousel__btn--prev").addEventListener("click", () => { show(i - 1); restart(); });
   carousel.querySelector(".carousel__btn--next").addEventListener("click", () => { show(i + 1); restart(); });
 });
@@ -59,7 +62,7 @@ document.querySelectorAll("[data-slider]").forEach((slider) => {
   };
   buildDots();
   window.addEventListener("resize", buildDots);
-  setInterval(() => go(index >= maxIndex() ? 0 : index + 1), 6000);
+  if (!reduceMotion) setInterval(() => go(index >= maxIndex() ? 0 : index + 1), 6000);
 });
 
 // Forms: submitted to Netlify Forms in the background so visitors stay on the page.
