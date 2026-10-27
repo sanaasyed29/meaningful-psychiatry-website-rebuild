@@ -62,32 +62,6 @@
       ]
     },
     {
-      "label": "Mind Matters",
-      "shortLabel": "Mind Matters",
-      "children": [
-        {
-          "label": "Blog",
-          "url": "/blog/"
-        },
-        {
-          "label": "Unequal Parts Podcast",
-          "url": "/podcast/"
-        }
-      ]
-    },
-    {
-      "label": "Contact",
-      "url": "/contact-us/"
-    },
-    {
-      "label": "For Patients",
-      "url": "/patients/"
-    },
-    {
-      "label": "Help",
-      "url": "/help-faqs/"
-    },
-    {
       "label": "Insurance & Mental Health Care in Washington",
       "children": [
         {
@@ -104,6 +78,32 @@
         }
       ],
       "shortLabel": "Insurance"
+    },
+    {
+      "label": "For Patients",
+      "url": "/patients/"
+    },
+    {
+      "label": "Help",
+      "url": "/help-faqs/"
+    },
+    {
+      "label": "Mind Matters",
+      "shortLabel": "Mind Matters",
+      "children": [
+        {
+          "label": "Blog",
+          "url": "/blog/"
+        },
+        {
+          "label": "Unequal Parts Podcast",
+          "url": "/podcast/"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "url": "/contact-us/"
     }
   ],
   "footerNav": [
