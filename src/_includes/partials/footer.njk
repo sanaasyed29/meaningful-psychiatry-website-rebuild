@@ -49,6 +49,11 @@
   <div class="container footer-bottom">
     <p>&copy; {{ "now" | currentYear }} {{ site.name }}. All rights reserved.</p>
     <p>If you are in crisis, call or text 988. For emergencies, call 911.</p>
+    <ul class="footer-legal">
+      {%- for l in site.legalLinks %}
+      <li><a href="{{ l.url }}"{% if l.url == page.url %} aria-current="page"{% endif %}>{{ l.label }}</a></li>
+      {%- endfor %}
+    </ul>
   </div>
 </div>
 </footer>

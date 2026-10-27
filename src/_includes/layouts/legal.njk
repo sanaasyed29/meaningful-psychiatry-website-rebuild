@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow eyebrow--light">{{ eyebrow or "Patient notices" }}</p>
+    <h1 class="page-title">{{ title }}</h1>
+    {%- if effective %}<p class="page-hero__sub">Effective {{ effective }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container container--narrow">
+    <article class="post__content legal__content">
+      {{ content | safe }}
+    </article>
+    <nav class="legal__nav" aria-label="Patient notices and policies">
+      <p class="eyebrow">Patient notices &amp; policies</p>
+      <ul>
+        {%- for l in site.legalLinks %}{% if l.url != page.url %}
+        <li><a href="{{ l.url }}">{{ l.label }}</a></li>
+        {%- endif %}{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</section>

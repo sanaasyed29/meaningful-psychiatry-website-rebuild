@@ -686,3 +686,15 @@ ul, ol { padding-left: 1.2em; }
 .reviews-band .carousel__slide footer { margin-top: 10px; font-size: 14px; color: var(--muted); }
 .reviews-band .carousel__controls { margin-top: 14px; gap: 14px; }
 .reviews-band .carousel__btn { width: 36px; height: 36px; font-size: 13px; }
+
+/* ---------- Legal pages & footer links ---------- */
+.footer-legal { list-style: none; margin: 0; padding: 0; width: 100%; display: flex; flex-wrap: wrap; gap: 6px 20px; }
+.footer-legal a { color: inherit; opacity: .85; }
+.footer-legal a:hover { opacity: 1; color: var(--gold); }
+.legal__content h2 { margin-top: 1.6em; font-size: 26px; }
+.legal__content li { margin-bottom: 10px; }
+.legal__nav { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); }
+.legal__nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.legal__nav a { display: inline-block; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-weight: 600; }
+.legal__nav a:hover { border-color: var(--gold); }
+.legal__content { overflow-wrap: anywhere; }
