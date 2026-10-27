@@ -23,6 +23,7 @@ layout: layouts/base.njk
     </div>
     <nav class="landing__related" aria-label="More Eastside care topics">
       <p class="eyebrow">More care on the Eastside</p>
+      <p>Not on the Eastside? <a href="/areas-we-serve/">We see patients anywhere in Washington</a>.</p>
       <ul>
         {%- for p in collections.eastside | sort(false, false, "data.order") %}{% if p.url != page.url %}
         <li><a href="{{ p.url }}">{{ p.data.navLabel }}</a></li>

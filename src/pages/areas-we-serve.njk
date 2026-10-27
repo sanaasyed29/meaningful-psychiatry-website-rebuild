@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+title: Areas We Serve
+seoTitle: "Online Psychiatrist Serving All of Washington State | Meaningful Psychiatry"
+permalink: /areas-we-serve/
+description: "Meaningful Psychiatry is based in Sammamish on the Eastside and sees patients by secure video anywhere in Washington, from Seattle and Bellevue to Spokane, Tacoma, Vancouver and Yakima."
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow eyebrow--light">Areas we serve</p>
+    <h1 class="page-title">Rooted on the Eastside. Here for all of Washington.</h1>
+    <p class="page-hero__sub">Our practice is based in Sammamish, and because every visit is by secure video, we can see you anywhere in Washington State.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% include "partials/wa-map.njk" %}
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="areas-grid">
+      <div>
+        <h2>Where are you?</h2>
+        <p>You just need to be physically located in Washington at the time of your appointment. Join from home, work, or your car (parked, please!). No commute, no waiting room, and no driving across the mountains or the bridge.</p>
+        <p class="areas-note">Don't see your town on the map? If you're in Washington, we can still see you.</p>
+        <a href="{{ booking.general }}" class="btn btn--lg">Book an Appointment</a>
+      </div>
+      <div>
+        <h3>On the Eastside &amp; in Seattle</h3>
+        <p class="areas-cities">Sammamish · Bellevue · Kirkland · Redmond · Issaquah · Renton · Mercer Island · Newcastle · Seattle</p>
+        <h3>Across Washington</h3>
+        <p class="areas-cities">Bellingham · Mount Vernon · Everett · Port Angeles · Bremerton · Tacoma · Olympia · Aberdeen · Longview · Vancouver · Wenatchee · Ellensburg · Yakima · Moses Lake · Tri-Cities · Walla Walla · Spokane · Pullman, and everywhere in between</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container center">
+    <p class="eyebrow">Local guides</p>
+    <h2>Care for Eastside neighbors</h2>
+    <nav class="quick-links" aria-label="Eastside care topics">
+      {%- for p in collections.eastside | sort(false, false, "data.order") %}
+      <a href="{{ p.url }}">{{ p.data.navLabel }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+</section>

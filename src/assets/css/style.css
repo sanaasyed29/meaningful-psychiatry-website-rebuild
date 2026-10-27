@@ -640,3 +640,33 @@ ul, ol { padding-left: 1.2em; }
 .ins-guides ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .ins-guides li a { display: inline-block; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; }
 @media (max-width: 760px) { .ins-compare { grid-template-columns: 1fr; } .ins-card { padding: 28px 22px; } }
+
+/* ---------- Washington service map ---------- */
+.wa-map { display: grid; grid-template-columns: 2fr 1fr; gap: 28px; align-items: start; }
+.wa-map figure { margin: 0; min-width: 0; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; }
+.wa-map__svg { display: block; width: 100%; height: auto; overflow: visible; }
+.wa-map__zoom .wa-map__svg { overflow: hidden; border-radius: 8px; background: #f3f6fa; }
+.wa-map__main .wa-map__svg { overflow: visible; }
+.wa-map figcaption { margin-top: 12px; font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.wa-map__zoom-label { margin: 0 0 10px; font-weight: 700; color: var(--ink); }
+.wa-shape { fill: var(--gold-soft); stroke: var(--gold-text); stroke-width: 1.2; stroke-linejoin: round; }
+.wa-map__zoom .wa-shape { stroke-width: 1.2; }
+.wa-inset-box { fill: none; stroke: var(--navy); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.wa-pin { cursor: pointer; outline: none; }
+.wa-pin__hit { fill: transparent; }
+.wa-pin__dot { fill: var(--navy); stroke: var(--white); stroke-width: 1.5; vector-effect: non-scaling-stroke; transition: fill .15s; }
+.wa-pin--home .wa-pin__dot { fill: #2e9e63; }
+.wa-pin:hover .wa-pin__dot, .wa-pin:focus .wa-pin__dot, .wa-pin:focus-visible .wa-pin__dot { fill: var(--gold-text); }
+.wa-pin__tip { opacity: 0; pointer-events: none; transition: opacity .15s; }
+.wa-pin__tip rect { fill: var(--navy); }
+.wa-pin__tip text { fill: var(--white); text-anchor: middle; font-family: var(--font-body, Roboto, sans-serif); font-weight: 600; }
+.wa-pin:hover .wa-pin__tip, .wa-pin:focus .wa-pin__tip, .wa-pin:focus-visible .wa-pin__tip { opacity: 1; }
+.wa-pin:hover, .wa-pin:focus { position: relative; }
+.wa-legend { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #2e9e63; }
+.areas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.areas-grid h3 { margin: 0 0 8px; }
+.areas-cities { line-height: 1.9; margin-bottom: 24px; }
+.areas-note { font-weight: 600; color: var(--ink); }
+@media (max-width: 900px) { .wa-map, .areas-grid { grid-template-columns: 1fr; gap: 24px; } .wa-map figure { padding: 14px; } }
+.wa-map__status { margin: 12px 0 0; min-height: 1.6em; color: var(--ink); }
+.wa-map__status i { color: var(--gold-text); }

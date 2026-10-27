@@ -102,3 +102,17 @@ document.querySelectorAll("form[data-ajax-form]").forEach((form) => {
     }
   });
 });
+
+// Washington map: name the pin being hovered or tapped (helps on small screens)
+document.querySelectorAll(".wa-map").forEach((map) => {
+  const status = map.querySelector(".wa-map__status");
+  if (!status) return;
+  const show = (pin) => {
+    const name = pin.getAttribute("aria-label");
+    status.innerHTML = `<i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>${name}</strong>: we see patients here by secure video.`;
+  };
+  map.querySelectorAll(".wa-pin").forEach((pin) => {
+    pin.addEventListener("mouseenter", () => show(pin));
+    pin.addEventListener("focus", () => show(pin));
+  });
+});

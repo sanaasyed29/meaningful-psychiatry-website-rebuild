@@ -40,9 +40,13 @@
       "shortLabel": "About"
     },
     {
-      "label": "Eastside Care",
-      "shortLabel": "Eastside Care",
+      "label": "Areas We Serve",
+      "shortLabel": "Areas We Serve",
       "children": [
+        {
+          "label": "Washington Service Map",
+          "url": "/areas-we-serve/"
+        },
         {
           "label": "Transferring Your Care",
           "url": "/transfer-psychiatric-care-eastside/"
@@ -122,6 +126,10 @@
     {
       "label": "Services",
       "url": "/our-services/"
+    },
+    {
+      "label": "Areas We Serve",
+      "url": "/areas-we-serve/"
     },
     {
       "label": "Blog",
