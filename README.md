@@ -77,5 +77,10 @@ so no health information passes through the website. The booking panel lives in
 `qureshiBookingUrl` in `site.json` and her "Call or text to schedule" buttons become
 "Book with Dr. Qureshi" buttons automatically.
 
+To offer a request form instead (a Google Form created in the practice's Google Workspace
+account, which is covered by the practice's HIPAA BAA), paste its link into
+`inquiryFormUrl`. Her buttons then read "Request an Appointment" and the booking panel
+mentions the form. A booking link takes priority over the form when both are set.
+
 The only form left is the newsletter sign-up (email address only), handled by Netlify
 Forms under the form name `newsletter`.

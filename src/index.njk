@@ -96,7 +96,7 @@ bodyClass: home
           <p class="provider__creds"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> WA license {{ site.credentials.qureshiLicense | replace("Washington ", "") }} · <a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener noreferrer">Verified on Psychology Today</a></p>
           <p>Trained at the University of Liverpool School of Medicine and the University of Washington Psychiatry Residency Program, Dr. Qureshi weaves together mind, body, and spirit, with a focus on time-limited, personalized medication regimens and psychotherapy.</p>
           <div class="btn-row">
-            {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% else %}<a href="{{ site.phoneLink }}" class="btn">Call or Text to Schedule</a>{% endif %}
+            {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% elif site.inquiryFormUrl %}<a href="{{ site.inquiryFormUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Request an appointment with Dr. Qureshi (opens our secure request form in a new tab)">Request an Appointment</a>{% else %}<a href="{{ site.phoneLink }}" class="btn">Call or Text to Schedule</a>{% endif %}
             <a href="/about-us/#badeea" class="btn btn--outline">Read Bio</a>
           </div>
         </div>

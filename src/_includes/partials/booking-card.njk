@@ -15,10 +15,14 @@
       <strong>Dr. Badeea Qureshi, MD</strong>
       <span>Private pay · sliding scale available</span>
     </div>
-    {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% else %}<a href="{{ site.phoneLink }}" class="btn btn--outline"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or text to schedule</a>{% endif %}
+    {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% elif site.inquiryFormUrl %}<a href="{{ site.inquiryFormUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Request an appointment with Dr. Qureshi (opens our secure request form in a new tab)">Request an appointment</a>{% else %}<a href="{{ site.phoneLink }}" class="btn btn--outline"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or text to schedule</a>{% endif %}
   </div>
 
+  {%- if site.inquiryFormUrl %}
+  <p class="booking-card__help">Not sure which provider is right for you, or prefer not to call? <a href="{{ site.inquiryFormUrl }}" target="_blank" rel="noopener noreferrer">Fill out our secure request form</a> or call or text <a href="{{ site.phoneLink }}">{{ site.phone }}</a>, and our care coordinator will reach out.</p>
+  {%- else %}
   <p class="booking-card__help">Not sure which provider is right for you? Call or text <a href="{{ site.phoneLink }}">{{ site.phone }}</a> and our care coordinator will help you get started.</p>
+  {%- endif %}
   <p class="booking-card__help">Already a patient? <a href="{{ site.portalUrl }}" target="_blank" rel="noopener noreferrer">Log in to the patient portal</a> to message your provider.</p>
 
   <p class="privacy-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> <span><strong>Your privacy matters.</strong> Please don't send medical details by email or text. Your health history is collected securely during intake in Osmind.</span></p>
