@@ -26,7 +26,7 @@
   </div>
 
   {%- if site.inquiryFormUrl %}
-  <p class="booking-card__help">Not sure which provider is right for you, or prefer not to call? <a href="{{ site.inquiryFormUrl }}" target="_blank" rel="noopener noreferrer">Fill out our secure request form</a> or call or text <a href="{{ site.phoneLink }}">{{ site.phone }}</a>, and our care coordinator will reach out.</p>
+  <p class="booking-card__help">Not sure which provider is right for you, or prefer not to call? <a href="{{ '/contact-us/#request-form' if site.inquiryFormEmbedUrl else site.inquiryFormUrl }}"{% if not site.inquiryFormEmbedUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Fill out our secure request form</a> or call or text <a href="{{ site.phoneLink }}">{{ site.phone }}</a>, and our care coordinator will reach out.</p>
   {%- else %}
   <p class="booking-card__help">Not sure which provider is right for you? Call or text <a href="{{ site.phoneLink }}">{{ site.phone }}</a> and our care coordinator will help you get started.</p>
   {%- endif %}

@@ -139,7 +139,7 @@
     "qureshiLicense": "Washington MD61485578"
   },
   "qureshiBookingUrl": "https://care.osmind.org/appointments/embed_appt?dietitian_id=15452809",
-  "inquiryFormUrl": "",
+  "inquiryFormUrl": "https://forms.gle/5ncY591SGEfruXpP9",
   "masterBookingUrl": "",
-  "inquiryFormEmbedUrl": ""
+  "inquiryFormEmbedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf4njgmmSwuaqx1090Q6m3woHcGDldJ4SZCEGar9poZpvCV2A/viewform?embedded=true"
 }
