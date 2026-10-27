@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+<section class="page-hero">
+  <div class="container">
+    {%- if eyebrow %}<p class="eyebrow eyebrow--light">{{ eyebrow }}</p>{% endif %}
+    <h1 class="page-title">{{ title }}</h1>
+    <div class="btn-row btn-row--center">
+      <a href="{{ booking.general }}" class="btn btn--lg">{{ ctaLabel or "Book an Appointment" }}</a>
+      <a href="{{ site.phoneLink }}" class="btn btn--lg btn--ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text {{ site.phone }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container container--narrow">
+    <article class="post__content landing__content">
+      {{ content | safe }}
+    </article>
+    <div class="landing__cta">
+      <p>{{ ctaText }}</p>
+      <a href="{{ booking.general }}" class="btn btn--lg">{{ ctaLabel or "Book an Appointment" }}</a>
+    </div>
+    <nav class="landing__related" aria-label="More Eastside care topics">
+      <p class="eyebrow">More care on the Eastside</p>
+      <ul>
+        {%- for p in collections.eastside | sort(false, false, "data.order") %}{% if p.url != page.url %}
+        <li><a href="{{ p.url }}">{{ p.data.navLabel }}</a></li>
+        {%- endif %}{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</section>
+
+{% include "partials/contact-section.njk" %}

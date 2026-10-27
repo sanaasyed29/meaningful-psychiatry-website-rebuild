@@ -40,3 +40,15 @@ description: "Dr. Badeea Qureshi at Meaningful Psychiatry. Personalized psychiat
   </div>
 </section>
 
+
+<section class="section section--tight section--light">
+  <div class="container center">
+    <p class="eyebrow">Serving Bellevue, Kirkland, Issaquah, Mercer Island, Newcastle &amp; Renton</p>
+    <h2>Care on the Eastside</h2>
+    <nav class="quick-links" aria-label="Eastside care topics">
+      {%- for p in collections.eastside | sort(false, false, "data.order") %}
+      <a href="{{ p.url }}">{{ p.data.navLabel }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+</section>

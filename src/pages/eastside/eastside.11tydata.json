@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/landing.njk",
+  "tags": ["eastside"]
+}

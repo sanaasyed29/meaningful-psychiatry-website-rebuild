@@ -5,7 +5,7 @@ const site = JSON.parse(fs.readFileSync(new URL("./site.json", import.meta.url))
 
 export default {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
+  "@type": "MedicalClinic",
   "@id": `${site.url}/#practice`,
   name: site.name,
   url: site.url,
@@ -15,7 +15,16 @@ export default {
   email: site.email,
   medicalSpecialty: "Psychiatric",
   description: "Online psychiatry for children, teens, and adults across Washington State. Medication management and psychotherapy by telehealth.",
-  areaServed: { "@type": "State", name: "Washington" },
+  isAcceptingNewPatients: true,
+  // Washington-wide telehealth, with the Eastside cities we most often serve named explicitly.
+  areaServed: [
+    { "@type": "State", name: "Washington", sameAs: "https://en.wikipedia.org/wiki/Washington_(state)" },
+    ...["Bellevue", "Kirkland", "Issaquah", "Mercer Island", "Newcastle", "Renton"].map((name) => ({
+      "@type": "City",
+      name,
+      sameAs: `https://en.wikipedia.org/wiki/${name.replace(/ /g, "_")},_Washington`,
+    })),
+  ],
   availableService: [
     { "@type": "MedicalTherapy", name: "Medication management" },
     { "@type": "MedicalTherapy", name: "Psychotherapy" },
