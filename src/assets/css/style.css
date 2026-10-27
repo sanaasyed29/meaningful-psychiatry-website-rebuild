@@ -4,10 +4,17 @@
    there and the whole site updates.
    ========================================================== */
 :root {
-  --navy: #232845;
-  --navy-800: #1c2039;
-  --navy-700: #2e3458;
-  --navy-600: #3b426b;
+  --navy: #17184a;
+  --navy-800: #0f1034;
+  --navy-700: #23286a;
+  --navy-600: #333b85;
+  /* Ombre from the logo: deep indigo with a blue glow top-right and a violet glow bottom-right */
+  --ombre-blue: #1d3478;
+  --ombre-violet: #4a2370;
+  --ombre:
+    radial-gradient(ellipse 55% 70% at 88% 0%, rgba(32, 62, 150, 0.85), transparent 70%),
+    radial-gradient(ellipse 50% 65% at 72% 100%, rgba(86, 38, 128, 0.8), transparent 70%),
+    linear-gradient(160deg, #22216a 0%, #15163f 50%, #0e0f30 100%);
   --gold: #ceb364;
   --gold-600: #b99c49;
   --gold-text: #8a6d1f;      /* gold dark enough to read on light backgrounds */
@@ -61,7 +68,7 @@ ul, ol { padding-left: 1.2em; }
 .section { padding: 96px 0; }
 .section--tight { padding: 64px 0 88px; }
 .section--light { background: var(--cream); }
-.section--navy { background: var(--navy); color: rgba(255, 255, 255, 0.82); }
+.section--navy { background: var(--ombre); color: rgba(255, 255, 255, 0.82); }
 .section--navy h2, .section--navy h3 { color: var(--white); }
 
 .section-head { text-align: center; max-width: 760px; margin: 0 auto 56px; }
@@ -112,7 +119,7 @@ ul, ol { padding-left: 1.2em; }
 .topbar__crisis a { color: var(--white); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
 .topbar__contact { display: flex; gap: 24px; }
 
-.site-header { background: var(--navy); position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line-dark); }
+.site-header { background: linear-gradient(90deg, #1b1a55, #141640 55%, #182a62); position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line-dark); }
 .site-header__inner { display: flex; align-items: center; gap: 24px; min-height: 76px; }
 .logo { margin-right: auto; }
 .logo img { width: 96px; }
@@ -140,7 +147,7 @@ ul, ol { padding-left: 1.2em; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); margin: 5px 0; border-radius: 2px; transition: transform 0.2s, opacity 0.2s; }
 
 /* ---------- Hero ---------- */
-.hero { background: radial-gradient(1200px 600px at 85% 10%, var(--navy-700), var(--navy) 60%); color: rgba(255, 255, 255, 0.85); padding: 80px 0 96px; overflow: hidden; }
+.hero { background: var(--ombre); color: rgba(255, 255, 255, 0.85); padding: 80px 0 96px; overflow: hidden; }
 .hero__inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
 .hero h1 { color: var(--white); margin-bottom: 28px; }
 .hero__facts { list-style: none; padding: 0; margin: 0 0 36px; display: grid; grid-template-columns: repeat(2, auto); gap: 12px 28px; justify-content: start; }
@@ -303,9 +310,9 @@ ul, ol { padding-left: 1.2em; }
 .footer-cta p { margin: 0; color: var(--navy); }
 .footer-cta .btn { background: var(--navy); border-color: var(--navy); color: var(--white); }
 .footer-cta .btn:hover { background: var(--navy-800); box-shadow: none; }
-.footer-cta .btn--ghost { background: transparent; color: var(--navy); border-color: rgba(35, 40, 69, 0.4); }
+.footer-cta .btn--ghost { background: transparent; color: var(--navy); border-color: rgba(23, 24, 74, 0.4); }
 .footer-cta .btn--ghost:hover { background: var(--navy); color: var(--white); }
-.site-footer { background: var(--navy); color: rgba(255, 255, 255, 0.7); font-size: 15.5px; }
+.site-footer { background: var(--ombre); color: rgba(255, 255, 255, 0.7); font-size: 15.5px; }
 .footer-main { display: grid; grid-template-columns: 1.2fr 0.9fr 1.5fr 1.3fr; gap: 40px; padding-top: 72px; padding-bottom: 56px; }
 .footer-logo { width: 110px; margin-bottom: 18px; }
 .footer-col h3 { font-family: var(--font-body); font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--white); margin-bottom: 18px; }
@@ -327,7 +334,7 @@ ul, ol { padding-left: 1.2em; }
 .footer-bottom p { margin: 0; }
 
 /* ---------- Inner page banner ---------- */
-.page-hero { background: radial-gradient(900px 400px at 80% 0%, var(--navy-700), var(--navy) 65%); color: rgba(255, 255, 255, 0.8); text-align: center; padding: 72px 0 76px; }
+.page-hero { background: var(--ombre); color: rgba(255, 255, 255, 0.8); text-align: center; padding: 72px 0 76px; }
 .page-title { color: var(--white); margin: 0 auto; max-width: 900px; }
 .page-hero__sub { font-size: 18px; max-width: 640px; margin: 18px auto 0; }
 .page-hero .btn-row { margin-top: 28px; }
