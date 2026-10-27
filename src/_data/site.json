@@ -140,5 +140,6 @@
   },
   "qureshiBookingUrl": "https://care.osmind.org/appointments/embed_appt?dietitian_id=15452809",
   "inquiryFormUrl": "",
-  "masterBookingUrl": ""
+  "masterBookingUrl": "",
+  "inquiryFormEmbedUrl": ""
 }
