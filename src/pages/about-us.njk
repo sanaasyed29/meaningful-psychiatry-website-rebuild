@@ -43,7 +43,7 @@ description: "Dr. Badeea Qureshi, psychiatrist in Washington State, combines pro
           <div><dt>Payment</dt><dd>Private pay · sliding scale · FSA/HSA · superbills</dd></div>
           <div><dt>Find Dr. Qureshi on</dt><dd><a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener noreferrer">Psychology Today</a> · <a href="{{ site.profiles.webmd }}" target="_blank" rel="noopener noreferrer">WebMD</a></dd></div>
         </dl>
-        <a href="{{ site.phoneLink }}" class="btn btn--block"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text to Schedule</a>
+        {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn btn--block" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% else %}<a href="{{ site.phoneLink }}" class="btn btn--block"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text to Schedule</a>{% endif %}
       </div>
       <div class="member__bio">
         <p class="member__lead">Dr. Badeea Qureshi is a visionary psychiatrist whose practice weaves together the intricate threads of mind, body, and spirit with profound sensitivity and insight.</p>

@@ -73,7 +73,9 @@ Netlify or Cloudflare Pages:
 There is no contact form: patients book and complete intake in Osmind (HIPAA-compliant),
 so no health information passes through the website. The booking panel lives in
 `src/_includes/partials/booking-card.njk`; links come from `bookingUrl`, `portalUrl` and
-`phone` in `site.json`.
+`phone` in `site.json`. When Dr. Qureshi has her own Osmind booking link, paste it into
+`qureshiBookingUrl` in `site.json` and her "Call or text to schedule" buttons become
+"Book with Dr. Qureshi" buttons automatically.
 
 The only form left is the newsletter sign-up (email address only), handled by Netlify
 Forms under the form name `newsletter`.

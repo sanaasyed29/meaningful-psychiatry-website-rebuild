@@ -15,7 +15,7 @@
       <strong>Dr. Badeea Qureshi, MD</strong>
       <span>Private pay · sliding scale available</span>
     </div>
-    <a href="{{ site.phoneLink }}" class="btn btn--outline"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or text to schedule</a>
+    {% if site.qureshiBookingUrl %}<a href="{{ site.qureshiBookingUrl }}" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Book with Dr. Qureshi (opens our secure Osmind scheduling page in a new tab)">Book with Dr. Qureshi</a>{% else %}<a href="{{ site.phoneLink }}" class="btn btn--outline"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or text to schedule</a>{% endif %}
   </div>
 
   <p class="booking-card__help">Not sure which provider is right for you? Call or text <a href="{{ site.phoneLink }}">{{ site.phone }}</a> and our care coordinator will help you get started.</p>

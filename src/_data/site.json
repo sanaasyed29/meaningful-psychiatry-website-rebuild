@@ -137,5 +137,6 @@
   },
   "credentials": {
     "qureshiLicense": "Washington MD61485578"
-  }
+  },
+  "qureshiBookingUrl": ""
 }
