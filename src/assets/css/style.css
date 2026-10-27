@@ -649,8 +649,10 @@ ul, ol { padding-left: 1.2em; }
 .wa-map__main .wa-map__svg { overflow: visible; }
 .wa-map figcaption { margin-top: 12px; font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
 .wa-map__zoom-label { margin: 0 0 10px; font-weight: 700; color: var(--ink); }
-.wa-shape { fill: var(--gold-soft); stroke: var(--gold-text); stroke-width: 1.2; stroke-linejoin: round; }
-.wa-map__zoom .wa-shape { stroke-width: 1.2; }
+.wa-county { fill: var(--gold-soft); stroke: #fff; stroke-width: 1; stroke-linejoin: round; vector-effect: non-scaling-stroke; transition: fill .15s; cursor: pointer; }
+.wa-map__main .wa-county:hover, .wa-county.is-active { fill: #e9d9a6; }
+.wa-outline { fill: none; stroke: var(--gold-text); stroke-width: 1.2; stroke-linejoin: round; vector-effect: non-scaling-stroke; pointer-events: none; }
+.wa-base-copy { pointer-events: none; }
 .wa-inset-box { fill: none; stroke: var(--navy); stroke-width: 1.5; stroke-dasharray: 4 3; }
 .wa-pin { cursor: pointer; outline: none; }
 .wa-pin__hit { fill: transparent; }
@@ -670,3 +672,5 @@ ul, ol { padding-left: 1.2em; }
 @media (max-width: 900px) { .wa-map, .areas-grid { grid-template-columns: 1fr; gap: 24px; } .wa-map figure { padding: 14px; } }
 .wa-map__status { margin: 12px 0 0; min-height: 1.6em; color: var(--ink); }
 .wa-map__status i { color: var(--gold-text); }
+.ins-disclaimer { margin: 32px 0 0; color: var(--muted); font-size: 15px; }
+.ins-guide-list__label { margin: 14px 0 0; font-weight: 700; color: var(--gold-text); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }

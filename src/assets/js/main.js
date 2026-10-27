@@ -108,11 +108,23 @@ document.querySelectorAll(".wa-map").forEach((map) => {
   const status = map.querySelector(".wa-map__status");
   if (!status) return;
   const show = (pin) => {
+    if (active) { active.classList.remove("is-active"); active = null; }
     const name = pin.getAttribute("aria-label");
     status.innerHTML = `<i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>${name}</strong>: we see patients here by secure video.`;
   };
   map.querySelectorAll(".wa-pin").forEach((pin) => {
     pin.addEventListener("mouseenter", () => show(pin));
     pin.addEventListener("focus", () => show(pin));
+  });
+  let active = null;
+  map.querySelectorAll(".wa-map__main .wa-county").forEach((county) => {
+    const pick = () => {
+      if (active) active.classList.remove("is-active");
+      active = county;
+      county.classList.add("is-active");
+      status.innerHTML = `<i class="fa-solid fa-map" aria-hidden="true"></i> <strong>${county.dataset.county}</strong>: we see patients here by secure video.`;
+    };
+    county.addEventListener("mouseenter", pick);
+    county.addEventListener("click", pick);
   });
 });

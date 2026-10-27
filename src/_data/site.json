@@ -73,16 +73,20 @@
           "url": "/insurance/"
         },
         {
-          "label": "Aetna Mental Health Provider in Washington",
+          "label": "Aetna",
           "url": "/aetna-mental-health-provider-in-washington/"
         },
         {
-          "label": "How Much Does a Mental Health Provider Cost With Aetna?",
-          "url": "/aetna-mental-health-provider-cost/"
+          "label": "Ambetter",
+          "url": "/ambetter-psychiatrist-washington/"
         },
         {
-          "label": "Online Psychiatric Care With Aetna in Washington: What to Expect",
-          "url": "/online-psychiatric-care-aetna-washington/"
+          "label": "Medicare",
+          "url": "/medicare-psychiatric-provider-washington/"
+        },
+        {
+          "label": "Apple Health (Medicaid)",
+          "url": "/apple-health-medicaid-psychiatrist-washington/"
         }
       ],
       "shortLabel": "Insurance"
@@ -180,7 +184,8 @@
     "webmd": "https://doctor.webmd.com/doctor/badeea-qureshi-1e984613-08bc-4586-ae7c-3a141afd21b9-overview"
   },
   "credentials": {
-    "qureshiLicense": "Washington MD61485578"
+    "qureshiLicense": "Washington MD61485578",
+    "agbotseLicense": "Washington ARNP.AP.70090240-NP"
   },
   "qureshiBookingUrl": "https://care.osmind.org/appointments/embed_appt?dietitian_id=15452809",
   "inquiryFormUrl": "https://forms.gle/5ncY591SGEfruXpP9",

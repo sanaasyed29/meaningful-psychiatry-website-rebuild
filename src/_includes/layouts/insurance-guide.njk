@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow eyebrow--light">{{ eyebrow }}</p>
+    <h1 class="page-title">{{ title }}</h1>
+    {%- if lead %}<p class="page-hero__sub">{{ lead }}</p>{% endif %}
+    <div class="btn-row btn-row--center">
+      {% set p = booking.francis %}{% set btnClass = "btn btn--lg" %}{% include "partials/book-button.njk" %}
+      <a href="{{ site.phoneLink }}" class="btn btn--lg btn--ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text {{ site.phone }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container container--narrow">
+    {% include "partials/insurance-notice.njk" %}
+    <article class="post__content landing__content">
+      {{ content | safe }}
+    </article>
+    <p class="ins-disclaimer"><em>Coverage varies by plan. {{ planName }} makes the final decision about your benefits and what you owe, so we recommend calling the member services number on your card before your first visit.</em></p>
+    {% include "partials/insurance-guides.njk" %}
+  </div>
+</section>
+
+{% include "partials/contact-section.njk" %}

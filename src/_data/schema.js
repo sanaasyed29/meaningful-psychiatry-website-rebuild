@@ -32,6 +32,6 @@ export default {
   sameAs: [site.social.facebook, site.social.instagram, site.profiles.psychologyToday, site.profiles.webmd],
   employee: [
     { "@type": "Physician", name: "Badeea Qureshi, MD", medicalSpecialty: "Psychiatric", sameAs: [site.profiles.psychologyToday, site.profiles.webmd] },
-    { "@type": "Person", name: "Francis Agbotse, PMHNP", jobTitle: "Psychiatric Mental Health Nurse Practitioner" },
+    { "@type": "Person", name: "Francis Agbotse, PMHNP", jobTitle: "Psychiatric Mental Health Nurse Practitioner", hasCredential: { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: site.credentials.agbotseLicense } },
   ],
 };

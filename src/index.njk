@@ -106,7 +106,8 @@ bodyClass: home
         <div class="provider__body">
           <h3>Francis Agbotse, PMHNP</h3>
           <p class="provider__role">Psychiatric Mental Health Nurse Practitioner · Aetna, Ambetter, Medicare &amp; Medicaid</p>
-          <p>With over a decade of experience in psychiatry, Francis is well equipped to work with complex psychiatric presentations, multiple diagnoses, and complicated medication regimens, in a collaborative, patient-centered way.</p>
+          <p class="provider__creds"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> WA license {{ site.credentials.agbotseLicense | replace("Washington ", "") }}</p>
+          <p>Trained at Windsor School of Medicine in Saint Kitts and the University of Alabama at Birmingham, with over a decade of experience in psychiatry, Francis is well equipped to work with complex psychiatric presentations, multiple diagnoses, and complicated medication regimens, in a collaborative, patient-centered way.</p>
           <div class="btn-row">
             {% set p = booking.francis %}{% set btnClass = "btn" %}{% include "partials/book-button.njk" %}
             <a href="/about-us/#francis" class="btn btn--outline">Read Bio</a>
