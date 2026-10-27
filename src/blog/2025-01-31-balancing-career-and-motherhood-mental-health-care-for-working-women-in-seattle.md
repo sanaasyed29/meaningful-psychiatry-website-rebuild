@@ -7,7 +7,7 @@ categories: ["Psychotherapy"]
 tags: ["post", "bellevue", "careers", "compassionate", "female psychiatrist", "modern working women", "Nonjudgmental", "Seattle", "Washington state"]
 excerpt: "Modern working women are navigating a delicate balancing act: excelling in their careers, raising children, managing relationships, and maintaining beauty standards—all while carrying an invisible mental load of unpaid labor and societal expectations. This unrelenting pressure can significantly impact mental health, making it vital to find the right support."
 description: "The modern woman is expected to thrive in her career, be a dedicated mother, maintain relationships, and still find time for self-care—all without breaking a sweat."
-seoTitle: "Mental Health Care for Working Women in Seattle"
+seoTitle: "Balancing Career and Motherhood: Mental Health Care in Seattle"
 ---
 
 ## Balancing Career and Motherhood: Mental Health Care for Working Women in Seattle

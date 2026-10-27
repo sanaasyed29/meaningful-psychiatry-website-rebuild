@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- set pageTitle = seoTitle or (title + " - " + site.name if title else site.name) %}
+  {#- Pages without a description fall back to the start of their own text #}
+  {%- set description = description or (content | autoDescription) %}
   <title>{{ pageTitle }}</title>
   {%- if description %}
   <meta name="description" content="{{ description }}">

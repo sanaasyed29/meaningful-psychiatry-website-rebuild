@@ -76,4 +76,4 @@ To make a request described in this notice, or if you have questions, contact ou
 - **Email:** admin@meaningfulpsychiatry.com
 - **Call or text:** 425-272-5931
 
-If you feel we have violated your rights, you can complain to us using the contact information above. You can also file a complaint with the U.S. Department of Health and Human Services Office for Civil Rights by sending a letter to 200 Independence Avenue, S.W., Washington, D.C. 20201, calling 1-877-696-6775, or visiting [www.hhs.gov/ocr/privacy/hipaa/complaints](https://www.hhs.gov/ocr/privacy/hipaa/complaints/).
+If you feel we have violated your rights, you can complain to us using the contact information above. You can also file a complaint with the U.S. Department of Health and Human Services Office for Civil Rights by sending a letter to 200 Independence Avenue, S.W., Washington, D.C. 20201, calling 1-877-696-6775, or visiting [www.hhs.gov/hipaa/filing-a-complaint](https://www.hhs.gov/hipaa/filing-a-complaint/index.html).

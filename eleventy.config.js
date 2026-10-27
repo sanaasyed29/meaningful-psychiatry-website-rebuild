@@ -49,6 +49,14 @@ export default function (eleventyConfig) {
     new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", timeZone: "UTC" })
   );
   eleventyConfig.addFilter("head", (arr, n) => (arr || []).slice(0, n));
+  // Meta description fallback: the first ~155 characters of a page's main text block
+  eleventyConfig.addFilter("autoDescription", (html) => {
+    const m = /class="post__content[^"]*"[^>]*>([\s\S]*)/.exec(html || "");
+    if (!m) return "";
+    const text = m[1].replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+    if (text.length <= 155) return text;
+    return text.slice(0, 155).replace(/\s+\S*$/, "") + "…";
+  });
   eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
   eleventyConfig.addFilter("rfcDate", (d) => new Date(d).toUTCString());
   eleventyConfig.addFilter("isoDate", (d) => new Date(d).toISOString().slice(0, 10));

@@ -630,6 +630,7 @@ ul, ol { padding-left: 1.2em; }
 .ins-card > .btn { margin-top: auto; }
 .ins-note { max-width: 720px; margin: 28px auto 0; color: var(--muted, #555); }
 .ins-note a, .ins-notice a, .ins-guides a { color: var(--gold-text); font-weight: 600; }
+.ins-notice a { color: #1b6b43; text-decoration: underline; }
 .ins-guide-list { display: grid; gap: 14px; }
 .ins-guide { display: block; padding: 20px 24px; border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); text-decoration: none; transition: border-color .2s, box-shadow .2s; }
 .ins-guide:hover { border-color: var(--gold); box-shadow: var(--shadow); }
