@@ -62,12 +62,18 @@
       ]
     },
     {
-      "label": "Blog",
-      "url": "/blog/"
-    },
-    {
-      "label": "Podcast",
-      "url": "/podcast/"
+      "label": "Blog & Podcast",
+      "shortLabel": "Blog & Podcast",
+      "children": [
+        {
+          "label": "Blog",
+          "url": "/blog/"
+        },
+        {
+          "label": "Unequal Parts Podcast",
+          "url": "/podcast/"
+        }
+      ]
     },
     {
       "label": "Contact",
