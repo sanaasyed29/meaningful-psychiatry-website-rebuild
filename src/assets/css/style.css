@@ -98,6 +98,8 @@ ul, ol { padding-left: 1.2em; }
 .btn--outline:hover { background: var(--ink); color: var(--white); border-color: var(--ink); box-shadow: none; }
 .btn--ghost { background: transparent; color: var(--white); border-color: rgba(255, 255, 255, 0.35); }
 .btn--ghost:hover { background: var(--white); color: var(--navy); border-color: var(--white); box-shadow: none; }
+.btn--light { background: var(--white); color: var(--navy); border-color: var(--white); }
+.btn--light:hover { background: var(--cream); color: var(--navy); border-color: var(--cream); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 14px; }
 .btn-row--center { justify-content: center; }
 
