@@ -72,7 +72,9 @@ Netlify or Cloudflare Pages:
 
 All booking buttons are decided in `src/_data/booking.js` from the links in `site.json`.
 `masterBookingUrl` is the practice-wide Osmind scheduling page; when it is set, both
-providers' buttons use it and show a "select ___" hint for the patient.
+providers' buttons use it and show a "select ___" hint for the patient. Use a public self-scheduling link here, not
+`https://care.osmind.org/go/meaningfulpsychiatryxosmind`, which is the Osmind sign-in page
+for existing patients and staff.
 
 There is no contact form: patients book and complete intake in Osmind (HIPAA-compliant),
 so no health information passes through the website. The booking panel lives in
