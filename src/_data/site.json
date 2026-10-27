@@ -40,6 +40,28 @@
       "shortLabel": "About"
     },
     {
+      "label": "Eastside Care",
+      "shortLabel": "Eastside Care",
+      "children": [
+        {
+          "label": "Transferring Your Care",
+          "url": "/transfer-psychiatric-care-eastside/"
+        },
+        {
+          "label": "ADHD Testing & Evaluation",
+          "url": "/adhd-testing-psychiatrist-bellevue-kirkland-issaquah/"
+        },
+        {
+          "label": "Anxiety Treatment",
+          "url": "/anxiety-treatment-mercer-island-newcastle-renton/"
+        },
+        {
+          "label": "Depression Treatment",
+          "url": "/depression-treatment-bellevue-renton/"
+        }
+      ]
+    },
+    {
       "label": "Blog",
       "url": "/blog/"
     },
