@@ -2,17 +2,44 @@
 layout: layouts/base.njk
 title: Our Services
 permalink: /our-services/
-description: "Dr. Badeea Qureshi at Meaningful Psychiatry. Personalized psychiatric medication management and psychotherapy across Washington State."
+description: "Psychiatric medication management and psychotherapy for children, teens, and adults across Washington State, and the conditions we treat."
 ---
 <section class="page-hero">
   <div class="container">
     <h1 class="page-title">Our Services</h1>
+    <p class="page-hero__sub">Medication management and psychotherapy for children (8+), teens, and adults, by secure video anywhere in Washington.</p>
+  </div>
+</section>
+
+<section class="section section--light" id="approach">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Our approach</p>
+      <h2>Care that looks at the whole person</h2>
+    </div>
+    <div class="card-grid card-grid--3">
+      <article class="card">
+        <span class="card__icon"><i class="fa-solid fa-file-medical" aria-hidden="true"></i></span>
+        <h3>Evidence Based Medicine</h3>
+        <p>We aim to use evidence-based medicine to guide us in collaborating with you when arriving at a suitable medication regimen for your psychiatric needs. In certain cases, medications may not be indicated, and we can discuss the clinical decision making process and other supports.</p>
+      </article>
+      <article class="card">
+        <span class="card__icon"><i class="fa-solid fa-hand-holding-medical" aria-hidden="true"></i></span>
+        <h3>Tailored Treatment Regimens</h3>
+        <p>We address your mental health needs from multiple angles, including medication management, individual psychotherapy, drawing on social supports and resources, and recommendations for somatic therapies and alternative medicine modalities if applicable.</p>
+      </article>
+      <article class="card">
+        <span class="card__icon"><i class="fa-solid fa-laptop-medical" aria-hidden="true"></i></span>
+        <h3>Secure Telehealth</h3>
+        <p>Appointments take place over a secure, HIPAA-compliant video platform. Attend from a private location without commuting, sitting in a waiting room, or rearranging your entire day around an office visit.</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <section class="section section--tight">
   <div class="container service-boxes">
-    <div class="service-box">
+    <div class="service-box" id="medication">
       <img src="/images/2020/05/online-talk.webp" alt="" class="service-box__icon">
       <h2>Medication Management</h2>
       <ul class="checklist">
@@ -25,7 +52,7 @@ description: "Dr. Badeea Qureshi at Meaningful Psychiatry. Personalized psychiat
         <li>Considerations around deprescribing</li>
       </ul>
     </div>
-    <div class="service-box">
+    <div class="service-box" id="psychotherapy">
       <img src="/images/2020/05/online-phone.webp" alt="" class="service-box__icon">
       <h2>Psychotherapy</h2>
       <ul class="checklist">
@@ -40,6 +67,36 @@ description: "Dr. Badeea Qureshi at Meaningful Psychiatry. Personalized psychiat
   </div>
 </section>
 
+
+<section class="section section--navy" id="conditions">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--light">Integrative approach</p>
+      <h2>Conditions we treat</h2>
+      <p class="section-head__sub">We treat a wide range of conditions for patients age 8 and up.</p>
+    </div>
+    <div class="condition-grid">
+      {%- for s in specialties %}
+      <div class="condition">
+        <i class="{{ s.icon }}" aria-hidden="true"></i>
+        <div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.text }}</p>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container center">
+    <p class="eyebrow">Psychotherapy</p>
+    <h2>Special interests in psychotherapy</h2>
+    <p class="section-head__sub">Dr. Qureshi's integrative approach to identity and culture, family and parenting, money, spirituality, life transitions, and more.</p>
+    <div class="btn-row btn-row--center" style="margin-top: 20px;"><a href="/service/" class="btn btn--lg">See all special interests</a></div>
+  </div>
+</section>
 
 <section class="section section--tight section--light">
   <div class="container center">

@@ -58,31 +58,6 @@ bodyClass: home
   </div>
 </section>
 
-<section class="section section--light">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Our approach</p>
-      <h2>Care that looks at the whole person</h2>
-    </div>
-    <div class="card-grid card-grid--3">
-      <article class="card">
-        <span class="card__icon"><i class="fa-solid fa-file-medical" aria-hidden="true"></i></span>
-        <h3>Evidence Based Medicine</h3>
-        <p>We aim to use evidence-based medicine to guide us in collaborating with you when arriving at a suitable medication regimen for your psychiatric needs. In certain cases, medications may not be indicated, and we can discuss the clinical decision making process and other supports.</p>
-      </article>
-      <article class="card">
-        <span class="card__icon"><i class="fa-solid fa-hand-holding-medical" aria-hidden="true"></i></span>
-        <h3>Tailored Treatment Regimens</h3>
-        <p>We address your mental health needs from multiple angles, including medication management, individual psychotherapy, drawing on social supports and resources, and recommendations for somatic therapies and alternative medicine modalities if applicable.</p>
-      </article>
-      <article class="card">
-        <span class="card__icon"><i class="fa-solid fa-laptop-medical" aria-hidden="true"></i></span>
-        <h3>Secure Telehealth</h3>
-        <p>Appointments take place over a secure, HIPAA-compliant video platform. Attend from a private location without commuting, sitting in a waiting room, or rearranging your entire day around an office visit.</p>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="container">
@@ -97,7 +72,7 @@ bodyClass: home
           <h3>Dr. Badeea Qureshi, MD</h3>
           <p class="provider__role">Psychiatrist · Private pay</p>
           <p class="provider__creds"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> WA license {{ site.credentials.qureshiLicense | replace("Washington ", "") }} · <a href="{{ site.profiles.psychologyToday }}" target="_blank" rel="noopener noreferrer">Verified on Psychology Today</a></p>
-          <p>Trained at the University of Liverpool School of Medicine and the University of Washington Psychiatry Residency Program, Dr. Qureshi weaves together mind, body, and spirit, with a focus on time-limited, personalized medication regimens and psychotherapy.</p>
+          <p>Trained at the University of Liverpool and the University of Washington Psychiatry Residency, Dr. Qureshi blends medication management and psychotherapy with care for mind, body, and spirit.</p>
           <div class="btn-row">
             {% set p = booking.qureshi %}{% set btnClass = "btn" %}{% include "partials/book-button.njk" %}
             <a href="/about-us/#badeea" class="btn btn--outline">Read Bio</a>
@@ -110,7 +85,7 @@ bodyClass: home
           <h3>Francis Agbotse, PMHNP</h3>
           <p class="provider__role">Psychiatric Mental Health Nurse Practitioner · Aetna, Ambetter, Medicare &amp; Medicaid</p>
           <p class="provider__creds"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> WA license {{ site.credentials.agbotseLicense | replace("Washington ", "") }}</p>
-          <p>Trained at Windsor School of Medicine in Saint Kitts and the University of Alabama at Birmingham, with over a decade of experience in psychiatry, Francis is well equipped to work with complex psychiatric presentations, multiple diagnoses, and complicated medication regimens, in a collaborative, patient-centered way.</p>
+          <p>Trained at Windsor School of Medicine and the University of Alabama at Birmingham, Francis brings over a decade of psychiatric experience, including complex diagnoses and medication regimens.</p>
           <div class="btn-row">
             {% set p = booking.francis %}{% set btnClass = "btn" %}{% include "partials/book-button.njk" %}
             <a href="/about-us/#francis" class="btn btn--outline">Read Bio</a>
@@ -148,100 +123,42 @@ bodyClass: home
   </div>
 </section>
 
+
+
+
+
 <section class="section">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Our services</p>
       <h2>Medication management and psychotherapy</h2>
+      <p class="section-head__sub">Whole-person psychiatric care for children (8+), teens, and adults, by secure video anywhere in Washington.</p>
     </div>
-    <div class="card-grid card-grid--2">
-      <article class="card card--service">
+    <div class="card-grid card-grid--2 services-mini">
+      <a class="card card--link" href="/our-services/#medication">
         <span class="card__icon"><i class="fa-solid fa-prescription-bottle-medical" aria-hidden="true"></i></span>
         <h3>Medication Management</h3>
-        <ul class="checklist">
-          <li>Personalized psychiatric medication regimen</li>
-          <li>Evidence based medicine</li>
-          <li>Continuous assessment of medication needs</li>
-          <li>Monitoring for side effects, drug interactions and efficacy</li>
-          <li>Goals for time limited medication use where appropriate</li>
-          <li>Minimizing risks of polypharmacy and considerations around deprescribing</li>
-        </ul>
-      </article>
-      <article class="card card--service">
+        <p>Personalized, evidence-based regimens, with close monitoring and the lowest effective number of medications.</p>
+      </a>
+      <a class="card card--link" href="/service/">
         <span class="card__icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span>
         <h3>Psychotherapy</h3>
-        <ul class="checklist">
-          <li>Judgement free and confidential</li>
-          <li>Goal directed</li>
-          <li>Psychoanalytic and supportive approach</li>
-          <li>Nurturing environment</li>
-          <li>Direct communication style</li>
-          <li>Focus on personal and interpersonal growth</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section section--navy">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow eyebrow--light">Integrative approach</p>
-      <h2>Specialty Medication Management Services</h2>
-      <p class="section-head__sub">We treat a wide range of conditions for patients age 8 and up.</p>
-    </div>
-    <div class="condition-grid">
-      {%- for s in specialties %}
-      <div class="condition">
-        <i class="{{ s.icon }}" aria-hidden="true"></i>
-        <div>
-          <h3>{{ s.title }}</h3>
-          <p>{{ s.text }}</p>
-        </div>
-      </div>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="mission">
-  <div class="container mission__inner">
-    <div>
-      <p class="eyebrow eyebrow--light">Meaningful Psychiatry</p>
-      <h2>Our Mission</h2>
-      <p>Our mission at Meaningful Psychiatry is to broaden the definition of mental health care by embracing the full spectrum of the human experience. We believe in zooming out, exploring beyond the surface, and understanding the intricate connections between the mind, body, and spirit.</p>
-      <p>Rooted in a deep understanding of cultural diversity and personal growth, we strive to create a compassionate and inclusive environment where every patient feels seen, heard, and valued.</p>
-    </div>
-    <ul class="mission__pillars">
-      <li><i class="fa-solid fa-spa" aria-hidden="true"></i> Holistic Healing</li>
-      <li><i class="fa-solid fa-earth-americas" aria-hidden="true"></i> Global Awareness</li>
-      <li><i class="fa-solid fa-comments" aria-hidden="true"></i> Purposeful Conversations</li>
-      <li><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Full Picture of Health</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section section--light">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Integrative approach</p>
-      <h2>Special Interests in Psychotherapy</h2>
-      <p class="section-head__sub">Dr. Qureshi embraces a compassionate and integrative approach to mental health, recognizing the spiritual and psychological dimensions of challenges related to finances, sexual health, and personal relationships.</p>
-    </div>
-    <div class="interest-grid">
-      {%- for s in interests %}
-      <a class="interest-card" href="/service/{{ s.slug }}/">
-        <span class="interest-card__icon"><img src="{{ s.icon }}" alt="" loading="lazy"></span>
-        <h3>{{ s.title }}</h3>
-        <p>{{ s.text }}</p>
-        <span class="interest-card__more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        <p>Judgment-free, goal-directed therapy, including Dr. Qureshi's special interests in identity, culture, family, and life transitions.</p>
       </a>
-      {%- endfor %}
     </div>
+    <div class="conditions-mini">
+      <h3>Conditions we treat</h3>
+      <ul class="tag-list">
+        {%- set common = ["Anxiety & Panic Disorders", "Depressive Disorders", "Neurodevelopmental Disorders", "Bipolar and Related Disorders", "PTSD and Trauma/Stressor Related Disorders", "Obsessive Compulsive and Related Disorders", "Sleep-Wake Disorders", "Adjustment Disorder and Grief"] %}
+        {%- for s in specialties %}
+        <li{% if s.title not in common %} class="tag-list__extra"{% endif %}><a href="/our-services/#conditions">{{ s.title }}</a></li>
+        {%- endfor %}
+        <li class="tag-list__all"><a href="/our-services/#conditions">See all conditions <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="center"><a href="/our-services/" class="text-link">Explore all services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
   </div>
 </section>
-
-{% include "partials/testimonials.njk" %}
 
 <section class="section section--light featured-section">
   <div class="container">
@@ -256,9 +173,9 @@ bodyClass: home
         <p class="eyebrow">From the blog</p>
         <h2>Latest articles</h2>
       </div>
-      <a href="/blog/" class="text-link">View all articles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="/blog/" class="text-link">More in Mind Matters <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </div>
-    <div class="post-grid">
+    <div class="post-grid post-grid--home">
       {%- for post in collections.posts | head(3) %}{% include "partials/post-card.njk" %}{% endfor %}
     </div>
   </div>
