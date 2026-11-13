@@ -30,4 +30,4 @@ Our providers offer an integrative, whole-person approach that goes beyond sympt
 
 ## Virtual care across the Eastside
 
-Whether you live in Mercer Island, Renton, Bellevue, Kirkland, or nearby areas, you can meet with your provider by secure video from home or work—no commute or traffic required. Francis Agbotse, PMHNP is in-network with Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, TRICARE (TriWest), and Coordinated Care (Apple Health/Medicaid), and Dr. Badeea Qureshi, MD offers private-pay care with a sliding scale. See [payment and insurance details](/patients/#payment).
+Whether you live in Mercer Island, Renton, Bellevue, Kirkland, or nearby areas, you can meet with your provider by secure video from home or work—no commute or traffic required. Francis Agbotse, PMHNP is in-network with Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, and TRICARE (TriWest), and Dr. Badeea Qureshi, MD offers private-pay care with a sliding scale. See [payment and insurance details](/patients/#payment).

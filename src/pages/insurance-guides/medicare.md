@@ -19,7 +19,7 @@ Our care coordinator will add you to the list and contact you as soon as we can 
 
 ## Have other coverage too?
 
-If you also have another plan we accept, such as a plan through Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, TRICARE (TriWest), or Apple Health (Medicaid) through Coordinated Care, call or text us and we'll check whether we can see you sooner. See all [insurance and payment options](/insurance/).
+If you also have another plan we accept, such as a plan through Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, or TRICARE (TriWest), call or text us and we'll check whether we can see you sooner. See all [insurance and payment options](/insurance/).
 
 ## In the meantime
 

@@ -1,39 +1,27 @@
 ---
-title: "Psychiatric Care With Apple Health (Medicaid) in Washington"
-seoTitle: "Medicaid Psychiatrist in Washington: Apple Health Through Coordinated Care | Meaningful Psychiatry"
-description: "Looking for a psychiatric provider who takes Washington Apple Health (Medicaid)? Francis Agbotse, PMHNP accepts Apple Health through Coordinated Care for children, teens, and adults."
+title: "Apple Health (Medicaid) and Psychiatric Care in Washington"
+seoTitle: "Medicaid Psychiatrist in Washington: Apple Health Waitlist | Meaningful Psychiatry"
+description: "Meaningful Psychiatry is not yet in-network with Washington Apple Health (Medicaid). Join our waitlist and we'll contact you as soon as we can see Apple Health patients."
 permalink: /apple-health-medicaid-psychiatrist-washington/
 eyebrow: Apple Health (Medicaid)
 planName: Your Apple Health plan
-lead: "Francis Agbotse, PMHNP accepts Washington Apple Health (Medicaid) through Coordinated Care, with psychiatric care by secure video for children, teens, and adults."
+waitlist: true
+lead: "We're not in-network with Apple Health (Medicaid) yet, but we're working on it. Join our waitlist and we'll reach out as soon as we can see Apple Health patients."
 ---
-In Washington, Medicaid is called **Apple Health**. Most Apple Health members are enrolled in a managed care plan, and the plan name is printed on your member card. Francis is in-network with **Coordinated Care**, one of the Apple Health managed care plans.
+In Washington, Medicaid is called **Apple Health**. Finding a psychiatric provider who takes it can be hard, and **Apple Health is on our waitlist** while Francis Agbotse, PMHNP works on expanding his in-network plans.
 
-## Check which Apple Health plan you have
+## Join the Apple Health waitlist
 
-Look at your Apple Health card or member materials:
+1. **Fill out our short request form** using the button above, and choose "Insurance" as your payment type with Apple Health as your insurance, or
+2. **Call or text us** at 425-272-5931.
 
-- **Coordinated Care:** You can book with Francis.
-- **A different Apple Health plan:** Call or text us at 425-272-5931 and we'll talk through your options. Washington's Health Care Authority can tell you which plans are available to you.
+Our care coordinator will add you to the list and contact you as soon as we can schedule Apple Health patients. We see children (8+), teens, and adults.
 
-## Care for the whole family
+## Have other coverage too?
 
-Apple Health covers many children and teens in Washington, and we see patients **age 8 and up**. Francis works with families on:
+If you also have a plan we accept, such as Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, or TRICARE (TriWest), call or text us and we'll check whether we can see you sooner. See all [insurance and payment options](/insurance/).
 
-- ADHD evaluation and treatment
-- Anxiety, depression, and mood concerns
-- Behavioral and emotional challenges at home or school
-- Trauma-related concerns
-- Ongoing medication management for adults
+## In the meantime
 
-For patients under 18, a parent or guardian helps with intake and joins appointments as needed.
-
-## Why telehealth helps
-
-Getting to appointments can be one of the biggest barriers to care. Telehealth means no bus rides, no gas money, no time off for a long drive, and no need to find childcare for a commute. All you need is a phone, tablet, or computer with a camera and a private place to talk.
-
-## Getting started
-
-1. **Book online with Francis** using the button above, or call or text us at 425-272-5931.
-2. **Complete onboarding** in the secure Osmind patient app and add your Apple Health ProviderOne or member ID.
-3. **Meet Francis by video** for a 60-minute evaluation from wherever you are in Washington.
+- **In a crisis?** Call or text **988**, or call 911 for emergencies.
+- **Need care now?** The member services number on your Apple Health card, or Washington's Health Care Authority, can help you find an in-network psychiatric provider.
