@@ -208,5 +208,17 @@
       "label": "Accessibility",
       "url": "/accessibility/"
     }
-  ]
+  ],
+  "hours": {
+    "label": "Monday–Friday, 10 AM–6 PM (Pacific)",
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "10:00",
+    "closes": "18:00"
+  }
 }

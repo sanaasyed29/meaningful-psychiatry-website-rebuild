@@ -16,6 +16,9 @@ export default {
   medicalSpecialty: "Psychiatric",
   description: "Online psychiatry for children, teens, and adults across Washington State. Medication management and psychotherapy by telehealth.",
   isAcceptingNewPatients: true,
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: site.hours.days, opens: site.hours.opens, closes: site.hours.closes },
+  ],
   // Washington-wide telehealth, with the Eastside cities we most often serve named explicitly.
   areaServed: [
     { "@type": "State", name: "Washington", sameAs: "https://en.wikipedia.org/wiki/Washington_(state)" },
