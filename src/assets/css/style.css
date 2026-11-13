@@ -780,3 +780,9 @@ ul, ol { padding-left: 1.2em; }
 .inperson-note { display: flex; gap: 12px; align-items: flex-start; margin: 24px 0; padding: 16px 20px; border-radius: var(--radius); background: var(--cream); border: 1px solid var(--line); color: var(--ink); }
 .inperson-note > i { color: var(--gold-text); font-size: 20px; margin-top: 3px; }
 .section--light .inperson-note { background: var(--white); }
+.consult-steps { list-style: none; margin: 0 auto 32px; padding: 0; display: grid; gap: 12px; max-width: 680px; }
+.consult-steps li { display: flex; gap: 16px; align-items: flex-start; background: var(--white); border-radius: var(--radius); padding: 18px 22px; box-shadow: var(--shadow); }
+.consult-steps__num { flex: 0 0 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--gold); color: var(--navy); font-weight: 700; }
+.consult-steps strong { display: block; color: var(--ink); margin-bottom: 4px; }
+.consult-steps p { margin: 0; font-size: 15.5px; }
+.consult-steps a { color: var(--gold-text); font-weight: 600; white-space: nowrap; }
