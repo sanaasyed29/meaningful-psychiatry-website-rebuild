@@ -18,8 +18,8 @@ bodyClass: home
         <li><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Private-pay &amp; select insurance</li>
       </ul>
       <div class="btn-row">
-        <a href="{{ booking.general }}" class="btn btn--lg">Book an Appointment</a>
-        <a href="/contact-us/#request-form" class="btn btn--lg btn--light">Schedule a Free Consult</a>
+        <a href="{{ booking.general }}" data-book class="btn btn--lg">Book an Appointment</a>
+        <a href="/contact-us/#request-form" class="btn btn--lg btn--light">Free 15-Min Consult with Dr. Qureshi</a>
         <a href="{{ site.phoneLink }}" class="btn btn--lg btn--ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text {{ site.phone }}</a>
       </div>
       <a href="/insurance/" class="text-link text-link--light">Check insurance and fees <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
@@ -119,7 +119,7 @@ bodyClass: home
         <p>Your first appointment is a 60-minute comprehensive evaluation of your mental health history, current concerns, and treatment goals.</p>
       </li>
     </ol>
-    <div class="center"><a href="{{ booking.general }}" class="btn btn--lg">Book an Appointment</a></div>
+    <div class="center"><a href="{{ booking.general }}" data-book class="btn btn--lg">Book an Appointment</a></div>
   </div>
 </section>
 
@@ -140,7 +140,7 @@ bodyClass: home
         <h3>Medication Management</h3>
         <p>Personalized, evidence-based regimens, with close monitoring and the lowest effective number of medications.</p>
       </a>
-      <a class="card card--link" href="/service/">
+      <a class="card card--link" href="/our-services/#psychotherapy">
         <span class="card__icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span>
         <h3>Psychotherapy</h3>
         <p>Judgment-free, goal-directed therapy, including Dr. Qureshi's special interests in identity, culture, family, and life transitions.</p>

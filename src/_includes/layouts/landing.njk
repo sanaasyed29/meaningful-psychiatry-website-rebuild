@@ -6,7 +6,7 @@ layout: layouts/base.njk
     {%- if eyebrow %}<p class="eyebrow eyebrow--light">{{ eyebrow }}</p>{% endif %}
     <h1 class="page-title">{{ title }}</h1>
     <div class="btn-row btn-row--center">
-      <a href="{{ booking.general }}" class="btn btn--lg">{{ ctaLabel or "Book an Appointment" }}</a>
+      <a href="{{ booking.general }}" data-book class="btn btn--lg">{{ ctaLabel or "Book an Appointment" }}</a>
       <a href="{{ site.phoneLink }}" class="btn btn--lg btn--ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text {{ site.phone }}</a>
     </div>
   </div>
@@ -19,7 +19,7 @@ layout: layouts/base.njk
     </article>
     <div class="landing__cta">
       <p>{{ ctaText }}</p>
-      <a href="{{ booking.general }}" class="btn btn--lg">{{ ctaLabel or "Book an Appointment" }}</a>
+      <a href="{{ booking.general }}" data-book class="btn btn--lg">{{ ctaLabel or "Book an Appointment" }}</a>
     </div>
     <nav class="landing__related" aria-label="More Eastside care topics">
       <p class="eyebrow">More care on the Eastside</p>

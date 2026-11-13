@@ -128,7 +128,7 @@
       "url": "/"
     },
     {
-      "label": "About Dr. Qureshi",
+      "label": "Meet the Team",
       "url": "/about-us/"
     },
     {
@@ -162,10 +162,6 @@
     {
       "label": "FAQ",
       "url": "/help-faqs/"
-    },
-    {
-      "label": "Unequal Parts Podcast",
-      "url": "https://open.spotify.com/show/3AIYRYODDaBBk4oRV0lOTy"
     }
   ],
   "featuredOn": [

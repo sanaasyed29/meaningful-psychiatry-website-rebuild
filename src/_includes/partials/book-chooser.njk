@@ -1,0 +1,27 @@
+{#- One booking pop-up for every general "Book" button (links with data-book).
+    Without JavaScript those links fall back to the booking section on Contact. -#}
+<dialog class="book-chooser" id="book-chooser" aria-labelledby="book-chooser-title">
+  <form method="dialog" class="book-chooser__close-form">
+    <button class="book-chooser__close" aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+  </form>
+  <h2 id="book-chooser-title">How will you pay for your visits?</h2>
+  <p class="book-chooser__sub">Each provider has their own calendar. Pick one and you'll go straight to secure booking in Osmind.</p>
+  <div class="book-chooser__options">
+    <a class="book-chooser__option" href="{{ booking.francis.url }}" target="_blank" rel="noopener noreferrer">
+      <span class="pay-badge pay-badge--ins">Insurance</span>
+      <strong>I'm using insurance</strong>
+      <span>Book with Francis Agbotse, PMHNP</span>
+      <small>Aetna, Ambetter, Premera, Regence, First Choice, TRICARE, Medicare &amp; Medicaid</small>
+      <span class="book-chooser__go">Book with Francis <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+    </a>
+    <a class="book-chooser__option" href="{{ booking.qureshi.url }}" target="_blank" rel="noopener noreferrer">
+      <span class="pay-badge">Private pay</span>
+      <strong>I'm paying privately</strong>
+      <span>Book with Dr. Badeea Qureshi, MD</span>
+      <small>Sliding scale available · FSA/HSA · superbills for reimbursement</small>
+      <span class="book-chooser__go">Book with Dr. Qureshi <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+    </a>
+  </div>
+  <p class="book-chooser__more">Not sure yet? <a href="/contact-us/#request-form">Request a free 15-minute call with Dr. Qureshi</a> or call or text <a href="{{ site.phoneLink }}">{{ site.phone }}</a>.</p>
+  <p class="book-chooser__note"><i class="fa-solid fa-lock" aria-hidden="true"></i> A credit card is required to hold your appointment.</p>
+</dialog>

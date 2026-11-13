@@ -128,3 +128,23 @@ document.querySelectorAll(".wa-map").forEach((map) => {
     county.addEventListener("click", pick);
   });
 });
+
+// Booking chooser: every general "Book" button asks how the visitor will pay,
+// then links straight to that provider's Osmind calendar.
+const chooser = document.getElementById("book-chooser");
+if (chooser && typeof chooser.showModal === "function") {
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("a[data-book]");
+    if (!link) return;
+    e.preventDefault();
+    if (nav && nav.classList.contains("is-open") && navToggle) navToggle.click();
+    chooser.showModal();
+  });
+  // Close when the dimmed backdrop (outside the panel) is clicked
+  chooser.addEventListener("click", (e) => {
+    const r = chooser.getBoundingClientRect();
+    const inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+    if (!inside) chooser.close();
+  });
+  chooser.querySelectorAll(".book-chooser__more a").forEach((a) => a.addEventListener("click", () => chooser.close()));
+}
