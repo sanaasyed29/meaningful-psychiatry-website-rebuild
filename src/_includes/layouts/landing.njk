@@ -17,6 +17,7 @@ layout: layouts/base.njk
     <article class="post__content landing__content">
       {{ content | safe }}
     </article>
+    <p class="inperson-note"><i class="fa-solid fa-handshake" aria-hidden="true"></i> <span><strong>Prefer to meet in person?</strong> {{ site.inPersonNote }}</span></p>
     <div class="landing__cta">
       <p>{{ ctaText }}</p>
       <a href="{{ booking.general }}" data-book class="btn btn--lg">{{ ctaLabel or "Book an Appointment" }}</a>

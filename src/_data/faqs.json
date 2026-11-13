@@ -12,6 +12,10 @@
     "answer": "<p>Yes, research has shown that virtual appointments are just as effective as in-person visits for many psychiatric services, including therapy and medication management. They also provide the added convenience of receiving care from the comfort of your home.</p>"
   },
   {
+    "question": "Do you offer in-person appointments?",
+    "answer": "<p>Most appointments are by secure video. In-person visits with Dr. Badeea Qureshi on the Eastside are available on a case-by-case basis. Call or text 425-272-5931, or mention it when you reach out, and our care coordinator will let you know what's possible.</p>"
+  },
+  {
     "question": "How do I schedule an appointment?",
     "answer": "<p>You can schedule an appointment by calling our office, sending an email, or using our online scheduling tool available on our website. Our admin will help you to schedule your first intake appointment, after you complete your onboarding paperwork.</p>"
   },

@@ -1,0 +1,13 @@
+{
+  "profile": "https://www.instagram.com/meaningfulpsychiatry/",
+  "handle": "@meaningfulpsychiatry",
+  "note": "Posts are cropped screenshots. Set a post's link to its own Instagram URL when you have it; until then each opens the profile.",
+  "posts": [
+    { "image": "/images/instagram/meet-the-team.webp", "alt": "Meet the Team post introducing Dr. Badeea Qureshi, Francis Agbotse, Sanaa Syed and the outreach coordinator", "link": "", "reel": false },
+    { "image": "/images/instagram/adhd-talk.webp", "alt": "Dr. Qureshi speaking to an audience about the advantages of having ADHD", "link": "", "reel": true },
+    { "image": "/images/instagram/emotional-suppression.webp", "alt": "Dr. Qureshi on stage at a women's conference discussing emotional suppression in women", "link": "", "reel": true },
+    { "image": "/images/instagram/kids-with-disabilities.webp", "alt": "Reel: Don't Skip Over Kids With Disabilities, part 6 of Dr. Qureshi's parenting talk", "link": "", "reel": true },
+    { "image": "/images/instagram/social-skills-ai.webp", "alt": "Reel: Social Skills in the Age of AI, part 5 of Dr. Qureshi's parenting talk", "link": "", "reel": true },
+    { "image": "/images/instagram/community-booth.webp", "alt": "Meaningful Psychiatry's booth at a community event", "link": "", "reel": false }
+  ]
+}

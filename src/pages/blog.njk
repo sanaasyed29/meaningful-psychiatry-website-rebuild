@@ -32,3 +32,6 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumbe
   </div>
 </section>
 
+{%- if pagination.pageNumber == 0 %}
+{% set igLight = true %}{% include "partials/instagram-strip.njk" %}
+{%- endif %}

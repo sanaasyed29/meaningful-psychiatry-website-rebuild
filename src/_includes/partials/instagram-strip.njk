@@ -1,0 +1,22 @@
+{#- Hand-picked posts from _data/instagram.json. Static images, so no Instagram/Meta scripts load on the site. -#}
+<section class="section ig-strip{% if igLight %} section--light{% endif %}" aria-labelledby="ig-title-{{ page.url | slugify }}">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <p class="eyebrow">Follow along</p>
+        <h2 id="ig-title-{{ page.url | slugify }}">Talks, tips and community on Instagram</h2>
+      </div>
+      <a href="{{ instagram.profile }}" class="btn btn--outline" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> {{ instagram.handle }}</a>
+    </div>
+    <ul class="ig-strip__grid">
+      {%- for p in instagram.posts %}
+      <li>
+        <a href="{{ p.link or instagram.profile }}" class="ig-post" target="_blank" rel="noopener noreferrer" aria-label="{{ p.alt }} (opens Instagram)">
+          <img src="{{ p.image }}" alt="" width="318" height="425" loading="lazy">
+          <span class="ig-post__badge" aria-hidden="true"><i class="fa-{{ 'solid fa-play' if p.reel else 'brands fa-instagram' }}"></i></span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
