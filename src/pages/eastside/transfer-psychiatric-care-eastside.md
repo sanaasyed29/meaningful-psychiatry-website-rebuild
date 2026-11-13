@@ -33,4 +33,4 @@ At Meaningful Psychiatry, care goes beyond a checklist—it takes a holistic vie
 
 - **Summarize treatment history:** Bring details on past medications (dosages, side effects, and effectiveness) and therapy approaches you've tried.
 - **Outline your goals:** Note what you hope to achieve, whether that involves fine-tuning medication, exploring culturally responsive therapy, or integrating lifestyle and somatic wellness supports.
-- **Check your payment options:** Francis Agbotse, PMHNP is in-network with Aetna, Ambetter, and Coordinated Care (Medicare and Medicaid). Dr. Badeea Qureshi, MD sees patients on a private-pay basis with a sliding scale, FSA/HSA, and superbills for possible reimbursement. See [payment and insurance details](/patients/#payment).
+- **Check your payment options:** Francis Agbotse, PMHNP is in-network with Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, TRICARE (TriWest), and Coordinated Care (Medicare and Medicaid). Dr. Badeea Qureshi, MD sees patients on a private-pay basis with a sliding scale, FSA/HSA, and superbills for possible reimbursement. See [payment and insurance details](/patients/#payment).
