@@ -1,40 +1,27 @@
 ---
-title: "Psychiatric Care With Medicare in Washington"
-seoTitle: "Medicare Psychiatric Provider in Washington: Telehealth Care | Meaningful Psychiatry"
-description: "Looking for a psychiatric provider who takes Medicare in Washington? Francis Agbotse, PMHNP accepts Medicare coverage through Coordinated Care, with telehealth visits from home."
+title: "Medicare and Psychiatric Care in Washington"
+seoTitle: "Medicare Psychiatric Provider in Washington: Waitlist | Meaningful Psychiatry"
+description: "Meaningful Psychiatry is not yet in-network with Medicare. Join our Medicare waitlist and we'll contact you as soon as we can see Medicare patients."
 permalink: /medicare-psychiatric-provider-washington/
 eyebrow: Medicare
 planName: Your Medicare plan
-lead: "Francis Agbotse, PMHNP accepts Medicare coverage through Coordinated Care, so you can get psychiatric care by secure video without leaving home."
+waitlist: true
+lead: "We're not in-network with Medicare yet, but we're working on it. Join our waitlist and we'll reach out as soon as we can see Medicare patients."
 ---
-Many people on Medicare find it hard to locate a psychiatric provider who is taking new patients. Long waits, long drives, and mobility or transportation challenges can all get in the way. Telehealth lets you meet with Francis from the comfort of your home anywhere in Washington.
+Many people on Medicare find it hard to locate a psychiatric provider who is taking new patients. We hear you, and **Medicare is on our waitlist** while Francis Agbotse, PMHNP works on expanding his in-network plans.
 
-## Check your Medicare coverage
+## Join the Medicare waitlist
 
-Medicare comes in a few forms, and the type you have affects where you can be seen:
+1. **Fill out our short request form** using the button above, and choose "Insurance" as your payment type with Medicare as your insurance, or
+2. **Call or text us** at 425-272-5931.
 
-- **Medicare plan through Coordinated Care:** You can book with Francis.
-- **Original Medicare or a different Medicare Advantage plan:** Call or text us at 425-272-5931 before booking and we'll check whether we can see you.
+Our care coordinator will add you to the list and contact you as soon as we can schedule Medicare patients.
 
-Ask your plan what you pay for an outpatient mental health visit and whether telehealth visits from home are covered.
+## Have other coverage too?
 
-## Care that considers your whole health
+If you also have another plan we accept, such as a plan through Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, TRICARE (TriWest), or Apple Health (Medicaid) through Coordinated Care, call or text us and we'll check whether we can see you sooner. See all [insurance and payment options](/insurance/).
 
-Older adults often take several medications for different conditions. Francis has over a decade of psychiatric experience and is well equipped to work with **complex medication regimens**, paying close attention to side effects, drug interactions, and avoiding unnecessary medications. He also coordinates with your primary care provider and other specialists when that helps your care.
+## In the meantime
 
-Francis can help with:
-
-- Depression and anxiety, including after retirement, loss, or health changes
-- Sleep problems connected to mental health
-- Bipolar disorder and other long-term conditions that need ongoing management
-- Reviewing and simplifying psychiatric medications
-
-## Making video visits easy
-
-You don't need to be tech-savvy. Visits work on a smartphone, tablet, or computer with a camera. A family member or caregiver is welcome to help you set up or join the visit (we may ask you to sign a release form first). If you have trouble connecting, call us and we'll walk you through it.
-
-## Getting started
-
-1. **Book online with Francis** using the button above, or call or text us at 425-272-5931.
-2. **Complete onboarding** in the secure Osmind patient app and add your Medicare or plan member ID.
-3. **Meet Francis by video** for a 60-minute evaluation from home.
+- **In a crisis?** Call or text **988**, or call 911 for emergencies.
+- **Need care now?** Your primary care provider or your Medicare plan's member services line can help you find an in-network psychiatric provider.

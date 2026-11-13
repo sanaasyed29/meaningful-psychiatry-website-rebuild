@@ -5,7 +5,7 @@
   "phoneLink": "tel:4252725931",
   "email": "admin@meaningfulpsychiatry.com",
   "bookingUrl": "https://care.osmind.org/appointments/embed_appt?dietitian_id=17069373",
-  "acceptingBanner": "Now Accepting: ✔ Aetna, ✔ Ambetter, ✔ Premera, ✔ Regence, ✔ First Choice, ✔ TRICARE, ✔ Medicare, ✔ Medicaid",
+  "acceptingBanner": "Now Accepting: ✔ Aetna, ✔ Ambetter, ✔ Premera, ✔ Regence, ✔ First Choice, ✔ TRICARE, ✔ Medicaid",
   "insuranceOptions": [
     "Private pay (Dr. Qureshi)",
     "Aetna (Francis)",
@@ -14,7 +14,6 @@
     "Regence BlueShield (Francis)",
     "First Choice Health (Francis)",
     "TRICARE / TriWest (Francis)",
-    "Medicare",
     "Medicaid",
     "Other"
   ],
@@ -83,10 +82,6 @@
         {
           "label": "Ambetter",
           "url": "/ambetter-psychiatrist-washington/"
-        },
-        {
-          "label": "Medicare",
-          "url": "/medicare-psychiatric-provider-washington/"
         },
         {
           "label": "Apple Health (Medicaid)",

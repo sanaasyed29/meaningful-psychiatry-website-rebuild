@@ -32,6 +32,6 @@ Treatment at Meaningful Psychiatry centers on seeing you as a whole person—not
 
 ## Serving the Eastside and all of Washington State
 
-If you are searching for expert depression care in Bellevue, Kirkland, Renton, Newcastle, or the surrounding communities, Meaningful Psychiatry offers flexible online psychiatric care across Washington State. Francis Agbotse, PMHNP accepts Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, TRICARE (TriWest), and Coordinated Care (Medicare and Medicaid), and Dr. Badeea Qureshi, MD offers private-pay care with a sliding scale. See [payment and insurance details](/patients/#payment).
+If you are searching for expert depression care in Bellevue, Kirkland, Renton, Newcastle, or the surrounding communities, Meaningful Psychiatry offers flexible online psychiatric care across Washington State. Francis Agbotse, PMHNP accepts Aetna, Ambetter, Premera Blue Cross, Regence BlueShield, First Choice Health, TRICARE (TriWest), and Coordinated Care (Apple Health/Medicaid), and Dr. Badeea Qureshi, MD offers private-pay care with a sliding scale. See [payment and insurance details](/patients/#payment).
 
 <p class="note"><strong>If you are in crisis</strong>, call or text <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline), or call 911 for emergencies.</p>

@@ -7,7 +7,11 @@ layout: layouts/base.njk
     <h1 class="page-title">{{ title }}</h1>
     {%- if lead %}<p class="page-hero__sub">{{ lead }}</p>{% endif %}
     <div class="btn-row btn-row--center">
+      {%- if waitlist %}
+      <a href="/contact-us/#request-form" class="btn btn--lg">Join the Waitlist</a>
+      {%- else %}
       {% set p = booking.francis %}{% set btnClass = "btn btn--lg" %}{% include "partials/book-button.njk" %}
+      {%- endif %}
       <a href="{{ site.phoneLink }}" class="btn btn--lg btn--ghost"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call or Text {{ site.phone }}</a>
     </div>
   </div>
